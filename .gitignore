@@ -1,0 +1,4 @@
+cudnn_samples_v8/
+mentalchat_qwen_finetuned/
+mentalchat_qwen_finetuned_stable/
+myenv/

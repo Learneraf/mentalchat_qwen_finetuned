@@ -1,0 +1,17 @@
+nohup: ignoring input
+训练集大小: 14475
+验证集大小: 1609
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:10,  3.42s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.58s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.63s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.40s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.46s/it]
+/usr/src/myenv/lib/python3.8/site-packages/transformers/training_args.py:1568: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/usr/src/myenv/lib/python3.8/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length. Will not be supported from version '1.0.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+trainable params: 20,185,088 || all params: 7,635,801,600 || trainable%: 0.2643
+Traceback (most recent call last):
+  File "./main.py", line 119, in <module>
+    trainer = SFTTrainer(
+  File "/usr/src/myenv/lib/python3.8/site-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
+    return f(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'tokenizer_kwargs'
