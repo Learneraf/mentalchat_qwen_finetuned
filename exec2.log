@@ -1,17 +1,24 @@
 nohup: ignoring input
 训练集大小: 14475
 验证集大小: 1609
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:10,  3.42s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.58s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.63s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.40s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.46s/it]
-/usr/src/myenv/lib/python3.8/site-packages/transformers/training_args.py:1568: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
-  warnings.warn(
-/usr/src/myenv/lib/python3.8/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length. Will not be supported from version '1.0.0'.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.61s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.59s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:16<00:05,  5.55s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.25s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.37s/it]
+/usr/src/myenv/lib/python3.8/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length, packing. Will not be supported from version '1.0.0'.
 
 Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
   warnings.warn(message, FutureWarning)
+/usr/src/myenv/lib/python3.8/site-packages/trl/trainer/sft_trainer.py:195: UserWarning: You passed a `packing` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/usr/src/myenv/lib/python3.8/site-packages/trl/trainer/sft_trainer.py:283: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/usr/src/myenv/lib/python3.8/site-packages/trl/trainer/sft_trainer.py:321: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/usr/src/myenv/lib/python3.8/site-packages/trl/trainer/sft_trainer.py:401: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `SFTTrainer.__init__`. Use `processing_class` instead.
+  super().__init__(
 trainable params: 20,185,088 || all params: 7,635,801,600 || trainable%: 0.2643
-Traceback (most recent call last):
-  File "./main.py", line 119, in <module>
-    trainer = SFTTrainer(
-  File "/usr/src/myenv/lib/python3.8/site-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
-    return f(*args, **kwargs)
-TypeError: __init__() got an unexpected keyword argument 'tokenizer_kwargs'
+开始训练...
+  0%|          | 0/10854 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+/usr/src/myenv/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py:600: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/usr/src/myenv/lib/python3.8/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+  0%|          | 1/10854 [00:05<15:14:20,  5.05s/it]  0%|          | 2/10854 [00:09<13:44:47,  4.56s/it]  0%|          | 3/10854 [00:13<12:49:35,  4.26s/it]  0%|          | 4/10854 [00:17<12:43:11,  4.22s/it]  0%|          | 5/10854 [00:21<12:29:59,  4.15s/it]

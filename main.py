@@ -3,6 +3,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTTrainer
 import torch
+from transformers import DataCollatorForLanguageModeling
 
 # 1. 加载数据
 dataset = load_dataset("ShenLab/MentalChat16K")
@@ -12,7 +13,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
 
-# 2. 数据预处理 - 简化版本
+# 2. 数据预处理
 def format_instruction(sample):
     system_message = "你是一位富有同理心的心理健康助手。请根据用户的倾诉，提供温暖、支持性的回应。"
     user_input = sample.get("input", "") or ""
@@ -33,6 +34,19 @@ def format_instruction(sample):
 
 # 应用格式化
 tokenized_dataset = dataset.map(format_instruction)
+
+def tokenize_function(examples):
+    model_inputs = tokenizer(
+        examples["text"],
+        truncation=True,
+        padding=False,
+        max_length=1024,
+    )
+    model_inputs["labels"] = model_inputs["input_ids"].copy()
+    return model_inputs
+
+
+tokenized_dataset = tokenized_dataset.map(tokenize_function, batched=True, remove_columns=tokenized_dataset["train"].column_names)
 
 # 3. 检查是否有验证集
 if "validation" not in tokenized_dataset:
@@ -57,6 +71,7 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map="auto",
     trust_remote_code=True,
     torch_dtype=torch.float16,
+    use_cache=True,
 )
 
 # 关键步骤：准备模型用于k-bit训练
@@ -75,7 +90,7 @@ lora_config = LoraConfig(
 model = get_peft_model(model, lora_config)
 model.print_trainable_parameters()
 
-# 6. 训练配置 - 使用正确的参数名
+# 6. 训练配置
 training_args = TrainingArguments(
     output_dir="./mentalchat_qwen_finetuned_stable",
     per_device_train_batch_size=1,
@@ -87,9 +102,9 @@ training_args = TrainingArguments(
     logging_steps=10,
     save_steps=500,
     
-    # 验证配置 - 使用正确的参数名
+    # 验证配置
     eval_steps=100,
-    evaluation_strategy="steps",  # 修正参数名
+    eval_strategy="steps",
     save_total_limit=3,
     load_best_model_at_end=True,
     metric_for_best_model="eval_loss",
@@ -97,7 +112,7 @@ training_args = TrainingArguments(
     
     # 梯度稳定化配置
     max_grad_norm=0.5,
-    gradient_checkpointing=True,
+    gradient_checkpointing=False,
     
     # 优化器配置
     optim="paged_adamw_8bit",
@@ -115,21 +130,16 @@ training_args = TrainingArguments(
     fp16=True,
 )
 
-# 7. 使用 SFTTrainer - 简化配置
+# 7. 使用 SFTTrainer
 trainer = SFTTrainer(
     model=model,
     args=training_args,
     train_dataset=tokenized_dataset["train"],
     eval_dataset=tokenized_dataset["validation"],
     tokenizer=tokenizer,
-    dataset_text_field="text",  # 明确指定文本字段
+    dataset_text_field="text",
     max_seq_length=1024,
-    packing=False,  # 关闭 packing 可能更稳定
-    tokenizer_kwargs={
-        "padding": "max_length",  # 或者设置为True，但动态填充通常设置为`padding=True`，但这里我们尝试使用最大长度填充
-        "truncation": True,
-        "max_length": 1024,
-    },
+    packing=True,
 )
 
 print("开始训练...")
@@ -137,14 +147,7 @@ print("开始训练...")
 # 确保模型处于训练模式
 model.train()
 
-try:
-    trainer.train()
-    trainer.save_model()
-    print("训练完成！")
-except Exception as e:
-    print(f"训练过程中出现错误: {e}")
-    # 打印更多调试信息
-    print("模型可训练参数:")
-    for name, param in model.named_parameters():
-        if param.requires_grad:
-            print(f"可训练: {name}")
+
+trainer.train()
+trainer.save_model()
+print("训练完成！")
