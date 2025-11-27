@@ -35,19 +35,6 @@ def format_instruction(sample):
 # 应用格式化
 tokenized_dataset = dataset.map(format_instruction)
 
-def tokenize_function(examples):
-    model_inputs = tokenizer(
-        examples["text"],
-        truncation=True,
-        padding=False,
-        max_length=1024,
-    )
-    model_inputs["labels"] = model_inputs["input_ids"].copy()
-    return model_inputs
-
-
-tokenized_dataset = tokenized_dataset.map(tokenize_function, batched=True, remove_columns=tokenized_dataset["train"].column_names)
-
 # 3. 检查是否有验证集
 if "validation" not in tokenized_dataset:
     train_val_split = tokenized_dataset["train"].train_test_split(test_size=0.1, seed=42)
@@ -90,10 +77,35 @@ lora_config = LoraConfig(
 model = get_peft_model(model, lora_config)
 model.print_trainable_parameters()
 
+class CustomDataCollator(DataCollatorForLanguageModeling):
+    def __call__(self, features):
+        # 提取文本
+        texts = [feature["text"] for feature in features]
+        
+        # 使用tokenizer进行批处理，启用动态填充
+        batch = self.tokenizer(
+            texts,
+            padding=True,  # 动态填充
+            truncation=True,
+            max_length=1024,
+            return_tensors="pt",
+        )
+        
+        # 设置labels
+        batch["labels"] = batch["input_ids"].clone()
+        
+        return batch
+
+data_collator = CustomDataCollator(
+    tokenizer=tokenizer,
+    mlm=False,
+)
+
+
 # 6. 训练配置
 training_args = TrainingArguments(
     output_dir="./mentalchat_qwen_finetuned_stable",
-    per_device_train_batch_size=1,
+    per_device_train_batch_size=2,
     per_device_eval_batch_size=1,
     gradient_accumulation_steps=4,
     learning_rate=1e-4,
@@ -139,7 +151,9 @@ trainer = SFTTrainer(
     tokenizer=tokenizer,
     dataset_text_field="text",
     max_seq_length=1024,
-    packing=True,
+    packing=False,
+
+    data_collator=data_collator,  # 使用自定义数据整理器
 )
 
 print("开始训练...")

@@ -1,24 +1,24 @@
 nohup: ignoring input
 训练集大小: 14475
 验证集大小: 1609
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.61s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.59s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:16<00:05,  5.55s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.25s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.37s/it]
-/usr/src/myenv/lib/python3.8/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length, packing. Will not be supported from version '1.0.0'.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:09,  3.08s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.24s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.41s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.16s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.21s/it]
+/usr/src/myenv/lib/python3.8/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length. Will not be supported from version '1.0.0'.
 
 Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
   warnings.warn(message, FutureWarning)
-/usr/src/myenv/lib/python3.8/site-packages/trl/trainer/sft_trainer.py:195: UserWarning: You passed a `packing` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
-  warnings.warn(
 /usr/src/myenv/lib/python3.8/site-packages/trl/trainer/sft_trainer.py:283: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
   warnings.warn(
 /usr/src/myenv/lib/python3.8/site-packages/trl/trainer/sft_trainer.py:321: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/usr/src/myenv/lib/python3.8/site-packages/trl/trainer/sft_trainer.py:576: UserWarning: You passed `remove_unused_columns=False` on a non-packed dataset. This might create some issues with the default collator and yield to errors. If you want to inspect dataset other columns (in this case ['instruction', 'input', 'output', 'text']), you can subclass `DataCollatorForLanguageModeling` in case you used the default collator and create your own data collator in order to inspect the unused dataset columns.
   warnings.warn(
 /usr/src/myenv/lib/python3.8/site-packages/trl/trainer/sft_trainer.py:401: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `SFTTrainer.__init__`. Use `processing_class` instead.
   super().__init__(
 trainable params: 20,185,088 || all params: 7,635,801,600 || trainable%: 0.2643
 开始训练...
-  0%|          | 0/10854 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+  0%|          | 0/5427 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
 /usr/src/myenv/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py:600: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
   return fn(*args, **kwargs)
 /usr/src/myenv/lib/python3.8/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
   with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
-  0%|          | 1/10854 [00:05<15:14:20,  5.05s/it]  0%|          | 2/10854 [00:09<13:44:47,  4.56s/it]  0%|          | 3/10854 [00:13<12:49:35,  4.26s/it]  0%|          | 4/10854 [00:17<12:43:11,  4.22s/it]  0%|          | 5/10854 [00:21<12:29:59,  4.15s/it]
+  0%|          | 1/5427 [00:09<13:39:57,  9.07s/it]  0%|          | 2/5427 [00:16<12:19:01,  8.17s/it]  0%|          | 3/5427 [00:24<12:02:02,  7.99s/it]  0%|          | 4/5427 [00:31<11:29:21,  7.63s/it]  0%|          | 5/5427 [00:38<11:04:12,  7.35s/it]  0%|          | 6/5427 [00:45<10:57:54,  7.28s/it]  0%|          | 7/5427 [00:51<10:35:38,  7.04s/it]  0%|          | 8/5427 [00:58<10:23:23,  6.90s/it]  0%|          | 9/5427 [01:06<10:54:42,  7.25s/it]  0%|          | 10/5427 [01:13<10:39:51,  7.09s/it]                                                      0%|          | 10/5427 [01:13<10:39:51,  7.09s/it]  0%|          | 11/5427 [01:21<11:03:14,  7.35s/it]  0%|          | 12/5427 [01:26<10:10:44,  6.77s/it]  0%|          | 13/5427 [01:33<10:06:49,  6.73s/it]  0%|          | 14/5427 [01:39<10:00:43,  6.66s/it]  0%|          | 15/5427 [01:46<10:02:32,  6.68s/it]  0%|          | 16/5427 [01:52<9:51:30,  6.56s/it]   0%|          | 17/5427 [01:58<9:37:59,  6.41s/it]  0%|          | 18/5427 [02:05<9:51:03,  6.56s/it]  0%|          | 19/5427 [02:12<9:58:40,  6.64s/it]  0%|          | 20/5427 [02:19<10:03:10,  6.69s/it]                                                      0%|          | 20/5427 [02:19<10:03:10,  6.69s/it]  0%|          | 21/5427 [02:26<10:01:56,  6.68s/it]
