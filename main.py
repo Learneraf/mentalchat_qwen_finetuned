@@ -105,12 +105,12 @@ data_collator = CustomDataCollator(
 # 6. 训练配置
 training_args = TrainingArguments(
     output_dir="./mentalchat_qwen_finetuned_stable",
-    per_device_train_batch_size=2,
+    per_device_train_batch_size=4,
     per_device_eval_batch_size=1,
-    gradient_accumulation_steps=4,
+    gradient_accumulation_steps=2,
     learning_rate=1e-4,
     warmup_ratio=0.03,
-    num_train_epochs=3,
+    num_train_epochs=1,
     logging_steps=10,
     save_steps=500,
     
@@ -136,9 +136,11 @@ training_args = TrainingArguments(
     # 学习率调度
     lr_scheduler_type="cosine",
     
+    dataloader_pin_memory=True,
+    dataloader_num_workers=4,    # 增加工作进程
     report_to="none",
+    torch_compile=True,
     remove_unused_columns=False,
-    dataloader_pin_memory=False,
     fp16=True,
 )
 
@@ -151,9 +153,9 @@ trainer = SFTTrainer(
     tokenizer=tokenizer,
     dataset_text_field="text",
     max_seq_length=1024,
-    packing=False,
+    packing=True,
 
-    data_collator=data_collator,  # 使用自定义数据整理器
+    # data_collator=data_collator,  # 使用自定义数据整理器
 )
 
 print("开始训练...")
