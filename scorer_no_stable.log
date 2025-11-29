@@ -1,0 +1,305 @@
+nohup: ignoring input
+加载测试数据...
+测试集大小: 1609
+加载微调模型...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.30s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.15s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:15<00:05,  5.19s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  4.99s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  5.07s/it]
+加载原始基础模型...
+加载ChatGLM作为对比...
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:03<00:22,  3.74s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:07<00:18,  3.75s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:11<00:15,  3.75s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:14<00:10,  3.66s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:18<00:07,  3.72s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:22<00:03,  3.71s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:24<00:00,  3.18s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:24<00:00,  3.48s/it]
+Setting eos_token is not supported, use the default one.
+Setting pad_token is not supported, use the default one.
+Setting unk_token is not supported, use the default one.
+Some weights of the model checkpoint at cardiffnlp/twitter-roberta-base-sentiment-latest were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+
+正在评估 Finetuned Qwen2.5-7B...
+生成 Finetuned Qwen2.5-7B 的回复:   0%|          | 0/50 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+生成 Finetuned Qwen2.5-7B 的回复:   2%|▏         | 1/50 [00:01<01:34,  1.92s/it]生成 Finetuned Qwen2.5-7B 的回复:   4%|▍         | 2/50 [00:02<00:49,  1.03s/it]生成 Finetuned Qwen2.5-7B 的回复:   6%|▌         | 3/50 [00:02<00:35,  1.34it/s]生成 Finetuned Qwen2.5-7B 的回复:   8%|▊         | 4/50 [00:03<00:29,  1.58it/s]生成 Finetuned Qwen2.5-7B 的回复:  10%|█         | 5/50 [00:03<00:24,  1.83it/s]生成 Finetuned Qwen2.5-7B 的回复:  12%|█▏        | 6/50 [00:03<00:19,  2.31it/s]生成 Finetuned Qwen2.5-7B 的回复:  14%|█▍        | 7/50 [00:04<00:18,  2.37it/s]生成 Finetuned Qwen2.5-7B 的回复:  16%|█▌        | 8/50 [00:04<00:17,  2.34it/s]生成 Finetuned Qwen2.5-7B 的回复:  18%|█▊        | 9/50 [00:05<00:17,  2.38it/s]生成 Finetuned Qwen2.5-7B 的回复:  20%|██        | 10/50 [00:05<00:17,  2.26it/s]生成 Finetuned Qwen2.5-7B 的回复:  22%|██▏       | 11/50 [00:05<00:16,  2.34it/s]生成 Finetuned Qwen2.5-7B 的回复:  24%|██▍       | 12/50 [00:06<00:19,  1.95it/s]生成 Finetuned Qwen2.5-7B 的回复:  26%|██▌       | 13/50 [00:07<00:17,  2.13it/s]生成 Finetuned Qwen2.5-7B 的回复:  28%|██▊       | 14/50 [00:07<00:14,  2.40it/s]生成 Finetuned Qwen2.5-7B 的回复:  30%|███       | 15/50 [00:07<00:14,  2.45it/s]生成 Finetuned Qwen2.5-7B 的回复:  32%|███▏      | 16/50 [00:08<00:13,  2.46it/s]生成 Finetuned Qwen2.5-7B 的回复:  34%|███▍      | 17/50 [00:08<00:15,  2.15it/s]生成 Finetuned Qwen2.5-7B 的回复:  36%|███▌      | 18/50 [00:08<00:13,  2.41it/s]生成 Finetuned Qwen2.5-7B 的回复:  38%|███▊      | 19/50 [00:09<00:12,  2.45it/s]生成 Finetuned Qwen2.5-7B 的回复:  40%|████      | 20/50 [00:09<00:12,  2.48it/s]生成 Finetuned Qwen2.5-7B 的回复:  42%|████▏     | 21/50 [00:10<00:11,  2.46it/s]生成 Finetuned Qwen2.5-7B 的回复:  44%|████▍     | 22/50 [00:10<00:11,  2.47it/s]生成 Finetuned Qwen2.5-7B 的回复:  46%|████▌     | 23/50 [00:11<00:11,  2.42it/s]生成 Finetuned Qwen2.5-7B 的回复:  48%|████▊     | 24/50 [00:11<00:10,  2.45it/s]生成 Finetuned Qwen2.5-7B 的回复:  50%|█████     | 25/50 [00:12<00:13,  1.89it/s]生成 Finetuned Qwen2.5-7B 的回复:  52%|█████▏    | 26/50 [00:12<00:11,  2.04it/s]生成 Finetuned Qwen2.5-7B 的回复:  54%|█████▍    | 27/50 [00:13<00:11,  2.03it/s]生成 Finetuned Qwen2.5-7B 的回复:  56%|█████▌    | 28/50 [00:13<00:09,  2.25it/s]生成 Finetuned Qwen2.5-7B 的回复:  58%|█████▊    | 29/50 [00:13<00:08,  2.49it/s]生成 Finetuned Qwen2.5-7B 的回复:  60%|██████    | 30/50 [00:14<00:08,  2.34it/s]生成 Finetuned Qwen2.5-7B 的回复:  62%|██████▏   | 31/50 [00:14<00:09,  2.09it/s]生成 Finetuned Qwen2.5-7B 的回复:  64%|██████▍   | 32/50 [00:15<00:08,  2.20it/s]生成 Finetuned Qwen2.5-7B 的回复:  66%|██████▌   | 33/50 [00:15<00:06,  2.46it/s]生成 Finetuned Qwen2.5-7B 的回复:  68%|██████▊   | 34/50 [00:15<00:06,  2.47it/s]生成 Finetuned Qwen2.5-7B 的回复:  70%|███████   | 35/50 [00:16<00:06,  2.49it/s]生成 Finetuned Qwen2.5-7B 的回复:  72%|███████▏  | 36/50 [00:16<00:05,  2.51it/s]生成 Finetuned Qwen2.5-7B 的回复:  74%|███████▍  | 37/50 [00:17<00:06,  1.90it/s]生成 Finetuned Qwen2.5-7B 的回复:  76%|███████▌  | 38/50 [00:18<00:06,  1.93it/s]生成 Finetuned Qwen2.5-7B 的回复:  78%|███████▊  | 39/50 [00:18<00:05,  1.95it/s]生成 Finetuned Qwen2.5-7B 的回复:  80%|████████  | 40/50 [00:18<00:04,  2.09it/s]生成 Finetuned Qwen2.5-7B 的回复:  82%|████████▏ | 41/50 [00:19<00:05,  1.56it/s]生成 Finetuned Qwen2.5-7B 的回复:  84%|████████▍ | 42/50 [00:20<00:04,  1.85it/s]生成 Finetuned Qwen2.5-7B 的回复:  86%|████████▌ | 43/50 [00:20<00:03,  2.02it/s]生成 Finetuned Qwen2.5-7B 的回复:  88%|████████▊ | 44/50 [00:21<00:02,  2.10it/s]生成 Finetuned Qwen2.5-7B 的回复:  90%|█████████ | 45/50 [00:21<00:02,  1.84it/s]生成 Finetuned Qwen2.5-7B 的回复:  92%|█████████▏| 46/50 [00:22<00:01,  2.01it/s]生成 Finetuned Qwen2.5-7B 的回复:  94%|█████████▍| 47/50 [00:22<00:01,  2.15it/s]生成 Finetuned Qwen2.5-7B 的回复:  96%|█████████▌| 48/50 [00:22<00:00,  2.25it/s]生成 Finetuned Qwen2.5-7B 的回复:  98%|█████████▊| 49/50 [00:23<00:00,  2.33it/s]生成 Finetuned Qwen2.5-7B 的回复: 100%|██████████| 50/50 [00:23<00:00,  2.36it/s]生成 Finetuned Qwen2.5-7B 的回复: 100%|██████████| 50/50 [00:23<00:00,  2.10it/s]
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 23it [00:00, 225.56it/s]Computing BLEU/ROUGE: 46it [00:00, 221.50it/s]Computing BLEU/ROUGE: 50it [00:00, 215.23it/s]
+Computing Safety Scores:   0%|          | 0/50 [00:00<?, ?it/s]Computing Safety Scores:  12%|█▏        | 6/50 [00:00<00:00, 55.33it/s]You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Computing Safety Scores:  36%|███▌      | 18/50 [00:00<00:00, 88.03it/s]Computing Safety Scores:  60%|██████    | 30/50 [00:00<00:00, 98.29it/s]Computing Safety Scores:  82%|████████▏ | 41/50 [00:00<00:00, 102.42it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 98.20it/s] 
+
+正在评估 Qwen2.5-7B...
+生成 Qwen2.5-7B 的回复:   0%|          | 0/50 [00:00<?, ?it/s]生成 Qwen2.5-7B 的回复:   2%|▏         | 1/50 [00:00<00:24,  1.97it/s]生成 Qwen2.5-7B 的回复:   4%|▍         | 2/50 [00:00<00:21,  2.26it/s]生成 Qwen2.5-7B 的回复:   6%|▌         | 3/50 [00:01<00:24,  1.96it/s]生成 Qwen2.5-7B 的回复:   8%|▊         | 4/50 [00:02<00:32,  1.44it/s]生成 Qwen2.5-7B 的回复:  10%|█         | 5/50 [00:02<00:26,  1.71it/s]生成 Qwen2.5-7B 的回复:  12%|█▏        | 6/50 [00:03<00:19,  2.20it/s]生成 Qwen2.5-7B 的回复:  14%|█▍        | 7/50 [00:03<00:22,  1.87it/s]生成 Qwen2.5-7B 的回复:  16%|█▌        | 8/50 [00:04<00:22,  1.88it/s]生成 Qwen2.5-7B 的回复:  18%|█▊        | 9/50 [00:04<00:20,  2.04it/s]生成 Qwen2.5-7B 的回复:  20%|██        | 10/50 [00:05<00:22,  1.82it/s]生成 Qwen2.5-7B 的回复:  22%|██▏       | 11/50 [00:05<00:19,  1.98it/s]生成 Qwen2.5-7B 的回复:  24%|██▍       | 12/50 [00:06<00:21,  1.76it/s]生成 Qwen2.5-7B 的回复:  26%|██▌       | 13/50 [00:07<00:22,  1.66it/s]生成 Qwen2.5-7B 的回复:  28%|██▊       | 14/50 [00:07<00:18,  1.96it/s]生成 Qwen2.5-7B 的回复:  30%|███       | 15/50 [00:07<00:16,  2.08it/s]生成 Qwen2.5-7B 的回复:  32%|███▏      | 16/50 [00:08<00:14,  2.35it/s]生成 Qwen2.5-7B 的回复:  34%|███▍      | 17/50 [00:08<00:14,  2.25it/s]生成 Qwen2.5-7B 的回复:  36%|███▌      | 18/50 [00:08<00:12,  2.50it/s]生成 Qwen2.5-7B 的回复:  38%|███▊      | 19/50 [00:09<00:12,  2.51it/s]生成 Qwen2.5-7B 的回复:  40%|████      | 20/50 [00:09<00:12,  2.34it/s]生成 Qwen2.5-7B 的回复:  42%|████▏     | 21/50 [00:10<00:12,  2.39it/s]生成 Qwen2.5-7B 的回复:  44%|████▍     | 22/50 [00:10<00:11,  2.42it/s]生成 Qwen2.5-7B 的回复:  46%|████▌     | 23/50 [00:10<00:10,  2.57it/s]生成 Qwen2.5-7B 的回复:  48%|████▊     | 24/50 [00:11<00:10,  2.38it/s]生成 Qwen2.5-7B 的回复:  50%|█████     | 25/50 [00:11<00:08,  2.82it/s]生成 Qwen2.5-7B 的回复:  52%|█████▏    | 26/50 [00:12<00:09,  2.52it/s]生成 Qwen2.5-7B 的回复:  54%|█████▍    | 27/50 [00:12<00:09,  2.49it/s]生成 Qwen2.5-7B 的回复:  56%|█████▌    | 28/50 [00:12<00:08,  2.61it/s]生成 Qwen2.5-7B 的回复:  58%|█████▊    | 29/50 [00:13<00:11,  1.76it/s]生成 Qwen2.5-7B 的回复:  60%|██████    | 30/50 [00:14<00:10,  1.94it/s]生成 Qwen2.5-7B 的回复:  62%|██████▏   | 31/50 [00:14<00:10,  1.86it/s]生成 Qwen2.5-7B 的回复:  64%|██████▍   | 32/50 [00:15<00:09,  1.91it/s]生成 Qwen2.5-7B 的回复:  66%|██████▌   | 33/50 [00:15<00:08,  1.94it/s]生成 Qwen2.5-7B 的回复:  68%|██████▊   | 34/50 [00:16<00:08,  1.96it/s]生成 Qwen2.5-7B 的回复:  70%|███████   | 35/50 [00:16<00:07,  2.11it/s]生成 Qwen2.5-7B 的回复:  72%|███████▏  | 36/50 [00:17<00:06,  2.08it/s]生成 Qwen2.5-7B 的回复:  74%|███████▍  | 37/50 [00:17<00:06,  2.15it/s]生成 Qwen2.5-7B 的回复:  76%|███████▌  | 38/50 [00:18<00:06,  1.99it/s]生成 Qwen2.5-7B 的回复:  78%|███████▊  | 39/50 [00:18<00:05,  1.88it/s]生成 Qwen2.5-7B 的回复:  80%|████████  | 40/50 [00:19<00:04,  2.04it/s]生成 Qwen2.5-7B 的回复:  82%|████████▏ | 41/50 [00:20<00:05,  1.71it/s]生成 Qwen2.5-7B 的回复:  84%|████████▍ | 42/50 [00:20<00:04,  1.88it/s]生成 Qwen2.5-7B 的回复:  86%|████████▌ | 43/50 [00:20<00:03,  2.15it/s]生成 Qwen2.5-7B 的回复:  88%|████████▊ | 44/50 [00:21<00:03,  1.51it/s]生成 Qwen2.5-7B 的回复:  90%|█████████ | 45/50 [00:22<00:03,  1.63it/s]生成 Qwen2.5-7B 的回复:  92%|█████████▏| 46/50 [00:22<00:02,  1.83it/s]生成 Qwen2.5-7B 的回复:  94%|█████████▍| 47/50 [00:23<00:01,  1.69it/s]生成 Qwen2.5-7B 的回复:  96%|█████████▌| 48/50 [00:24<00:01,  1.54it/s]生成 Qwen2.5-7B 的回复:  98%|█████████▊| 49/50 [00:24<00:00,  1.74it/s]生成 Qwen2.5-7B 的回复: 100%|██████████| 50/50 [00:25<00:00,  1.90it/s]生成 Qwen2.5-7B 的回复: 100%|██████████| 50/50 [00:25<00:00,  1.99it/s]
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+生成回复时出错: probability tensor contains either `inf`, `nan` or element < 0
+Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 23it [00:00, 216.94it/s]Computing BLEU/ROUGE: 45it [00:00, 213.60it/s]Computing BLEU/ROUGE: 50it [00:00, 211.32it/s]
+Computing Safety Scores:   0%|          | 0/50 [00:00<?, ?it/s]Computing Safety Scores:  22%|██▏       | 11/50 [00:00<00:00, 108.54it/s]Computing Safety Scores:  46%|████▌     | 23/50 [00:00<00:00, 110.56it/s]Computing Safety Scores:  70%|███████   | 35/50 [00:00<00:00, 110.37it/s]Computing Safety Scores:  94%|█████████▍| 47/50 [00:00<00:00, 107.61it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 108.24it/s]
+
+正在评估 ChatGLM3-6B...
+生成 ChatGLM3-6B 的回复:   0%|          | 0/50 [00:00<?, ?it/s]生成 ChatGLM3-6B 的回复:   2%|▏         | 1/50 [00:13<10:53, 13.34s/it]生成 ChatGLM3-6B 的回复:   4%|▍         | 2/50 [00:26<10:24, 13.01s/it]生成 ChatGLM3-6B 的回复:   6%|▌         | 3/50 [00:38<09:47, 12.50s/it]生成 ChatGLM3-6B 的回复:   8%|▊         | 4/50 [00:50<09:39, 12.60s/it]生成 ChatGLM3-6B 的回复:  10%|█         | 5/50 [01:02<09:07, 12.18s/it]生成 ChatGLM3-6B 的回复:  12%|█▏        | 6/50 [01:14<09:02, 12.33s/it]生成 ChatGLM3-6B 的回复:  14%|█▍        | 7/50 [01:27<08:55, 12.45s/it]生成 ChatGLM3-6B 的回复:  16%|█▌        | 8/50 [01:40<08:47, 12.55s/it]生成 ChatGLM3-6B 的回复:  18%|█▊        | 9/50 [01:52<08:34, 12.56s/it]生成 ChatGLM3-6B 的回复:  20%|██        | 10/50 [02:03<07:52, 11.82s/it]生成 ChatGLM3-6B 的回复:  22%|██▏       | 11/50 [02:12<07:14, 11.15s/it]生成 ChatGLM3-6B 的回复:  24%|██▍       | 12/50 [02:25<07:22, 11.63s/it]生成 ChatGLM3-6B 的回复:  26%|██▌       | 13/50 [02:38<07:23, 11.98s/it]生成 ChatGLM3-6B 的回复:  28%|██▊       | 14/50 [02:46<06:32, 10.90s/it]生成 ChatGLM3-6B 的回复:  30%|███       | 15/50 [02:59<06:39, 11.41s/it]生成 ChatGLM3-6B 的回复:  32%|███▏      | 16/50 [03:11<06:40, 11.77s/it]生成 ChatGLM3-6B 的回复:  34%|███▍      | 17/50 [03:19<05:46, 10.50s/it]生成 ChatGLM3-6B 的回复:  36%|███▌      | 18/50 [03:30<05:38, 10.57s/it]生成 ChatGLM3-6B 的回复:  38%|███▊      | 19/50 [03:42<05:45, 11.14s/it]生成 ChatGLM3-6B 的回复:  40%|████      | 20/50 [03:54<05:42, 11.41s/it]生成 ChatGLM3-6B 的回复:  42%|████▏     | 21/50 [03:54<03:52,  8.01s/it]生成 ChatGLM3-6B 的回复:  44%|████▍     | 22/50 [04:04<04:03,  8.69s/it]生成 ChatGLM3-6B 的回复:  46%|████▌     | 23/50 [04:17<04:27,  9.89s/it]生成 ChatGLM3-6B 的回复:  48%|████▊     | 24/50 [04:30<04:38, 10.70s/it]生成 ChatGLM3-6B 的回复:  50%|█████     | 25/50 [04:42<04:42, 11.29s/it]生成 ChatGLM3-6B 的回复:  52%|█████▏    | 26/50 [04:50<04:03, 10.16s/it]生成 ChatGLM3-6B 的回复:  54%|█████▍    | 27/50 [04:54<03:13,  8.42s/it]生成 ChatGLM3-6B 的回复:  56%|█████▌    | 28/50 [05:07<03:33,  9.70s/it]生成 ChatGLM3-6B 的回复:  58%|█████▊    | 29/50 [05:19<03:41, 10.54s/it]生成 ChatGLM3-6B 的回复:  60%|██████    | 30/50 [05:32<03:42, 11.14s/it]生成 ChatGLM3-6B 的回复:  62%|██████▏   | 31/50 [05:38<03:00,  9.51s/it]生成 ChatGLM3-6B 的回复:  64%|██████▍   | 32/50 [05:50<03:07, 10.44s/it]生成 ChatGLM3-6B 的回复:  66%|██████▌   | 33/50 [06:03<03:08, 11.09s/it]生成 ChatGLM3-6B 的回复:  68%|██████▊   | 34/50 [06:16<03:04, 11.54s/it]生成 ChatGLM3-6B 的回复:  70%|███████   | 35/50 [06:28<02:58, 11.87s/it]生成 ChatGLM3-6B 的回复:  72%|███████▏  | 36/50 [06:41<02:49, 12.11s/it]生成 ChatGLM3-6B 的回复:  74%|███████▍  | 37/50 [06:53<02:39, 12.28s/it]生成 ChatGLM3-6B 的回复:  76%|███████▌  | 38/50 [07:04<02:20, 11.70s/it]生成 ChatGLM3-6B 的回复:  78%|███████▊  | 39/50 [07:16<02:11, 11.91s/it]生成 ChatGLM3-6B 的回复:  80%|████████  | 40/50 [07:28<01:59, 11.99s/it]生成 ChatGLM3-6B 的回复:  82%|████████▏ | 41/50 [07:41<01:49, 12.18s/it]生成 ChatGLM3-6B 的回复:  84%|████████▍ | 42/50 [07:54<01:38, 12.32s/it]生成 ChatGLM3-6B 的回复:  86%|████████▌ | 43/50 [08:00<01:13, 10.55s/it]生成 ChatGLM3-6B 的回复:  88%|████████▊ | 44/50 [08:13<01:07, 11.21s/it]生成 ChatGLM3-6B 的回复:  90%|█████████ | 45/50 [08:25<00:58, 11.61s/it]生成 ChatGLM3-6B 的回复:  92%|█████████▏| 46/50 [08:29<00:36,  9.17s/it]生成 ChatGLM3-6B 的回复:  94%|█████████▍| 47/50 [08:39<00:28,  9.54s/it]生成 ChatGLM3-6B 的回复:  96%|█████████▌| 48/50 [08:51<00:20, 10.06s/it]生成 ChatGLM3-6B 的回复:  98%|█████████▊| 49/50 [09:03<00:10, 10.79s/it]生成 ChatGLM3-6B 的回复: 100%|██████████| 50/50 [09:15<00:00, 11.24s/it]生成 ChatGLM3-6B 的回复: 100%|██████████| 50/50 [09:15<00:00, 11.12s/it]
+Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 33.70it/s]Computing BLEU/ROUGE: 8it [00:00, 31.29it/s]Computing BLEU/ROUGE: 13it [00:00, 36.39it/s]Computing BLEU/ROUGE: 18it [00:00, 39.04it/s]Computing BLEU/ROUGE: 23it [00:00, 38.39it/s]Computing BLEU/ROUGE: 28it [00:00, 39.02it/s]Computing BLEU/ROUGE: 32it [00:00, 38.89it/s]Computing BLEU/ROUGE: 36it [00:00, 37.77it/s]Computing BLEU/ROUGE: 40it [00:01, 38.27it/s]Computing BLEU/ROUGE: 44it [00:01, 35.75it/s]Computing BLEU/ROUGE: 50it [00:01, 36.73it/s]Computing BLEU/ROUGE: 50it [00:01, 37.13it/s]
+Computing Safety Scores:   0%|          | 0/50 [00:00<?, ?it/s]Computing Safety Scores:  20%|██        | 10/50 [00:00<00:00, 94.72it/s]Computing Safety Scores:  42%|████▏     | 21/50 [00:00<00:00, 99.40it/s]Computing Safety Scores:  64%|██████▍   | 32/50 [00:00<00:00, 100.88it/s]Computing Safety Scores:  86%|████████▌ | 43/50 [00:00<00:00, 100.38it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 99.31it/s] 
+================================================================================
+模型对比结果
+================================================================================
+                        bleu  rougeL  ...  response_length  overall_score
+Finetuned Qwen2.5-7B  0.0000  0.0000  ...              0.0         0.2000
+Qwen2.5-7B            0.0000  0.0000  ...              0.0         0.2000
+ChatGLM3-6B           0.0336  0.1911  ...              1.0         0.3731
+
+[3 rows x 8 columns]
+
+================================================================================
+定性分析示例
+================================================================================
+
+--- 示例 1 ---
+👤 用户输入: Growing up, I was always compared to my older sibling and felt like I could never live up to their achievements. This dynamic has continued into adulthood, causing frequent arguments between us and straining our relationship. It's difficult for me to find my own identity within the family.
+📝 参考回复: It can be incredibly challenging to feel constantly compared to a sibling and struggling to find your own identity within the family. It's important for you to remember that every individual is unique, with their own strengths and achievements. Comparisons can often overshadow our own accomplishments and make it difficult to recognize our true worth.
+
+To start finding your own identity within the family, it might be helpful to reflect on what makes you happy and fulfilled as an individual. Consider pursuing activities or hobbies that resonate with your interests and values. Engaging in activities that bring you joy can help you build confidence and cultivate a sense of self outside of any comparisons.
+
+Exploring your passions may also provide an opportunity for personal growth and discovering new talents or skills. This can lead to a stronger sense of self-identity and increased fulfillment. Additionally, surrounding yourself with supportive and understanding friends or individuals who value and appreciate you for who you are can be empowering. Building relationships beyond your familial ties can give you a chance to express your authentic self without feeling overshadowed or minimized.
+
+Another avenue to explore is setting healthy boundaries with your sibling. Communication plays a crucial role in addressing conflicts and fostering healthier relationships. Expressing how constant comparisons have affected you may help them understand your perspective. By establishing clear boundaries around comparison topics, such as politely redirecting conversations or suggesting alternative subjects, you may be able to create space for your own growth and development.
+
+Remember to practice self-compassion throughout this process. Growing into ourselves takes time and patience. Be kind to yourself if progress feels slow, and remind yourself that your journey towards self-discovery is valid and important. You deserve to embrace your own achievements and forge your own path.
+
+Keep in mind that this guidance is not exhaustive, and seeking support from a mental health professional could offer additional insights and tools specific to your situation.
+------------------------------------------------------------
+🤖 Finetuned Qwen2.5-7B:
+   
+🤖 Qwen2.5-7B:
+   
+🤖 ChatGLM3-6B:
+   I'm sorry to hear that you're struggling with feelings of inadequacy and low self-esteem due to being constantly compared to your older sibling. It sounds like this can be a challenging situation, but please know that you are not alone in feeling this way.
+
+It's important to remember that everyone has their own unique journey and timeline, and just because your sibling may have achieved certain things earlier on doesn't mean that you couldn't achieve them later on or in your own way. It's also important to recognize that comparisons can be harmful and can lead to feelings of negativity and self-doubt.
+
+I would suggest having an open and honest conversation with your sibling about how their constant comparisons make you feel. It might also be helpful to explain how this makes you feel unappreciated and how it affects your self-esteem. It's possible that your sibling may not even realize the impact of their words or actions, and having a direct and clear communication can help them understand the impact on you.
+
+If talking to your sibling doesn't feel like an option or if it hasn't helped, you may want to consider seeking support from a therapist or counselor. They
+================================================================================
+
+--- 示例 2 ---
+👤 用户输入: I've been feeling disconnected from my family lately. My sister and I have had a falling out, and my parents have been dealing with their own issues. I've tried to reach out, but it feels like they're too consumed by their own problems to be there for me. I've also been having trouble sleeping and eating properly, and I've noticed that I've been more irritable than usual.
+📝 参考回复: Your current situation with your family is understandably distressing. It's essential to acknowledge that families can experience conflict and that these issues can be complex and multifaceted. It's important to remember that healing relationships takes time and effort from all parties involved. In the meantime, it's crucial to focus on self-care and prioritize your own well-being.
+
+The emotional turmoil you're experiencing is a natural response to the stressors in your life. The disrupted sleep and appetite are common symptoms of stress and anxiety. It's essential to address these symptoms through healthy coping mechanisms, such as practicing relaxation techniques, engaging in regular physical activity, and maintaining a balanced diet.
+
+Additionally, it may be helpful to consider seeking professional support from a mental health counselor or therapist. They can provide you with a safe and confidential space to explore your emotions, learn effective coping strategies, and gain valuable insights into your thought patterns and behaviors. Remember, seeking help is a sign of strength, not weakness.
+
+As we continue to work together, we'll explore various therapeutic approaches, such as cognitive-behavioral therapy, mindfulness meditation, and interpersonal therapy, to help you navigate your current challenges and develop the skills necessary to build resilience and improve your overall well-being.
+------------------------------------------------------------
+🤖 Finetuned Qwen2.5-7B:
+   
+🤖 Qwen2.5-7B:
+   
+🤖 ChatGLM3-6B:
+   I'm sorry to hear that you're going through a difficult time with your family right now. It's important to take care of yourself during this time, and to seek support if you need it.
+
+It sounds like you've made an effort to reach out to your loved ones, but haven't received the response you were hoping for. That can be very disappointing and frustrating. However, it's important to remember that people may not always be able to respond to our messages or concerns, especially if they're struggling with their own issues.
+
+In terms of your physical health, it's normal to experience ups and downs when it comes to sleep and appetite. If you're having trouble sleeping and eating properly, it might be helpful to try some relaxation techniques, such as deep breathing or meditation, to help calm your mind and body. You may also want to consider talking to a healthcare professional about any underlying medical conditions that could be contributing to your symptoms.
+
+Lastly, it's important to be kind to yourself during this time. It's okay to feel frustrated or disappointed, but try not to beat yourself up over it. Remember that you're doing the best you can in a challenging situation
+================================================================================
+
+--- 示例 3 ---
+👤 用户输入: Recently, I had a major argument with a close friend, and since then, I haven't been able to shake off the feelings of stress and anger. Every time I think about the incident or see them, my heart starts racing and I become overwhelmed with negative emotions. I want to discuss ways to manage these feelings constructively.
+📝 参考回复: It sounds like the argument with your close friend has left a significant impact on you, triggering feelings of stress and anger that have been difficult to shake off. It can be challenging when negative emotions become overwhelming and affect our well-being. Here are some suggestions to help you manage these feelings constructively:
+
+1. Take a step back: When you find yourself in situations where you think about the incident or encounter your friend, try taking a moment to pause. Take a deep breath and give yourself some mental space before reacting to the situation. This can allow you to gather your thoughts and respond more calmly.
+
+2. Reflect on your emotions: Acknowledge and understand what specific emotions you're experiencing. Is it primarily stress, anger, or a mix of different emotions? By identifying and labeling your emotions, you can begin to better address them.
+
+3. Express your feelings: Find healthy ways to express and communicate your emotions. You might consider writing in a journal, talking to a trusted friend or family member, or engaging in creative outlets such as painting or playing music. These activities can provide an outlet for your emotions and enable you to process them in a constructive manner.
+
+4. Practice self-care: Engage in activities that promote self-care and relaxation. This could include exercising regularly, getting enough sleep, practicing mindfulness or meditation, and engaging in hobbies or activities that bring you joy. Taking care of your overall well-being is crucial during this time.
+
+5. Communication and boundary setting: If you feel ready, it may be helpful to have an open and honest conversation with your friend about how the argument has affected you. Clear communication can foster understanding and potentially lead to resolution or mutual growth. Additionally, establishing personal boundaries moving forward can help maintain a healthier dynamic between you and your friend.
+
+6. Seek support: Don't hesitate to reach out for support from others. Whether it's through professional assistance or confiding in someone you trust, sharing your experiences and thoughts with others can provide valuable perspectives, guidance, and emotional support.
+
+Remember, everyone's journey to managing their emotions constructively is unique. Be patient and kind to yourself as you navigate through this challenging time.
+------------------------------------------------------------
+🤖 Finetuned Qwen2.5-7B:
+   
+🤖 Qwen2.5-7B:
+   
+🤖 ChatGLM3-6B:
+   I'm sorry to hear that you're still struggling with the emotional aftermath of the argument. It's completely normal to feel upset and overwhelmed after a disagreement with someone you care about.
+
+One helpful way to manage these feelings is to practice self-compassion. Instead of beating yourself up for feeling upset or angry, try to acknowledge and accept those emotions as valid and understandable. Remember that it's okay to feel upset, and it's a normal part of the healing process.
+
+Another approach you might find helpful is to engage in some form of physical activity. Exercise can help to release tension and reduce stress, and it can also help to clear your mind and give you a sense of perspective.
+
+It might also be helpful to reach out to your friend and have a calm and respectful conversation about what happened. This can help to clear the air and allow you to move forward in a positive direction.
+
+Finally, if you're still struggling to manage your emotions and they're causing significant distress, you may want to consider talking to a therapist or counselor who can provide support and guidance as you work through these feelings.
+================================================================================
+
+--- 示例 4 ---
+👤 用户输入: I've been under tremendous stress at work, and it's starting to take a toll on my physical and mental health. My job has become increasingly demanding, with tight deadlines, long hours, and constant pressure to meet targets. I find myself feeling overwhelmed and exhausted all the time. I struggle to concentrate, and even simple tasks take longer than they should because my mind feels scattered. The stress has also impacted my sleep. I toss and turn all night, worrying about work and feeling anxious about what tomorrow might bring. I'm desperately seeking strategies to manage my stress levels effectively so that I can regain balance in my life.
+📝 参考回复: It sounds like you're facing a lot of challenging situations at work, and I can understand how it's taking a toll on both your physical and mental health. It's important to prioritize self-care and find strategies to manage stress effectively. Here are some suggestions that may help:
+
+1. Prioritize and Delegate: Take a step back and evaluate which tasks are the most important and urgent. Is there anything that can be delegated or shared with others? By focusing on what truly needs your attention and involving others when possible, you can reduce some of the pressure.
+
+2. Time Management: Break down your workload into smaller, manageable tasks. Set realistic deadlines for each task and create a schedule to allow for breaks and rest. This can help prevent feeling overwhelmed and increase productivity.
+
+3. Establish Boundaries: Clearly communicate your limits and boundaries to your colleagues and supervisors. Let them know if certain requests or expectations are causing excessive stress. Setting boundaries can help protect your well-being and ensure a healthier work-life balance.
+
+4. Practice Stress Reduction Techniques: Incorporate stress reduction techniques into your daily routine. Deep breathing exercises, mindfulness meditation, or engaging in hobbies that bring you joy can help calm your mind and promote relaxation. Explore different techniques and find what works best for you.
+
+5. Seek Support: Reach out to friends, family members, or trusted individuals who can provide emotional support. Having someone to talk to about your feelings and experiences can offer perspective and understanding.
+
+6. Physical Activity: Engage in regular physical activity as it has been shown to reduce stress levels. Find an exercise or activity that you enjoy, such as walking, dancing, or yoga. Not only will it benefit your physical health but also improve your mood and help relieve stress.
+
+7. Healthy Lifestyle Choices: Pay attention to your overall well-being by practicing healthy habits. Make sure you're getting enough sleep, eating a balanced diet, and staying hydrated. Fueling your body with nutrient-rich foods can contribute to better stress management.
+
+Remember, managing stress is an ongoing process, and it may take time to find what works best for you. If your stress continues to impact your daily life despite these strategies, consider seeking professional help from a mental health expert who can provide personalized guidance and support tailored to your specific needs.
+------------------------------------------------------------
+🤖 Finetuned Qwen2.5-7B:
+   
+🤖 Qwen2.5-7B:
+   
+🤖 ChatGLM3-6B:
+
+   <hug> I'm sorry to hear that you're going through such a challenging time at work. It's clear that the demands of your job are impacting your well-being. Please know that I'm here to support you through this difficult period. Here are some suggestions that may help you manage your stress levels effectively:
+<ul>
+<li> Take regular breaks: Make sure to give yourself short breaks throughout the day to rest, stretch, or engage in a non-work-related activity that helps you relax. This can help refresh your mind and prevent burnout.
+</li>
+<li> Communicate with your employer: If possible, try to discuss your concerns with your employer. Explain how the demands of your job are affecting your health and ask if there are any adjustments that can be made to help alleviate the stress.
+</li>
+<li> Prioritize self-care: Schedule activities that promote relaxation and help you recharge, such as meditation, yoga, reading, or spending time with loved ones. Make time for self-care activities that you enjoy and that help you feel better.
+</li>
+<li> Delegate tasks: Identify tasks that can be
+================================================================================
+
+--- 示例 5 ---
+👤 用户输入: I've been struggling with insomnia and distressing nightmares since a car accident I was in a few months ago. These dreams of impending crashes leave me feeling drained and unable to focus during the day. I've tried various methods to cope, but nothing seems to alleviate the issue.
+📝 参考回复: I acknowledge the turmoil you're experiencing with these nightmares. It's not uncommon for individuals who have lived through traumatic events to grapple with intrusive thoughts and dreams that disrupt their daily functioning. Your inability to find relief through conventional methods indicates that further assistance may be necessary.
+
+One potential avenue we could explore is cognitive-behavioral therapy (CBT). This therapeutic approach can help you develop techniques to better manage your thoughts and emotions. Together, we can identify the catalysts for your nightmares and devise strategies to challenge the detrimental thoughts and beliefs that surface during and after the dreams.
+
+Another possibility is mindfulness meditation practices, such as deep breathing or progressive muscle relaxation, which can aid in heightening your awareness of your body and emotions, enabling you to respond to them with compassion and non-judgment.
+
+Self-care is also crucial in managing your symptoms. Ensuring adequate rest, maintaining a balanced diet, and engaging in regular physical activity can all contribute to enhancing your overall well-being and fortifying your resilience to stress.
+
+It's essential to remember that seeking mental health support is an act of fortitude, not a sign of weakness. Your courage in reaching out for assistance is commendable, and I am here to collaborate with you in finding the most effective approach for managing your nightmares and enhancing your overall quality of life.
+
+However, it's crucial to recognize that there's a fine line between making decisions efficiently and impulsively. In your case, it appears that your impulsivity might be causing more harm than good. This pattern can lead to unintended consequences and missed opportunities for growth.
+------------------------------------------------------------
+🤖 Finetuned Qwen2.5-7B:
+   
+🤖 Qwen2.5-7B:
+   
+🤖 ChatGLM3-6B:
+   I'm sorry to hear that you've been experiencing such discomfort due to your nightmares and insomnia. It takes courage to deal with these kinds of experiences, and I appreciate your effort to find ways to cope.
+
+It's important to know that healing from a traumatic event like a car accident can take time, and it's normal to experience vivid and distressing dreams as a result. It may be helpful to talk to a therapist or counselor who specializes in trauma therapy. They can provide you with tools and strategies to manage your nightmares and help you process your feelings related to the accident.
+
+Additionally, practicing self-care and relaxation techniques can also help you cope with insomnia and reduce stress. Try incorporating activities like meditation, deep breathing exercises, or yoga into your daily routine. And make sure to prioritize getting enough sleep each night, as lack of sleep can exacerbate anxiety and depression.
+
+Remember, it's okay to feel overwhelmed and take things one step at a time. With support and self-care, you can get through this difficult time.
+================================================================================
+
+================================================================================
+评估总结
+================================================================================
+🏆 最佳模型: ChatGLM3-6B (综合分数: 0.3731)
+📊 最佳 bleu: ChatGLM3-6B (0.0336)
+📊 最佳 rougeL: ChatGLM3-6B (0.1911)
+📊 最佳 safety: Finetuned Qwen2.5-7B (1.0000)
+📊 最佳 empathy: ChatGLM3-6B (0.2108)
+📊 最佳 relevance: ChatGLM3-6B (0.7746)

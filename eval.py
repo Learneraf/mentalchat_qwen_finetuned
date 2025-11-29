@@ -29,6 +29,36 @@ if tokenizer.pad_token is None:
 # 加载 LoRA 权重
 model = PeftModel.from_pretrained(base_model, adapter_path)
 
+# def generate_response(user_input):
+#     system_message = "你是一位富有同理心的心理健康助手。请根据用户的倾诉，提供温暖、支持性的回应。"
+    
+#     conversation = [
+#         {"role": "system", "content": system_message},
+#         {"role": "user", "content": user_input}
+#     ]
+    
+#     prompt = tokenizer.apply_chat_template(conversation, tokenize=False, add_generation_prompt=True)
+    
+#     # 使用模型的 generate 方法而不是 pipeline
+#     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    
+#     with torch.no_grad():
+#         outputs = model.generate(
+#             **inputs,
+#             max_new_tokens=256,
+#             do_sample=True,
+#             temperature=0.7,
+#             top_p=0.9,
+#             pad_token_id=tokenizer.eos_token_id,
+#             repetition_penalty=1.1,
+#         )
+    
+#     # 解码输出，跳过输入部分
+#     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+#     # 移除输入部分，只返回生成的回复
+#     return response[len(prompt):]
+
+
 def generate_response(user_input):
     system_message = "你是一位富有同理心的心理健康助手。请根据用户的倾诉，提供温暖、支持性的回应。"
     
@@ -39,7 +69,6 @@ def generate_response(user_input):
     
     prompt = tokenizer.apply_chat_template(conversation, tokenize=False, add_generation_prompt=True)
     
-    # 使用模型的 generate 方法而不是 pipeline
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
     
     with torch.no_grad():
@@ -53,10 +82,18 @@ def generate_response(user_input):
             repetition_penalty=1.1,
         )
     
-    # 解码输出，跳过输入部分
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    # 移除输入部分，只返回生成的回复
-    return response[len(prompt):]
+    # 更可靠的回复提取方法
+    generated_tokens = outputs[0][inputs.input_ids.shape[1]:]  # 只取新生成的token
+    response = tokenizer.decode(generated_tokens, skip_special_tokens=True)
+    
+    # 清理回复开头的空格和标点
+    response = response.lstrip()  # 移除开头空格
+    # 如果回复以标点开头，也移除
+    if response and response[0] in ',.!?;:，。！？；：':
+        response = response[1:].lstrip()
+    
+    return response
+
 
 # 测试
 test_queries = [

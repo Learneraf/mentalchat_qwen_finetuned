@@ -15,7 +15,7 @@ if tokenizer.pad_token is None:
 
 # 2. 数据预处理
 def format_instruction(sample):
-    system_message = "你是一位富有同理心的心理健康助手。请根据用户的倾诉，提供温暖、支持性的回应。"
+    system_message = "You are an empathetic mental health assistant. Please provide warm and supportive responses based on the user's story."
     user_input = sample.get("input", "") or ""
     assistant_output = sample.get("output", "") or ""
 
@@ -58,7 +58,7 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map="auto",
     trust_remote_code=True,
     torch_dtype=torch.float16,
-    use_cache=True,
+    use_cache=False,
 )
 
 # 关键步骤：准备模型用于k-bit训练
@@ -66,10 +66,10 @@ model = prepare_model_for_kbit_training(model)
 
 # 5. LoRA配置
 lora_config = LoraConfig(
-    r=8,
-    lora_alpha=16,
+    r=16,
+    lora_alpha=32,
     target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
-    lora_dropout=0.05,
+    lora_dropout=0.1,
     bias="none",
     task_type="CAUSAL_LM",
 )
@@ -104,15 +104,16 @@ data_collator = CustomDataCollator(
 
 # 6. 训练配置
 training_args = TrainingArguments(
-    output_dir="./mentalchat_qwen_finetuned_stable",
+    output_dir="./mentalchat_qwen_finetuned_improved",
     per_device_train_batch_size=4,
-    per_device_eval_batch_size=1,
+    per_device_eval_batch_size=4,
     gradient_accumulation_steps=2,
     learning_rate=1e-4,
-    warmup_ratio=0.03,
-    num_train_epochs=1,
-    logging_steps=10,
-    save_steps=500,
+    warmup_ratio=0.1,
+    weight_decay=0.01,
+    num_train_epochs=2,
+    logging_steps=50,
+    save_steps=1000,
     
     # 验证配置
     eval_steps=100,
@@ -124,20 +125,19 @@ training_args = TrainingArguments(
     
     # 梯度稳定化配置
     max_grad_norm=0.5,
-    gradient_checkpointing=False,
+    gradient_checkpointing=True,
     
     # 优化器配置
     optim="paged_adamw_8bit",
     adam_beta1=0.9,
-    adam_beta2=0.999,
+    adam_beta2=0.95,
     adam_epsilon=1e-8,
-    weight_decay=0.01,
     
     # 学习率调度
     lr_scheduler_type="cosine",
     
     dataloader_pin_memory=True,
-    dataloader_num_workers=4,    # 增加工作进程
+    dataloader_num_workers=4,
     report_to="none",
     torch_compile=True,
     remove_unused_columns=False,
