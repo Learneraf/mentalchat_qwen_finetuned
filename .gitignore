@@ -3,3 +3,5 @@ mentalchat_qwen_finetuned/
 mentalchat_qwen_finetuned_stable/
 mentalchat_qwen_finetuned_improved/
 myenv/
+model/
+evaluation_cache/

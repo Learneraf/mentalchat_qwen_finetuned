@@ -1,0 +1,9 @@
+
+# For ChatGLM3, overall data:
+{'train_runtime': 14640.7853, 'train_samples_per_second': 1.07, 'train_steps_per_second': 0.267, 'train_loss': 1.0016842889347408, 'epoch': 2.0}
+
+# For Qwen1.5, overall data:
+{'train_runtime': 10748.4431, 'train_samples_per_second': 1.359, 'train_steps_per_second': 0.17, 'train_loss': 0.9897830708264521, 'epoch': 2.0}
+
+# For Qwen2.5, overall data:
+{'train_runtime': 17279.8394, 'train_samples_per_second': 0.845, 'train_steps_per_second': 0.106, 'train_loss': 0.9806336980529318, 'epoch': 2.0}

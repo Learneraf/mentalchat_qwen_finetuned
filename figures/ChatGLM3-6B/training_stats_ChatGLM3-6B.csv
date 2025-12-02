@@ -1,0 +1,2 @@
+total_records,train_records,eval_records,train_loss_mean,train_loss_min,train_loss_max,train_loss_std,train_loss_final,eval_loss_mean,eval_loss_min,eval_loss_max,eval_loss_std,eval_loss_final,grad_norm_mean,grad_norm_min,grad_norm_max,learning_rate_initial,learning_rate_final
+85,78,7,1.002130769230769,0.8684,2.2996,0.20693764812085352,0.8805,0.9856801118169513,0.9368462562561035,1.0846298933029175,0.05303330683179846,0.9368462562561035,2.7669924864402184,1.630257487297058,3.5890486240386963,1.1734693877551021e-05,8.761810572149865e-09

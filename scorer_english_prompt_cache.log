@@ -1,0 +1,21 @@
+nohup: ignoring input
+加载测试数据...
+加载缓存的测试样本...
+已加载 50 个测试样本
+使用 50 个测试样本
+加载微调模型...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.14s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.10s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:15<00:05,  5.14s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  5.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  5.05s/it]
+加载原始基础模型...
+加载ChatGLM作为对比...
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:03<00:21,  3.59s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:07<00:18,  3.70s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:11<00:14,  3.71s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:14<00:10,  3.63s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:18<00:07,  3.69s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:22<00:03,  3.69s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:24<00:00,  3.17s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:24<00:00,  3.45s/it]
+Setting eos_token is not supported, use the default one.
+Setting pad_token is not supported, use the default one.
+Setting unk_token is not supported, use the default one.
+Some weights of the model checkpoint at cardiffnlp/twitter-roberta-base-sentiment-latest were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+
+正在评估 Finetuned Qwen2.5-7B...
+生成 Finetuned Qwen2.5-7B 的回复...
+生成 Finetuned Qwen2.5-7B 的回复:   0%|          | 0/50 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+生成 Finetuned Qwen2.5-7B 的回复:   2%|▏         | 1/50 [00:23<18:51, 23.09s/it]生成 Finetuned Qwen2.5-7B 的回复:   4%|▍         | 2/50 [00:49<19:49, 24.79s/it]生成 Finetuned Qwen2.5-7B 的回复:   6%|▌         | 3/50 [01:15<19:58, 25.50s/it]生成 Finetuned Qwen2.5-7B 的回复:   8%|▊         | 4/50 [01:42<20:04, 26.19s/it]生成 Finetuned Qwen2.5-7B 的回复:  10%|█         | 5/50 [02:09<19:55, 26.57s/it]生成 Finetuned Qwen2.5-7B 的回复:  12%|█▏        | 6/50 [02:37<19:36, 26.75s/it]生成 Finetuned Qwen2.5-7B 的回复:  14%|█▍        | 7/50 [03:04<19:16, 26.89s/it]生成 Finetuned Qwen2.5-7B 的回复:  16%|█▌        | 8/50 [03:31<18:52, 26.96s/it]生成 Finetuned Qwen2.5-7B 的回复:  18%|█▊        | 9/50 [03:50<16:45, 24.52s/it]生成 Finetuned Qwen2.5-7B 的回复:  20%|██        | 10/50 [04:18<17:01, 25.53s/it]生成 Finetuned Qwen2.5-7B 的回复:  22%|██▏       | 11/50 [04:45<16:56, 26.06s/it]生成 Finetuned Qwen2.5-7B 的回复:  24%|██▍       | 12/50 [05:12<16:42, 26.39s/it]生成 Finetuned Qwen2.5-7B 的回复:  26%|██▌       | 13/50 [05:39<16:24, 26.60s/it]生成 Finetuned Qwen2.5-7B 的回复:  28%|██▊       | 14/50 [06:07<16:05, 26.81s/it]生成 Finetuned Qwen2.5-7B 的回复:  30%|███       | 15/50 [06:33<15:39, 26.85s/it]生成 Finetuned Qwen2.5-7B 的回复:  32%|███▏      | 16/50 [07:01<15:18, 27.02s/it]生成 Finetuned Qwen2.5-7B 的回复:  34%|███▍      | 17/50 [07:28<14:51, 27.02s/it]生成 Finetuned Qwen2.5-7B 的回复:  36%|███▌      | 18/50 [07:55<14:26, 27.06s/it]
