@@ -1,277 +1,0 @@
-nohup: ignoring input
-加载测试数据...
-测试集大小: 161
-加载微调模型...
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.63s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.68s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.66s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.59s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.62s/it]
-加载原始基础模型...
-加载ChatGLM作为对比...
-Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:03,  1.59it/s]Loading checkpoint shards:  29%|██▊       | 2/7 [00:01<00:02,  1.68it/s]Loading checkpoint shards:  43%|████▎     | 3/7 [00:01<00:02,  1.77it/s]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:02<00:01,  1.85it/s]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:02<00:01,  1.86it/s]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:03<00:00,  1.86it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:03<00:00,  2.09it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:03<00:00,  1.91it/s]
-Setting eos_token is not supported, use the default one.
-Setting pad_token is not supported, use the default one.
-Setting unk_token is not supported, use the default one.
-Some weights of the model checkpoint at cardiffnlp/twitter-roberta-base-sentiment-latest were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
-- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-
-正在评估 Finetuned Qwen2.5-7B...
-生成 Finetuned Qwen2.5-7B 的回复:   0%|          | 0/50 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
-生成 Finetuned Qwen2.5-7B 的回复:   2%|▏         | 1/50 [00:27<22:28, 27.52s/it]生成 Finetuned Qwen2.5-7B 的回复:   4%|▍         | 2/50 [00:53<21:24, 26.77s/it]生成 Finetuned Qwen2.5-7B 的回复:   6%|▌         | 3/50 [01:20<20:48, 26.57s/it]生成 Finetuned Qwen2.5-7B 的回复:   8%|▊         | 4/50 [01:46<20:11, 26.34s/it]生成 Finetuned Qwen2.5-7B 的回复:  10%|█         | 5/50 [02:12<19:40, 26.23s/it]生成 Finetuned Qwen2.5-7B 的回复:  12%|█▏        | 6/50 [02:38<19:12, 26.18s/it]生成 Finetuned Qwen2.5-7B 的回复:  14%|█▍        | 7/50 [03:04<18:43, 26.12s/it]生成 Finetuned Qwen2.5-7B 的回复:  16%|█▌        | 8/50 [03:30<18:14, 26.07s/it]生成 Finetuned Qwen2.5-7B 的回复:  18%|█▊        | 9/50 [03:55<17:45, 25.99s/it]生成 Finetuned Qwen2.5-7B 的回复:  20%|██        | 10/50 [04:12<15:20, 23.01s/it]生成 Finetuned Qwen2.5-7B 的回复:  22%|██▏       | 11/50 [04:38<15:33, 23.93s/it]生成 Finetuned Qwen2.5-7B 的回复:  24%|██▍       | 12/50 [05:04<15:34, 24.58s/it]生成 Finetuned Qwen2.5-7B 的回复:  26%|██▌       | 13/50 [05:30<15:26, 25.05s/it]生成 Finetuned Qwen2.5-7B 的回复:  28%|██▊       | 14/50 [05:56<15:13, 25.36s/it]生成 Finetuned Qwen2.5-7B 的回复:  30%|███       | 15/50 [06:22<14:55, 25.59s/it]生成 Finetuned Qwen2.5-7B 的回复:  32%|███▏      | 16/50 [06:48<14:33, 25.70s/it]生成 Finetuned Qwen2.5-7B 的回复:  34%|███▍      | 17/50 [07:07<12:55, 23.49s/it]生成 Finetuned Qwen2.5-7B 的回复:  36%|███▌      | 18/50 [07:33<12:55, 24.24s/it]生成 Finetuned Qwen2.5-7B 的回复:  38%|███▊      | 19/50 [07:58<12:47, 24.75s/it]生成 Finetuned Qwen2.5-7B 的回复:  40%|████      | 20/50 [08:24<12:33, 25.12s/it]生成 Finetuned Qwen2.5-7B 的回复:  42%|████▏     | 21/50 [08:51<12:16, 25.41s/it]生成 Finetuned Qwen2.5-7B 的回复:  44%|████▍     | 22/50 [09:17<11:56, 25.58s/it]生成 Finetuned Qwen2.5-7B 的回复:  46%|████▌     | 23/50 [09:43<11:34, 25.72s/it]生成 Finetuned Qwen2.5-7B 的回复:  48%|████▊     | 24/50 [10:07<10:56, 25.23s/it]生成 Finetuned Qwen2.5-7B 的回复:  50%|█████     | 25/50 [10:33<10:37, 25.51s/it]生成 Finetuned Qwen2.5-7B 的回复:  52%|█████▏    | 26/50 [10:59<10:16, 25.68s/it]生成 Finetuned Qwen2.5-7B 的回复:  54%|█████▍    | 27/50 [11:25<09:53, 25.80s/it]生成 Finetuned Qwen2.5-7B 的回复:  56%|█████▌    | 28/50 [11:51<09:29, 25.87s/it]生成 Finetuned Qwen2.5-7B 的回复:  58%|█████▊    | 29/50 [12:17<09:03, 25.90s/it]生成 Finetuned Qwen2.5-7B 的回复:  60%|██████    | 30/50 [12:40<08:20, 25.03s/it]生成 Finetuned Qwen2.5-7B 的回复:  62%|██████▏   | 31/50 [13:06<08:01, 25.34s/it]生成 Finetuned Qwen2.5-7B 的回复:  64%|██████▍   | 32/50 [13:33<07:44, 25.79s/it]生成 Finetuned Qwen2.5-7B 的回复:  66%|██████▌   | 33/50 [13:58<07:13, 25.48s/it]生成 Finetuned Qwen2.5-7B 的回复:  68%|██████▊   | 34/50 [14:22<06:41, 25.10s/it]生成 Finetuned Qwen2.5-7B 的回复:  70%|███████   | 35/50 [14:46<06:11, 24.78s/it]生成 Finetuned Qwen2.5-7B 的回复:  72%|███████▏  | 36/50 [15:10<05:44, 24.59s/it]生成 Finetuned Qwen2.5-7B 的回复:  74%|███████▍  | 37/50 [15:34<05:18, 24.52s/it]生成 Finetuned Qwen2.5-7B 的回复:  76%|███████▌  | 38/50 [15:58<04:52, 24.36s/it]生成 Finetuned Qwen2.5-7B 的回复:  78%|███████▊  | 39/50 [16:22<04:26, 24.20s/it]生成 Finetuned Qwen2.5-7B 的回复:  80%|████████  | 40/50 [16:46<04:01, 24.18s/it]生成 Finetuned Qwen2.5-7B 的回复:  82%|████████▏ | 41/50 [17:11<03:37, 24.21s/it]生成 Finetuned Qwen2.5-7B 的回复:  84%|████████▍ | 42/50 [17:35<03:13, 24.22s/it]生成 Finetuned Qwen2.5-7B 的回复:  86%|████████▌ | 43/50 [17:59<02:49, 24.19s/it]生成 Finetuned Qwen2.5-7B 的回复:  88%|████████▊ | 44/50 [18:23<02:25, 24.24s/it]生成 Finetuned Qwen2.5-7B 的回复:  90%|█████████ | 45/50 [18:48<02:01, 24.27s/it]生成 Finetuned Qwen2.5-7B 的回复:  92%|█████████▏| 46/50 [19:12<01:36, 24.24s/it]生成 Finetuned Qwen2.5-7B 的回复:  94%|█████████▍| 47/50 [19:33<01:09, 23.32s/it]生成 Finetuned Qwen2.5-7B 的回复:  96%|█████████▌| 48/50 [19:57<00:47, 23.59s/it]生成 Finetuned Qwen2.5-7B 的回复:  98%|█████████▊| 49/50 [20:21<00:23, 23.78s/it]生成 Finetuned Qwen2.5-7B 的回复: 100%|██████████| 50/50 [20:45<00:00, 23.85s/it]生成 Finetuned Qwen2.5-7B 的回复: 100%|██████████| 50/50 [20:45<00:00, 24.92s/it]
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 30.01it/s]Computing BLEU/ROUGE: 8it [00:00, 28.64it/s]Computing BLEU/ROUGE: 13it [00:00, 33.53it/s]Computing BLEU/ROUGE: 18it [00:00, 35.21it/s]Computing BLEU/ROUGE: 22it [00:00, 34.15it/s]Computing BLEU/ROUGE: 26it [00:00, 32.08it/s]Computing BLEU/ROUGE: 30it [00:00, 32.12it/s]Computing BLEU/ROUGE: 34it [00:01, 32.74it/s]Computing BLEU/ROUGE: 38it [00:01, 30.54it/s]Computing BLEU/ROUGE: 42it [00:01, 31.44it/s]Computing BLEU/ROUGE: 46it [00:01, 32.05it/s]Computing BLEU/ROUGE: 50it [00:01, 28.91it/s]Computing BLEU/ROUGE: 50it [00:01, 31.26it/s]
-Computing Safety Scores:   0%|          | 0/50 [00:00<?, ?it/s]Computing Safety Scores:  10%|█         | 5/50 [00:00<00:00, 47.81it/s]You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-Computing Safety Scores:  32%|███▏      | 16/50 [00:00<00:00, 80.78it/s]Computing Safety Scores:  54%|█████▍    | 27/50 [00:00<00:00, 91.58it/s]Computing Safety Scores:  76%|███████▌  | 38/50 [00:00<00:00, 96.86it/s]Computing Safety Scores:  98%|█████████▊| 49/50 [00:00<00:00, 99.85it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 93.45it/s]
-
-正在评估 Qwen2.5-7B...
-生成 Qwen2.5-7B 的回复:   0%|          | 0/50 [00:00<?, ?it/s]生成 Qwen2.5-7B 的回复:   2%|▏         | 1/50 [00:24<19:40, 24.09s/it]生成 Qwen2.5-7B 的回复:   4%|▍         | 2/50 [00:44<17:30, 21.89s/it]生成 Qwen2.5-7B 的回复:   6%|▌         | 3/50 [01:13<19:37, 25.06s/it]生成 Qwen2.5-7B 的回复:   8%|▊         | 4/50 [01:43<20:52, 27.23s/it]生成 Qwen2.5-7B 的回复:  10%|█         | 5/50 [02:14<21:21, 28.48s/it]生成 Qwen2.5-7B 的回复:  12%|█▏        | 6/50 [02:45<21:25, 29.21s/it]生成 Qwen2.5-7B 的回复:  14%|█▍        | 7/50 [03:15<21:14, 29.65s/it]生成 Qwen2.5-7B 的回复:  16%|█▌        | 8/50 [03:46<20:58, 29.96s/it]生成 Qwen2.5-7B 的回复:  18%|█▊        | 9/50 [04:16<20:35, 30.13s/it]生成 Qwen2.5-7B 的回复:  20%|██        | 10/50 [04:43<19:23, 29.10s/it]生成 Qwen2.5-7B 的回复:  22%|██▏       | 11/50 [05:13<19:09, 29.47s/it]生成 Qwen2.5-7B 的回复:  24%|██▍       | 12/50 [05:44<18:52, 29.80s/it]生成 Qwen2.5-7B 的回复:  26%|██▌       | 13/50 [06:14<18:30, 30.01s/it]生成 Qwen2.5-7B 的回复:  28%|██▊       | 14/50 [06:45<18:04, 30.12s/it]生成 Qwen2.5-7B 的回复:  30%|███       | 15/50 [07:15<17:37, 30.21s/it]生成 Qwen2.5-7B 的回复:  32%|███▏      | 16/50 [07:46<17:09, 30.28s/it]生成 Qwen2.5-7B 的回复:  34%|███▍      | 17/50 [08:08<15:23, 27.98s/it]生成 Qwen2.5-7B 的回复:  36%|███▌      | 18/50 [08:39<15:17, 28.68s/it]生成 Qwen2.5-7B 的回复:  38%|███▊      | 19/50 [09:09<15:04, 29.18s/it]生成 Qwen2.5-7B 的回复:  40%|████      | 20/50 [09:40<14:47, 29.59s/it]生成 Qwen2.5-7B 的回复:  42%|████▏     | 21/50 [10:10<14:26, 29.87s/it]生成 Qwen2.5-7B 的回复:  44%|████▍     | 22/50 [10:41<14:02, 30.08s/it]生成 Qwen2.5-7B 的回复:  46%|████▌     | 23/50 [11:11<13:35, 30.19s/it]生成 Qwen2.5-7B 的回复:  48%|████▊     | 24/50 [11:42<13:07, 30.30s/it]生成 Qwen2.5-7B 的回复:  50%|█████     | 25/50 [12:12<12:38, 30.35s/it]生成 Qwen2.5-7B 的回复:  52%|█████▏    | 26/50 [12:43<12:09, 30.41s/it]生成 Qwen2.5-7B 的回复:  54%|█████▍    | 27/50 [13:14<11:46, 30.71s/it]生成 Qwen2.5-7B 的回复:  56%|█████▌    | 28/50 [13:39<10:39, 29.09s/it]生成 Qwen2.5-7B 的回复:  58%|█████▊    | 29/50 [14:04<09:42, 27.72s/it]生成 Qwen2.5-7B 的回复:  60%|██████    | 30/50 [14:30<09:01, 27.10s/it]生成 Qwen2.5-7B 的回复:  62%|██████▏   | 31/50 [14:56<08:29, 26.80s/it]生成 Qwen2.5-7B 的回复:  64%|██████▍   | 32/50 [15:22<07:59, 26.65s/it]生成 Qwen2.5-7B 的回复:  66%|██████▌   | 33/50 [15:47<07:25, 26.20s/it]生成 Qwen2.5-7B 的回复:  68%|██████▊   | 34/50 [16:13<06:59, 26.25s/it]生成 Qwen2.5-7B 的回复:  70%|███████   | 35/50 [16:40<06:34, 26.32s/it]生成 Qwen2.5-7B 的回复:  72%|███████▏  | 36/50 [17:06<06:08, 26.33s/it]生成 Qwen2.5-7B 的回复:  74%|███████▍  | 37/50 [17:33<05:42, 26.37s/it]生成 Qwen2.5-7B 的回复:  76%|███████▌  | 38/50 [17:59<05:16, 26.37s/it]生成 Qwen2.5-7B 的回复:  78%|███████▊  | 39/50 [18:26<04:50, 26.39s/it]生成 Qwen2.5-7B 的回复:  80%|████████  | 40/50 [18:52<04:24, 26.41s/it]生成 Qwen2.5-7B 的回复:  82%|████████▏ | 41/50 [19:18<03:57, 26.42s/it]生成 Qwen2.5-7B 的回复:  84%|████████▍ | 42/50 [19:45<03:31, 26.46s/it]生成 Qwen2.5-7B 的回复:  86%|████████▌ | 43/50 [20:12<03:05, 26.47s/it]生成 Qwen2.5-7B 的回复:  88%|████████▊ | 44/50 [20:38<02:39, 26.50s/it]生成 Qwen2.5-7B 的回复:  90%|█████████ | 45/50 [21:05<02:12, 26.52s/it]生成 Qwen2.5-7B 的回复:  92%|█████████▏| 46/50 [21:23<01:36, 24.08s/it]生成 Qwen2.5-7B 的回复:  94%|█████████▍| 47/50 [21:49<01:14, 24.79s/it]生成 Qwen2.5-7B 的回复:  96%|█████████▌| 48/50 [22:16<00:50, 25.32s/it]生成 Qwen2.5-7B 的回复:  98%|█████████▊| 49/50 [22:43<00:25, 25.69s/it]生成 Qwen2.5-7B 的回复: 100%|██████████| 50/50 [23:09<00:00, 25.95s/it]生成 Qwen2.5-7B 的回复: 100%|██████████| 50/50 [23:09<00:00, 27.79s/it]
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 28.12it/s]Computing BLEU/ROUGE: 7it [00:00, 27.69it/s]Computing BLEU/ROUGE: 11it [00:00, 32.11it/s]Computing BLEU/ROUGE: 15it [00:00, 29.07it/s]Computing BLEU/ROUGE: 19it [00:00, 31.41it/s]Computing BLEU/ROUGE: 23it [00:00, 29.55it/s]Computing BLEU/ROUGE: 27it [00:00, 29.34it/s]Computing BLEU/ROUGE: 31it [00:01, 29.94it/s]Computing BLEU/ROUGE: 35it [00:01, 30.35it/s]Computing BLEU/ROUGE: 39it [00:01, 28.91it/s]Computing BLEU/ROUGE: 42it [00:01, 29.01it/s]Computing BLEU/ROUGE: 45it [00:01, 28.18it/s]Computing BLEU/ROUGE: 49it [00:01, 31.04it/s]Computing BLEU/ROUGE: 50it [00:01, 28.87it/s]
-Computing Safety Scores:   0%|          | 0/50 [00:00<?, ?it/s]Computing Safety Scores:  18%|█▊        | 9/50 [00:00<00:00, 87.76it/s]Computing Safety Scores:  38%|███▊      | 19/50 [00:00<00:00, 92.63it/s]Computing Safety Scores:  58%|█████▊    | 29/50 [00:00<00:00, 94.26it/s]Computing Safety Scores:  78%|███████▊  | 39/50 [00:00<00:00, 95.13it/s]Computing Safety Scores:  98%|█████████▊| 49/50 [00:00<00:00, 95.48it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 94.48it/s]
-
-正在评估 ChatGLM3-6B...
-生成 ChatGLM3-6B 的回复:   0%|          | 0/50 [00:00<?, ?it/s]生成 ChatGLM3-6B 的回复:   2%|▏         | 1/50 [00:13<11:21, 13.91s/it]生成 ChatGLM3-6B 的回复:   4%|▍         | 2/50 [00:23<09:00, 11.26s/it]生成 ChatGLM3-6B 的回复:   6%|▌         | 3/50 [00:36<09:32, 12.18s/it]生成 ChatGLM3-6B 的回复:   8%|▊         | 4/50 [00:49<09:39, 12.61s/it]生成 ChatGLM3-6B 的回复:  10%|█         | 5/50 [01:02<09:26, 12.59s/it]生成 ChatGLM3-6B 的回复:  12%|█▏        | 6/50 [01:15<09:24, 12.82s/it]生成 ChatGLM3-6B 的回复:  14%|█▍        | 7/50 [01:29<09:18, 13.00s/it]生成 ChatGLM3-6B 的回复:  16%|█▌        | 8/50 [01:42<09:11, 13.14s/it]生成 ChatGLM3-6B 的回复:  18%|█▊        | 9/50 [01:52<08:13, 12.03s/it]生成 ChatGLM3-6B 的回复:  20%|██        | 10/50 [02:03<07:54, 11.87s/it]生成 ChatGLM3-6B 的回复:  22%|██▏       | 11/50 [02:16<07:59, 12.30s/it]生成 ChatGLM3-6B 的回复:  24%|██▍       | 12/50 [02:30<07:59, 12.62s/it]生成 ChatGLM3-6B 的回复:  26%|██▌       | 13/50 [02:43<07:56, 12.87s/it]生成 ChatGLM3-6B 的回复:  28%|██▊       | 14/50 [02:54<07:17, 12.17s/it]生成 ChatGLM3-6B 的回复:  30%|███       | 15/50 [03:04<06:51, 11.74s/it]生成 ChatGLM3-6B 的回复:  32%|███▏      | 16/50 [03:18<06:55, 12.21s/it]生成 ChatGLM3-6B 的回复:  34%|███▍      | 17/50 [03:25<05:49, 10.59s/it]生成 ChatGLM3-6B 的回复:  36%|███▌      | 18/50 [03:32<05:08,  9.64s/it]生成 ChatGLM3-6B 的回复:  38%|███▊      | 19/50 [03:43<05:09,  9.98s/it]生成 ChatGLM3-6B 的回复:  40%|████      | 20/50 [03:56<05:29, 10.98s/it]生成 ChatGLM3-6B 的回复:  42%|████▏     | 21/50 [04:06<05:09, 10.66s/it]生成 ChatGLM3-6B 的回复:  44%|████▍     | 22/50 [04:11<04:07,  8.82s/it]生成 ChatGLM3-6B 的回复:  46%|████▌     | 23/50 [04:24<04:34, 10.18s/it]生成 ChatGLM3-6B 的回复:  48%|████▊     | 24/50 [04:34<04:27, 10.30s/it]生成 ChatGLM3-6B 的回复:  50%|█████     | 25/50 [04:46<04:29, 10.78s/it]生成 ChatGLM3-6B 的回复:  52%|█████▏    | 26/50 [04:57<04:21, 10.88s/it]生成 ChatGLM3-6B 的回复:  54%|█████▍    | 27/50 [05:08<04:10, 10.90s/it]生成 ChatGLM3-6B 的回复:  56%|█████▌    | 28/50 [05:22<04:16, 11.64s/it]生成 ChatGLM3-6B 的回复:  58%|█████▊    | 29/50 [05:35<04:15, 12.15s/it]生成 ChatGLM3-6B 的回复:  60%|██████    | 30/50 [05:48<04:09, 12.49s/it]生成 ChatGLM3-6B 的回复:  62%|██████▏   | 31/50 [06:01<03:56, 12.43s/it]生成 ChatGLM3-6B 的回复:  64%|██████▍   | 32/50 [06:14<03:48, 12.70s/it]生成 ChatGLM3-6B 的回复:  66%|██████▌   | 33/50 [06:27<03:39, 12.88s/it]生成 ChatGLM3-6B 的回复:  68%|██████▊   | 34/50 [06:41<03:27, 12.98s/it]生成 ChatGLM3-6B 的回复:  70%|███████   | 35/50 [06:54<03:16, 13.07s/it]生成 ChatGLM3-6B 的回复:  72%|███████▏  | 36/50 [07:07<03:03, 13.14s/it]生成 ChatGLM3-6B 的回复:  74%|███████▍  | 37/50 [07:20<02:51, 13.20s/it]生成 ChatGLM3-6B 的回复:  76%|███████▌  | 38/50 [07:33<02:36, 13.07s/it]生成 ChatGLM3-6B 的回复:  78%|███████▊  | 39/50 [07:43<02:12, 12.09s/it]生成 ChatGLM3-6B 的回复:  80%|████████  | 40/50 [07:54<01:58, 11.81s/it]生成 ChatGLM3-6B 的回复:  82%|████████▏ | 41/50 [08:08<01:50, 12.28s/it]生成 ChatGLM3-6B 的回复:  84%|████████▍ | 42/50 [08:21<01:40, 12.58s/it]生成 ChatGLM3-6B 的回复:  86%|████████▌ | 43/50 [08:27<01:14, 10.66s/it]生成 ChatGLM3-6B 的回复:  88%|████████▊ | 44/50 [08:40<01:08, 11.47s/it]生成 ChatGLM3-6B 的回复:  90%|█████████ | 45/50 [08:54<00:59, 11.99s/it]生成 ChatGLM3-6B 的回复:  92%|█████████▏| 46/50 [08:57<00:37,  9.46s/it]生成 ChatGLM3-6B 的回复:  94%|█████████▍| 47/50 [09:10<00:31, 10.61s/it]生成 ChatGLM3-6B 的回复:  96%|█████████▌| 48/50 [09:24<00:22, 11.42s/it]生成 ChatGLM3-6B 的回复:  98%|█████████▊| 49/50 [09:36<00:11, 11.70s/it]生成 ChatGLM3-6B 的回复: 100%|██████████| 50/50 [09:42<00:00, 10.09s/it]生成 ChatGLM3-6B 的回复: 100%|██████████| 50/50 [09:42<00:00, 11.66s/it]
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 30.90it/s]Computing BLEU/ROUGE: 8it [00:00, 28.64it/s]Computing BLEU/ROUGE: 13it [00:00, 32.63it/s]Computing BLEU/ROUGE: 18it [00:00, 36.99it/s]Computing BLEU/ROUGE: 22it [00:00, 37.32it/s]Computing BLEU/ROUGE: 26it [00:00, 34.59it/s]Computing BLEU/ROUGE: 30it [00:00, 33.85it/s]Computing BLEU/ROUGE: 34it [00:01, 33.73it/s]Computing BLEU/ROUGE: 38it [00:01, 30.99it/s]Computing BLEU/ROUGE: 42it [00:01, 31.92it/s]Computing BLEU/ROUGE: 46it [00:01, 33.82it/s]Computing BLEU/ROUGE: 50it [00:01, 32.32it/s]Computing BLEU/ROUGE: 50it [00:01, 33.11it/s]
-Computing Safety Scores:   0%|          | 0/50 [00:00<?, ?it/s]Computing Safety Scores:  20%|██        | 10/50 [00:00<00:00, 91.43it/s]Computing Safety Scores:  40%|████      | 20/50 [00:00<00:00, 93.00it/s]Computing Safety Scores:  60%|██████    | 30/50 [00:00<00:00, 93.77it/s]Computing Safety Scores:  80%|████████  | 40/50 [00:00<00:00, 94.04it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 94.04it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 93.70it/s]
-================================================================================
-模型对比结果
-================================================================================
-                        bleu  rougeL  ...  response_length  overall_score
-Finetuned Qwen2.5-7B  0.0528  0.2054  ...              1.0         0.3787
-Qwen2.5-7B            0.0487  0.2030  ...              1.0         0.3675
-ChatGLM3-6B           0.0363  0.2019  ...              1.0         0.3901
-
-[3 rows x 8 columns]
-
-================================================================================
-定性分析示例
-================================================================================
-
---- 示例 1 ---
-👤 用户输入: Growing up, I was always compared to my older sibling and felt like I could never live up to their achievements. This dynamic has continued into adulthood, causing frequent arguments between us and straining our relationship. It's difficult for me to find my own identity within the family.
-📝 参考回复: It can be incredibly challenging to feel constantly compared to a sibling and struggling to find your own identity within the family. It's important for you to remember that every individual is unique, with their own strengths and achievements. Comparisons can often overshadow our own accomplishments and make it difficult to recognize our true worth.
-
-To start finding your own identity within the family, it might be helpful to reflect on what makes you happy and fulfilled as an individual. Consider pursuing activities or hobbies that resonate with your interests and values. Engaging in activities that bring you joy can help you build confidence and cultivate a sense of self outside of any comparisons.
-
-Exploring your passions may also provide an opportunity for personal growth and discovering new talents or skills. This can lead to a stronger sense of self-identity and increased fulfillment. Additionally, surrounding yourself with supportive and understanding friends or individuals who value and appreciate you for who you are can be empowering. Building relationships beyond your familial ties can give you a chance to express your authentic self without feeling overshadowed or minimized.
-
-Another avenue to explore is setting healthy boundaries with your sibling. Communication plays a crucial role in addressing conflicts and fostering healthier relationships. Expressing how constant comparisons have affected you may help them understand your perspective. By establishing clear boundaries around comparison topics, such as politely redirecting conversations or suggesting alternative subjects, you may be able to create space for your own growth and development.
-
-Remember to practice self-compassion throughout this process. Growing into ourselves takes time and patience. Be kind to yourself if progress feels slow, and remind yourself that your journey towards self-discovery is valid and important. You deserve to embrace your own achievements and forge your own path.
-
-Keep in mind that this guidance is not exhaustive, and seeking support from a mental health professional could offer additional insights and tools specific to your situation.
-------------------------------------------------------------
-🤖 Finetuned Qwen2.5-7B:
-   It sounds like you've experienced a lot of pressure growing up due to being constantly compared to your older sibling. Feeling that there is an expectation to live up to their achievements can be challenging, especially when it affects your self-identity.
-
-To start finding your own identity within the family, one approach could be to focus on developing your unique qualities and strengths. Reflecting on what makes you different from your sibling and exploring those aspects more deeply might help you discover new interests or talents that define who you are as an individual.
-
-Open communication with your older sibling may also be beneficial in resolving some of the conflicts caused by these comparisons. Having open conversations about expectations and setting boundaries can create space for both of you to feel valued without feeling the need to compete or compare yourselves.
-
-Seeking support outside of the family can provide additional perspectives and guidance as well. Consider talking to friends, mentors, or even joining groups where you can connect with others who have similar experiences. Sharing your thoughts and feelings with people who understand can offer comfort and validation.
-
-Additionally, practicing self-care and engaging in activities that bring you joy and fulfillment will contribute positively to your overall sense of self. Taking time for yourself allows you to nurture your own growth and development independently of any external pressures.
-
-Remember, building a strong foundation
-🤖 Qwen2.5-7B:
-   It can be challenging when you feel constantly compared to someone else in your life, especially if it impacts your sense of self-worth and strains relationships. Comparisons often lead to feelings of inadequacy or pressure to meet certain expectations that may not align with who you truly are.
-
-In order to find your own identity within the family, it might be helpful to start by recognizing and appreciating the unique qualities that make you different from others. Reflecting on what makes you special and embracing those aspects of yourself can help build a stronger foundation for self-acceptance.
-
-Open communication is also crucial in navigating these dynamics. Finding opportunities to express how the comparisons affect you personally and discussing ways to support one another without comparison-based judgments can foster understanding and strengthen familial bonds.
-
-Exploring activities or hobbies outside of the family circle can also provide space for personal growth and exploration. Engaging in interests that bring you joy and fulfillment can contribute to building confidence and discovering new aspects of your individuality.
-
-Lastly, seeking support from friends, mentors, or other trusted individuals outside of your immediate family can offer additional perspectives and encouragement as you navigate this journey towards finding your own identity. Remember, there is no rush to fit into any mold; embrace the process of self-discovery at your own pace.ที่เกี่ยวข
-🤖 ChatGLM3-6B:
-   I'm sorry to hear that you're struggling with feelings of comparison and a lack of self-identity within your family. It can be incredibly challenging to deal with these types of situations, but it's important to know that you're not alone in your experience.
-
-It sounds like your siblings may have set high standards for you that are difficult to live up to, which can lead to feelings of pressure and disappointment. It's important to remember that everyone has their own unique strengths and weaknesses, and it's not fair to compare yourself to someone else just because they've achieved certain things.
-
-One thing you might try is to have an open and honest conversation with your siblings about how you're feeling. Let them know that you appreciate their accomplishments, but that you also feel like you struggle to live up to their expectations. They might surprise you by being more understanding and supportive than you expect.
-
-In addition, it can be helpful to focus on developing your own interests and goals outside of your family dynamics. This can help you build a sense of self that isn't dependent on your sibling's achievements or approval. By pursuing activities that you enjoy and making progress towards your own goals, you may find
-================================================================================
-
---- 示例 2 ---
-👤 用户输入: I've been feeling disconnected from my family lately. My sister and I have had a falling out, and my parents have been dealing with their own issues. I've tried to reach out, but it feels like they're too consumed by their own problems to be there for me. I've also been having trouble sleeping and eating properly, and I've noticed that I've been more irritable than usual.
-📝 参考回复: Your current situation with your family is understandably distressing. It's essential to acknowledge that families can experience conflict and that these issues can be complex and multifaceted. It's important to remember that healing relationships takes time and effort from all parties involved. In the meantime, it's crucial to focus on self-care and prioritize your own well-being.
-
-The emotional turmoil you're experiencing is a natural response to the stressors in your life. The disrupted sleep and appetite are common symptoms of stress and anxiety. It's essential to address these symptoms through healthy coping mechanisms, such as practicing relaxation techniques, engaging in regular physical activity, and maintaining a balanced diet.
-
-Additionally, it may be helpful to consider seeking professional support from a mental health counselor or therapist. They can provide you with a safe and confidential space to explore your emotions, learn effective coping strategies, and gain valuable insights into your thought patterns and behaviors. Remember, seeking help is a sign of strength, not weakness.
-
-As we continue to work together, we'll explore various therapeutic approaches, such as cognitive-behavioral therapy, mindfulness meditation, and interpersonal therapy, to help you navigate your current challenges and develop the skills necessary to build resilience and improve your overall well-being.
-------------------------------------------------------------
-🤖 Finetuned Qwen2.5-7B:
-   It sounds like you're experiencing a complex emotional response to your current situation. The loss of connection with your family can be particularly challenging, especially when combined with feelings of disconnection from other important relationships in your life. It's not uncommon for people to experience increased irritability, changes in sleep patterns, and changes in appetite during times of stress.
-
-One approach we could take is to focus on building stronger connections with the individuals who are currently present in your life. This might involve reaching out to trusted friends or colleagues, as well as exploring new ways to connect with others through community groups or social activities. Additionally, practicing self-care techniques such as meditation, exercise, or creative pursuits can help improve overall mood and resilience.
-
-It's also essential to acknowledge the role of past experiences in shaping our current emotional landscape. In this case, unresolved conflicts with your sister and your parents may be contributing to your feelings of disconnection. We could explore these experiences further in therapy sessions, using evidence-based techniques such as cognitive-behavioral therapy or psychodynamic therapy to gain insight into how they're impacting your current emotional state.
-
-Ultimately, the goal would be to help you develop a more comprehensive understanding of your emotions and the factors contributing to them, enabling you to build healthier relationships and manage stress more
-🤖 Qwen2.5-7B:
-   It sounds like you're experiencing significant emotional distress due to your relationships with your family members. The feelings of disconnection, frustration, and sadness can be overwhelming, especially when compounded by sleep and appetite disturbances. It's essential to acknowledge these emotions and validate them as valid experiences.
-
-In our sessions together, we'll work on developing coping strategies to help manage your emotions and improve your overall well-being. We'll explore techniques such as mindfulness meditation, journaling, and cognitive restructuring to help you process your emotions and develop healthier ways of responding to challenging situations.
-
-Additionally, we'll delve deeper into the underlying causes of your relationship conflicts with your sister and parents. By gaining a better understanding of the root causes, we can begin to address any unresolved issues and work towards rebuilding stronger, more resilient relationships.
-
-Throughout this therapeutic journey, I will maintain a compassionate, non-judgmental, and ethical approach, ensuring that our sessions create a safe space for you to express yourself openly and honestly. Together, we will navigate the complexities of your emotional landscape and work towards healing and growth.ยิง
-🤖 ChatGLM3-6B:
-   I'm sorry to hear that you're going through this difficult time with your family. It can be tough when we feel disconnected from the people we love, especially during times of conflict or stress.
-
-It's important to take care of yourself during this time. That means making sure you're getting enough sleep, eating well, and finding healthy ways to manage your stress and emotions. You might consider talking to a trusted friend or family member about how you're feeling, or even seeking support from a mental health professional if things feel really overwhelming.
-
-Remember that it's okay to take a step back from relationships that are causing you pain or stress, and it's also okay to seek help from others if you need it. You deserve to prioritize your own well-being and find ways to cope with the challenges you're facing.
-================================================================================
-
---- 示例 3 ---
-👤 用户输入: Recently, I had a major argument with a close friend, and since then, I haven't been able to shake off the feelings of stress and anger. Every time I think about the incident or see them, my heart starts racing and I become overwhelmed with negative emotions. I want to discuss ways to manage these feelings constructively.
-📝 参考回复: It sounds like the argument with your close friend has left a significant impact on you, triggering feelings of stress and anger that have been difficult to shake off. It can be challenging when negative emotions become overwhelming and affect our well-being. Here are some suggestions to help you manage these feelings constructively:
-
-1. Take a step back: When you find yourself in situations where you think about the incident or encounter your friend, try taking a moment to pause. Take a deep breath and give yourself some mental space before reacting to the situation. This can allow you to gather your thoughts and respond more calmly.
-
-2. Reflect on your emotions: Acknowledge and understand what specific emotions you're experiencing. Is it primarily stress, anger, or a mix of different emotions? By identifying and labeling your emotions, you can begin to better address them.
-
-3. Express your feelings: Find healthy ways to express and communicate your emotions. You might consider writing in a journal, talking to a trusted friend or family member, or engaging in creative outlets such as painting or playing music. These activities can provide an outlet for your emotions and enable you to process them in a constructive manner.
-
-4. Practice self-care: Engage in activities that promote self-care and relaxation. This could include exercising regularly, getting enough sleep, practicing mindfulness or meditation, and engaging in hobbies or activities that bring you joy. Taking care of your overall well-being is crucial during this time.
-
-5. Communication and boundary setting: If you feel ready, it may be helpful to have an open and honest conversation with your friend about how the argument has affected you. Clear communication can foster understanding and potentially lead to resolution or mutual growth. Additionally, establishing personal boundaries moving forward can help maintain a healthier dynamic between you and your friend.
-
-6. Seek support: Don't hesitate to reach out for support from others. Whether it's through professional assistance or confiding in someone you trust, sharing your experiences and thoughts with others can provide valuable perspectives, guidance, and emotional support.
-
-Remember, everyone's journey to managing their emotions constructively is unique. Be patient and kind to yourself as you navigate through this challenging time.
-------------------------------------------------------------
-🤖 Finetuned Qwen2.5-7B:
-   It can be challenging when conflicts arise in our relationships, especially with close friends. The stress and anger you're experiencing seem like natural reactions to such situations. It's important to acknowledge that your emotions are valid and understandable given what happened.
-
-To begin managing these feelings constructively, it may help to take some time for self-reflection and understanding yourself better. Consider journaling or finding other outlets where you can express your thoughts and emotions freely without judgment. This process might bring clarity and insight into why this particular situation has triggered such strong feelings within you.
-
-Once you have gained more awareness of your own emotional state, consider reaching out to your friend to initiate open communication. Approach the conversation with empathy and non-judgmental language, allowing both parties involved to share their perspectives respectfully. By creating space for dialogue, there is potential for healing and rebuilding trust between you two.
-
-In addition to addressing the immediate issue with your friend, practicing self-care techniques could also assist in managing your stress levels overall. Engaging in activities that promote relaxation and well-being, such as exercise, mindfulness meditation, or pursuing hobbies you enjoy, can offer relief from overwhelming negative emotions.
-
-Furthermore, seeking support from trusted individuals who understand your experiences—whether they are family members, mentors, or even online communities—
-🤖 Qwen2.5-7B:
-   It can be really challenging when we experience intense arguments with our close friends. The feelings of stress and anger that follow such situations are completely valid and understandable. It sounds like you're trying to find healthy ways to cope with these overwhelming emotions, which is commendable.
-
-One suggestion for managing your feelings in this situation could involve setting aside some dedicated time each day to reflect on what happened during the argument. By giving yourself space to process the event without judgment, it may help you gain clarity and perspective over time. Additionally, journaling might also prove beneficial as it allows you to express your thoughts and emotions freely while providing an outlet for release.
-
-When faced with triggering moments where your heart races and negative emotions arise, deep breathing exercises can assist in calming both your mind and body. Taking slow, deliberate breaths in through your nose and exhaling slowly out of your mouth helps activate relaxation responses within your nervous system. You can practice this technique whenever you feel the need to center yourself amidst heightened emotions.
-
-Another helpful strategy is seeking support from other trusted individuals who can offer different perspectives on the matter. Talking to someone impartial, such as another friend or family member whom you trust, might shed light on potential areas of misunderstanding or miscommunication between you and your close friend. This could potentially facilitate
-🤖 ChatGLM3-6B:
-   I'm sorry to hear that you're still struggling with the aftermath of your argument. It's completely normal to feel upset and overwhelmed after a confrontation with a close friend. It takes time and effort to process these emotions and move forward, but there are some strategies that can help you manage them constructively.
-
-Firstly, it's important to give yourself time to process your emotions. Don't rush into trying to resolve things right away if you're feeling too angry or upset. Take some time to reflect on what happened, write down your thoughts and feelings, and give yourself some space to calm down.
-
-When you're ready to talk, it can be helpful to approach the situation with empathy and curiosity. Try to put yourself in your friend's shoes and ask yourself why they might have reacted the way they did. This can help you understand their perspective and reduce your own anger and resentment.
-
-It's also important to communicate openly and honestly with your friend, if you feel comfortable doing so. Let them know how their actions affected you and express your own needs and feelings. This can help you work towards a resolution and build a stronger friendship in the long run.
-
-Remember that conflicts
-================================================================================
-
---- 示例 4 ---
-👤 用户输入: I've been under tremendous stress at work, and it's starting to take a toll on my physical and mental health. My job has become increasingly demanding, with tight deadlines, long hours, and constant pressure to meet targets. I find myself feeling overwhelmed and exhausted all the time. I struggle to concentrate, and even simple tasks take longer than they should because my mind feels scattered. The stress has also impacted my sleep. I toss and turn all night, worrying about work and feeling anxious about what tomorrow might bring. I'm desperately seeking strategies to manage my stress levels effectively so that I can regain balance in my life.
-📝 参考回复: It sounds like you're facing a lot of challenging situations at work, and I can understand how it's taking a toll on both your physical and mental health. It's important to prioritize self-care and find strategies to manage stress effectively. Here are some suggestions that may help:
-
-1. Prioritize and Delegate: Take a step back and evaluate which tasks are the most important and urgent. Is there anything that can be delegated or shared with others? By focusing on what truly needs your attention and involving others when possible, you can reduce some of the pressure.
-
-2. Time Management: Break down your workload into smaller, manageable tasks. Set realistic deadlines for each task and create a schedule to allow for breaks and rest. This can help prevent feeling overwhelmed and increase productivity.
-
-3. Establish Boundaries: Clearly communicate your limits and boundaries to your colleagues and supervisors. Let them know if certain requests or expectations are causing excessive stress. Setting boundaries can help protect your well-being and ensure a healthier work-life balance.
-
-4. Practice Stress Reduction Techniques: Incorporate stress reduction techniques into your daily routine. Deep breathing exercises, mindfulness meditation, or engaging in hobbies that bring you joy can help calm your mind and promote relaxation. Explore different techniques and find what works best for you.
-
-5. Seek Support: Reach out to friends, family members, or trusted individuals who can provide emotional support. Having someone to talk to about your feelings and experiences can offer perspective and understanding.
-
-6. Physical Activity: Engage in regular physical activity as it has been shown to reduce stress levels. Find an exercise or activity that you enjoy, such as walking, dancing, or yoga. Not only will it benefit your physical health but also improve your mood and help relieve stress.
-
-7. Healthy Lifestyle Choices: Pay attention to your overall well-being by practicing healthy habits. Make sure you're getting enough sleep, eating a balanced diet, and staying hydrated. Fueling your body with nutrient-rich foods can contribute to better stress management.
-
-Remember, managing stress is an ongoing process, and it may take time to find what works best for you. If your stress continues to impact your daily life despite these strategies, consider seeking professional help from a mental health expert who can provide personalized guidance and support tailored to your specific needs.
-------------------------------------------------------------
-🤖 Finetuned Qwen2.5-7B:
-   It sounds like you're experiencing a significant amount of stress at work, which is impacting both your physical and mental well-being. It can be challenging when there are tight deadlines, long hours, and constant pressure to meet targets. Feeling overwhelmed and exhausted is completely normal given these circumstances.
-
-To start managing your stress more effectively, here are some suggestions:
-
-1. Prioritize self-care: Make sure to carve out time for yourself each day, even if it's just 15-30 minutes. Engage in activities that help relax and recharge, such as taking walks outside, practicing deep breathing exercises, or engaging in hobbies you enjoy.
-
-2. Set boundaries: Establish clear limits between work and personal life. Avoid bringing work home by designating specific times during the day solely dedicated to relaxation and quality time with loved ones.
-
-3. Delegate and communicate: If possible, delegate tasks to colleagues who may have extra capacity. Additionally, open up lines of communication with your supervisor about any concerns or challenges you're facing. They may offer support or adjustments to alleviate some of the workload pressure.
-
-4. Break down tasks: When faced with overwhelming projects or responsibilities, break them down into smaller, manageable steps. By tackling one step at a time, you'll feel less daunted and more
-🤖 Qwen2.5-7B:
-   It sounds like you're dealing with a lot of stress at work, which is taking its toll on both your physical and mental well-being. It's important to address this issue as it can have negative consequences if left unmanaged.
-
-One strategy that may help is setting boundaries between your work and personal life. Establishing clear limits around when you will check emails or answer phone calls outside of working hours can give you some breathing space and allow for relaxation during non-work times. This way, you won't constantly feel obligated to be available and can focus on self-care activities.
-
-Another approach could involve prioritizing tasks and breaking them down into smaller, more manageable steps. By creating a plan of action, you can tackle one task at a time instead of feeling overwhelmed by everything at once. This can make things seem less daunting and improve concentration as you have a roadmap to follow.
-
-In terms of managing anxiety related to work pressures, practicing relaxation techniques such as deep breathing exercises or meditation might be beneficial. These practices can help calm your mind and reduce overall stress levels. You could try incorporating these techniques into your daily routine, perhaps right before bed or during short breaks throughout the day.
-
-Additionally, finding healthy outlets for stress relief can greatly contribute to regaining balance in your life. Engaging in
-🤖 ChatGLM3-6B:
-   <|system|> I'm sorry to hear that you're going through such a challenging time at work. It's clear that the demands of your job are affecting your well-being. I appreciate your honesty and vulnerability in sharing your story with me.
-
-Stress is a natural response to our body's attempt to adapt to challenging situations. However, when stress becomes chronic, it can have serious negative impacts on our physical and mental health. It sounds like you're struggling to keep up with the demands of your job, which may be contributing to your feelings of overwhelm and exhaustion.
-
-Here are some strategies you might try to manage your stress levels:
-
-1. Practice self-care: Make sure you're taking care of yourself physically, emotionally, and mentally. This might include things like exercise, meditation, journaling, or spending quality time with loved ones.
-2. Set boundaries: Identify what you can and cannot do, and communicate your needs to those around you, including your employer. It's okay to say no to additional responsibilities or tasks that are beyond your capacity.
-3. Prioritize your tasks: Focus on the most important tasks first, and avoid getting bogged
-================================================================================
-
---- 示例 5 ---
-👤 用户输入: I've been struggling with insomnia and distressing nightmares since a car accident I was in a few months ago. These dreams of impending crashes leave me feeling drained and unable to focus during the day. I've tried various methods to cope, but nothing seems to alleviate the issue.
-📝 参考回复: I acknowledge the turmoil you're experiencing with these nightmares. It's not uncommon for individuals who have lived through traumatic events to grapple with intrusive thoughts and dreams that disrupt their daily functioning. Your inability to find relief through conventional methods indicates that further assistance may be necessary.
-
-One potential avenue we could explore is cognitive-behavioral therapy (CBT). This therapeutic approach can help you develop techniques to better manage your thoughts and emotions. Together, we can identify the catalysts for your nightmares and devise strategies to challenge the detrimental thoughts and beliefs that surface during and after the dreams.
-
-Another possibility is mindfulness meditation practices, such as deep breathing or progressive muscle relaxation, which can aid in heightening your awareness of your body and emotions, enabling you to respond to them with compassion and non-judgment.
-
-Self-care is also crucial in managing your symptoms. Ensuring adequate rest, maintaining a balanced diet, and engaging in regular physical activity can all contribute to enhancing your overall well-being and fortifying your resilience to stress.
-
-It's essential to remember that seeking mental health support is an act of fortitude, not a sign of weakness. Your courage in reaching out for assistance is commendable, and I am here to collaborate with you in finding the most effective approach for managing your nightmares and enhancing your overall quality of life.
-
-However, it's crucial to recognize that there's a fine line between making decisions efficiently and impulsively. In your case, it appears that your impulsivity might be causing more harm than good. This pattern can lead to unintended consequences and missed opportunities for growth.
-------------------------------------------------------------
-🤖 Finetuned Qwen2.5-7B:
-   Your experience is not uncommon, as traumatic events can significantly impact our sleep patterns and emotional well-being. It's essential to acknowledge the severity of your symptoms and the potential need for professional help. We'll work together to explore various therapeutic approaches, such as cognitive-behavioral therapy (CBT), eye movement desensitization and reprocessing (EMDR), or medication options if necessary.
-
-First, let's examine some self-care strategies that might help improve your sleep quality. Regular exercise, maintaining a consistent sleep schedule, creating a relaxing bedtime routine, and avoiding stimulating activities before bed could all contribute to better rest. Additionally, we may want to discuss relaxation techniques like progressive muscle relaxation, deep breathing exercises, or mindfulness meditation to help manage stress and anxiety.
-
-In terms of addressing the trauma itself, CBT and EMDR have shown promise in helping individuals process past experiences and reduce intrusive thoughts and nightmares. CBT focuses on identifying and challenging negative thought patterns related to the accident, while EMDR involves recalling specific memories from the event while following the therapist's guidance through rapid eye movements or other bilateral stimulation techniques.
-
-Ultimately, the most effective approach will depend on your unique circumstances and preferences. Our goal is to create a safe, non-judgmental space where you feel
-🤖 Qwen2.5-7B:
-
-   Your experience with insomnia and distressing nightmares following a traumatic event is not uncommon. The connection between trauma and sleep disturbances is well-documented in the field of psychology. Traumatic events can trigger a range of emotional and physiological responses, including anxiety, fear, and hyperarousal. These reactions can make it difficult for individuals to fall asleep or stay asleep throughout the night.
-
-To help you manage your symptoms, we'll explore several evidence-based therapeutic approaches. One approach is cognitive-behavioral therapy (CBT), which focuses on identifying and challenging negative thought patterns that contribute to your distress. We'll also discuss relaxation techniques, such as deep breathing exercises and progressive muscle relaxation, to help calm your mind and body before bed.
-
-Another approach we might consider is eye movement desensitization and reprocessing (EMDR). EMDR is a psychotherapy technique designed to reduce the intensity of distressing memories by engaging the brain in a specific way while recalling the traumatic event. This process can help you process the memory more effectively and reduce its impact on your daily life.
-
-Lastly, we'll examine the role of medication in managing your symptoms. While medications should be used cautiously and only under the guidance of a healthcare professional, they may offer temporary relief from severe sleep disturbances and associated
-🤖 ChatGLM3-6B:
-   I'm sorry to hear that you've been experiencing such vivid and distressing nightmares since the car accident. It takes courage to acknowledge and face these kinds of challenges. It's important to know that what you're going through is normal and many people have experienced similar symptoms after a traumatic event.
-
-It might be helpful to speak with a mental health professional who can provide you with evidence-based strategies to manage your insomnia and nightmares. They may also help you process any lingering emotions or trauma related to the car accident. Remember, you don't have to go through this alone.
-
-In the meantime, there are some things you can do to help yourself feel more grounded and calm during the day. Try incorporating relaxation techniques like deep breathing exercises, meditation, or yoga into your daily routine. You could also try journaling or talking about your feelings with a trusted friend or family member.
-
-Remember that recovery is a journey and it may take time, but with the right support and effort, you can get through this. You deserve to live a life free from the constraints of insomnia and terrifying nightmares.
-================================================================================
-
-================================================================================
-评估总结
-================================================================================
-🏆 最佳模型: ChatGLM3-6B (综合分数: 0.3901)
-📊 最佳 bleu: Finetuned Qwen2.5-7B (0.0528)
-📊 最佳 rougeL: Finetuned Qwen2.5-7B (0.2054)
-📊 最佳 safety: Finetuned Qwen2.5-7B (0.6300)
-📊 最佳 empathy: ChatGLM3-6B (0.2100)
-📊 最佳 relevance: ChatGLM3-6B (0.8327)

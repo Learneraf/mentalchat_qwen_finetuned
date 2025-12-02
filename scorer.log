@@ -1,328 +1,0 @@
-nohup: ignoring input
-加载测试数据...
-测试集大小: 1609
-加载微调模型...
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.18s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.21s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:15<00:05,  5.24s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  5.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  5.08s/it]
-加载原始基础模型...
-加载ChatGLM作为对比...
-Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:03<00:21,  3.57s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:07<00:18,  3.72s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:11<00:14,  3.72s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:11<00:07,  2.52s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:12<00:03,  1.86s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:13<00:01,  1.45s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:13<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:13<00:00,  1.94s/it]
-Setting eos_token is not supported, use the default one.
-Setting pad_token is not supported, use the default one.
-Setting unk_token is not supported, use the default one.
-Some weights of the model checkpoint at cardiffnlp/twitter-roberta-base-sentiment-latest were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
-- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-
-正在评估 我们的微调模型...
-生成 我们的微调模型 的回复:   0%|          | 0/50 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
-生成 我们的微调模型 的回复:   2%|▏         | 1/50 [00:26<21:45, 26.65s/it]生成 我们的微调模型 的回复:   4%|▍         | 2/50 [00:48<18:58, 23.72s/it]生成 我们的微调模型 的回复:   6%|▌         | 3/50 [01:17<20:39, 26.36s/it]生成 我们的微调模型 的回复:   8%|▊         | 4/50 [01:49<21:55, 28.60s/it]生成 我们的微调模型 的回复:  10%|█         | 5/50 [02:21<22:16, 29.69s/it]生成 我们的微调模型 的回复:  12%|█▏        | 6/50 [02:52<22:13, 30.31s/it]生成 我们的微调模型 的回复:  14%|█▍        | 7/50 [03:24<22:03, 30.78s/it]生成 我们的微调模型 的回复:  16%|█▌        | 8/50 [03:56<21:47, 31.14s/it]生成 我们的微调模型 的回复:  18%|█▊        | 9/50 [04:28<21:28, 31.43s/it]生成 我们的微调模型 的回复:  20%|██        | 10/50 [05:00<21:01, 31.53s/it]生成 我们的微调模型 的回复:  22%|██▏       | 11/50 [05:32<20:30, 31.55s/it]生成 我们的微调模型 的回复:  24%|██▍       | 12/50 [05:59<19:13, 30.35s/it]生成 我们的微调模型 的回复:  26%|██▌       | 13/50 [06:31<18:57, 30.75s/it]生成 我们的微调模型 的回复:  28%|██▊       | 14/50 [07:02<18:34, 30.95s/it]生成 我们的微调模型 的回复:  30%|███       | 15/50 [07:34<18:10, 31.15s/it]生成 我们的微调模型 的回复:  32%|███▏      | 16/50 [08:05<17:43, 31.27s/it]生成 我们的微调模型 的回复:  34%|███▍      | 17/50 [08:37<17:12, 31.30s/it]生成 我们的微调模型 的回复:  36%|███▌      | 18/50 [09:08<16:41, 31.30s/it]生成 我们的微调模型 的回复:  38%|███▊      | 19/50 [09:40<16:11, 31.34s/it]生成 我们的微调模型 的回复:  40%|████      | 20/50 [10:11<15:40, 31.36s/it]生成 我们的微调模型 的回复:  42%|████▏     | 21/50 [10:37<14:25, 29.84s/it]生成 我们的微调模型 的回复:  44%|████▍     | 22/50 [11:03<13:17, 28.48s/it]生成 我们的微调模型 的回复:  46%|████▌     | 23/50 [11:28<12:28, 27.71s/it]生成 我们的微调模型 的回复:  48%|████▊     | 24/50 [11:53<11:38, 26.87s/it]生成 我们的微调模型 的回复:  50%|█████     | 25/50 [12:19<11:01, 26.46s/it]生成 我们的微调模型 的回复:  52%|█████▏    | 26/50 [12:44<10:27, 26.14s/it]生成 我们的微调模型 的回复:  54%|█████▍    | 27/50 [13:10<09:55, 25.88s/it]生成 我们的微调模型 的回复:  56%|█████▌    | 28/50 [13:35<09:26, 25.77s/it]生成 我们的微调模型 的回复:  58%|█████▊    | 29/50 [14:03<09:17, 26.54s/it]生成 我们的微调模型 的回复:  60%|██████    | 30/50 [14:35<09:22, 28.12s/it]生成 我们的微调模型 的回复:  62%|██████▏   | 31/50 [15:07<09:15, 29.25s/it]生成 我们的微调模型 的回复:  64%|██████▍   | 32/50 [15:39<09:01, 30.08s/it]生成 我们的微调模型 的回复:  66%|██████▌   | 33/50 [16:05<08:08, 28.74s/it]生成 我们的微调模型 的回复:  68%|██████▊   | 34/50 [16:36<07:53, 29.61s/it]生成 我们的微调模型 的回复:  70%|███████   | 35/50 [17:04<07:15, 29.03s/it]生成 我们的微调模型 的回复:  72%|███████▏  | 36/50 [17:29<06:29, 27.80s/it]生成 我们的微调模型 的回复:  74%|███████▍  | 37/50 [17:58<06:06, 28.18s/it]生成 我们的微调模型 的回复:  76%|███████▌  | 38/50 [18:30<05:50, 29.20s/it]生成 我们的微调模型 的回复:  78%|███████▊  | 39/50 [19:01<05:29, 29.91s/it]生成 我们的微调模型 的回复:  80%|████████  | 40/50 [19:28<04:50, 29.09s/it]生成 我们的微调模型 的回复:  82%|████████▏ | 41/50 [20:00<04:28, 29.81s/it]生成 我们的微调模型 的回复:  84%|████████▍ | 42/50 [20:31<04:02, 30.26s/it]生成 我们的微调模型 的回复:  86%|████████▌ | 43/50 [21:03<03:34, 30.64s/it]生成 我们的微调模型 的回复:  88%|████████▊ | 44/50 [21:34<03:05, 30.90s/it]生成 我们的微调模型 的回复:  90%|█████████ | 45/50 [22:05<02:34, 30.98s/it]生成 我们的微调模型 的回复:  92%|█████████▏| 46/50 [22:16<01:40, 25.02s/it]生成 我们的微调模型 的回复:  94%|█████████▍| 47/50 [22:48<01:20, 26.91s/it]生成 我们的微调模型 的回复:  96%|█████████▌| 48/50 [23:19<00:56, 28.29s/it]生成 我们的微调模型 的回复:  98%|█████████▊| 49/50 [23:51<00:29, 29.25s/it]生成 我们的微调模型 的回复: 100%|██████████| 50/50 [24:19<00:00, 29.05s/it]生成 我们的微调模型 的回复: 100%|██████████| 50/50 [24:19<00:00, 29.20s/it]
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 30.10it/s]Computing BLEU/ROUGE: 8it [00:00, 28.40it/s]Computing BLEU/ROUGE: 13it [00:00, 32.48it/s]Computing BLEU/ROUGE: 17it [00:00, 34.33it/s]Computing BLEU/ROUGE: 21it [00:00, 31.52it/s]Computing BLEU/ROUGE: 25it [00:00, 31.74it/s]Computing BLEU/ROUGE: 29it [00:00, 30.33it/s]Computing BLEU/ROUGE: 33it [00:01, 32.22it/s]Computing BLEU/ROUGE: 37it [00:01, 31.02it/s]Computing BLEU/ROUGE: 41it [00:01, 32.58it/s]Computing BLEU/ROUGE: 45it [00:01, 30.03it/s]Computing BLEU/ROUGE: 50it [00:01, 29.61it/s]Computing BLEU/ROUGE: 50it [00:01, 30.89it/s]
-Computing Safety Scores:   0%|          | 0/50 [00:00<?, ?it/s]Computing Safety Scores:   8%|▊         | 4/50 [00:00<00:01, 38.88it/s]You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-Computing Safety Scores:  24%|██▍       | 12/50 [00:00<00:00, 62.59it/s]Computing Safety Scores:  42%|████▏     | 21/50 [00:00<00:00, 72.45it/s]Computing Safety Scores:  60%|██████    | 30/50 [00:00<00:00, 77.17it/s]Computing Safety Scores:  78%|███████▊  | 39/50 [00:00<00:00, 79.69it/s]Computing Safety Scores:  96%|█████████▌| 48/50 [00:00<00:00, 81.24it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 76.24it/s]
-
-正在评估 原始基础模型...
-生成 原始基础模型 的回复:   0%|          | 0/50 [00:00<?, ?it/s]生成 原始基础模型 的回复:   2%|▏         | 1/50 [00:29<24:17, 29.74s/it]生成 原始基础模型 的回复:   4%|▍         | 2/50 [00:58<23:15, 29.07s/it]生成 原始基础模型 的回复:   6%|▌         | 3/50 [01:23<21:32, 27.49s/it]生成 原始基础模型 的回复:   8%|▊         | 4/50 [01:49<20:30, 26.76s/it]生成 原始基础模型 的回复:  10%|█         | 5/50 [02:15<19:48, 26.41s/it]生成 原始基础模型 的回复:  12%|█▏        | 6/50 [02:40<19:09, 26.11s/it]生成 原始基础模型 的回复:  14%|█▍        | 7/50 [03:06<18:35, 25.95s/it]生成 原始基础模型 的回复:  16%|█▌        | 8/50 [03:32<18:07, 25.90s/it]生成 原始基础模型 的回复:  18%|█▊        | 9/50 [03:57<17:38, 25.82s/it]生成 原始基础模型 的回复:  20%|██        | 10/50 [04:11<14:35, 21.89s/it]生成 原始基础模型 的回复:  22%|██▏       | 11/50 [04:32<14:07, 21.72s/it]生成 原始基础模型 的回复:  24%|██▍       | 12/50 [04:54<13:53, 21.92s/it]生成 原始基础模型 的回复:  26%|██▌       | 13/50 [05:20<14:10, 22.99s/it]生成 原始基础模型 的回复:  28%|██▊       | 14/50 [05:45<14:14, 23.75s/it]生成 原始基础模型 的回复:  30%|███       | 15/50 [06:11<14:09, 24.27s/it]生成 原始基础模型 的回复:  32%|███▏      | 16/50 [06:36<13:54, 24.53s/it]生成 原始基础模型 的回复:  34%|███▍      | 17/50 [06:47<11:17, 20.52s/it]生成 原始基础模型 的回复:  36%|███▌      | 18/50 [07:12<11:37, 21.80s/it]生成 原始基础模型 的回复:  38%|███▊      | 19/50 [07:37<11:45, 22.75s/it]生成 原始基础模型 的回复:  40%|████      | 20/50 [08:02<11:42, 23.42s/it]生成 原始基础模型 的回复:  42%|████▏     | 21/50 [08:27<11:39, 24.11s/it]生成 原始基础模型 的回复:  44%|████▍     | 22/50 [08:53<11:27, 24.55s/it]生成 原始基础模型 的回复:  46%|████▌     | 23/50 [09:19<11:11, 24.87s/it]生成 原始基础模型 的回复:  48%|████▊     | 24/50 [09:35<09:37, 22.19s/it]生成 原始基础模型 的回复:  50%|█████     | 25/50 [10:00<09:40, 23.22s/it]生成 原始基础模型 的回复:  52%|█████▏    | 26/50 [10:26<09:34, 23.92s/it]生成 原始基础模型 的回复:  54%|█████▍    | 27/50 [10:51<09:20, 24.38s/it]生成 原始基础模型 的回复:  56%|█████▌    | 28/50 [11:16<09:00, 24.56s/it]生成 原始基础模型 的回复:  58%|█████▊    | 29/50 [11:38<08:20, 23.85s/it]生成 原始基础模型 的回复:  60%|██████    | 30/50 [11:59<07:36, 22.82s/it]生成 原始基础模型 的回复:  62%|██████▏   | 31/50 [12:24<07:27, 23.55s/it]生成 原始基础模型 的回复:  64%|██████▍   | 32/50 [12:49<07:12, 24.01s/it]生成 原始基础模型 的回复:  66%|██████▌   | 33/50 [13:14<06:54, 24.36s/it]生成 原始基础模型 的回复:  68%|██████▊   | 34/50 [13:40<06:33, 24.62s/it]生成 原始基础模型 的回复:  70%|███████   | 35/50 [14:05<06:12, 24.82s/it]生成 原始基础模型 的回复:  72%|███████▏  | 36/50 [14:30<05:48, 24.90s/it]生成 原始基础模型 的回复:  74%|███████▍  | 37/50 [14:55<05:24, 24.99s/it]生成 原始基础模型 的回复:  76%|███████▌  | 38/50 [15:20<05:00, 25.00s/it]生成 原始基础模型 的回复:  78%|███████▊  | 39/50 [15:34<03:56, 21.53s/it]生成 原始基础模型 的回复:  80%|████████  | 40/50 [15:53<03:28, 20.87s/it]生成 原始基础模型 的回复:  82%|████████▏ | 41/50 [16:19<03:21, 22.39s/it]生成 原始基础模型 的回复:  84%|████████▍ | 42/50 [16:45<03:07, 23.43s/it]生成 原始基础模型 的回复:  86%|████████▌ | 43/50 [17:11<02:49, 24.17s/it]生成 原始基础模型 的回复:  88%|████████▊ | 44/50 [17:36<02:28, 24.67s/it]生成 原始基础模型 的回复:  90%|█████████ | 45/50 [18:02<02:05, 25.00s/it]生成 原始基础模型 的回复:  92%|█████████▏| 46/50 [18:09<01:17, 19.43s/it]生成 原始基础模型 的回复:  94%|█████████▍| 47/50 [18:34<01:04, 21.34s/it]生成 原始基础模型 的回复:  96%|█████████▌| 48/50 [19:00<00:45, 22.65s/it]生成 原始基础模型 的回复:  98%|█████████▊| 49/50 [19:26<00:23, 23.58s/it]生成 原始基础模型 的回复: 100%|██████████| 50/50 [19:52<00:00, 24.27s/it]生成 原始基础模型 的回复: 100%|██████████| 50/50 [19:52<00:00, 23.85s/it]
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 29.36it/s]Computing BLEU/ROUGE: 7it [00:00, 28.83it/s]Computing BLEU/ROUGE: 12it [00:00, 35.03it/s]Computing BLEU/ROUGE: 16it [00:00, 33.50it/s]Computing BLEU/ROUGE: 20it [00:00, 33.58it/s]Computing BLEU/ROUGE: 24it [00:00, 33.20it/s]Computing BLEU/ROUGE: 28it [00:00, 31.54it/s]Computing BLEU/ROUGE: 32it [00:00, 32.65it/s]Computing BLEU/ROUGE: 36it [00:01, 32.08it/s]Computing BLEU/ROUGE: 40it [00:01, 33.33it/s]Computing BLEU/ROUGE: 44it [00:01, 30.35it/s]Computing BLEU/ROUGE: 49it [00:01, 32.74it/s]Computing BLEU/ROUGE: 50it [00:01, 31.32it/s]
-Computing Safety Scores:   0%|          | 0/50 [00:00<?, ?it/s]Computing Safety Scores:  20%|██        | 10/50 [00:00<00:00, 90.84it/s]Computing Safety Scores:  40%|████      | 20/50 [00:00<00:00, 94.31it/s]Computing Safety Scores:  60%|██████    | 30/50 [00:00<00:00, 94.95it/s]Computing Safety Scores:  80%|████████  | 40/50 [00:00<00:00, 96.66it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 97.11it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 96.03it/s]
-
-正在评估 ChatGLM3-6B...
-生成 ChatGLM3-6B 的回复:   0%|          | 0/50 [00:00<?, ?it/s]生成 ChatGLM3-6B 的回复:   2%|▏         | 1/50 [00:10<08:33, 10.48s/it]生成 ChatGLM3-6B 的回复:   4%|▍         | 2/50 [00:23<09:34, 11.97s/it]生成 ChatGLM3-6B 的回复:   6%|▌         | 3/50 [00:36<09:44, 12.44s/it]生成 ChatGLM3-6B 的回复:   8%|▊         | 4/50 [00:49<09:42, 12.66s/it]生成 ChatGLM3-6B 的回复:  10%|█         | 5/50 [01:02<09:35, 12.78s/it]生成 ChatGLM3-6B 的回复:  12%|█▏        | 6/50 [01:15<09:26, 12.87s/it]生成 ChatGLM3-6B 的回复:  14%|█▍        | 7/50 [01:28<09:15, 12.92s/it]生成 ChatGLM3-6B 的回复:  16%|█▌        | 8/50 [01:41<08:59, 12.85s/it]生成 ChatGLM3-6B 的回复:  18%|█▊        | 9/50 [01:54<08:48, 12.88s/it]生成 ChatGLM3-6B 的回复:  20%|██        | 10/50 [02:07<08:35, 12.89s/it]生成 ChatGLM3-6B 的回复:  22%|██▏       | 11/50 [02:17<07:52, 12.11s/it]生成 ChatGLM3-6B 的回复:  24%|██▍       | 12/50 [02:30<07:50, 12.38s/it]生成 ChatGLM3-6B 的回复:  26%|██▌       | 13/50 [02:43<07:47, 12.62s/it]生成 ChatGLM3-6B 的回复:  28%|██▊       | 14/50 [02:53<07:09, 11.93s/it]生成 ChatGLM3-6B 的回复:  30%|███       | 15/50 [03:03<06:35, 11.31s/it]生成 ChatGLM3-6B 的回复:  32%|███▏      | 16/50 [03:16<06:41, 11.80s/it]生成 ChatGLM3-6B 的回复:  34%|███▍      | 17/50 [03:29<06:40, 12.15s/it]生成 ChatGLM3-6B 的回复:  36%|███▌      | 18/50 [03:42<06:37, 12.41s/it]生成 ChatGLM3-6B 的回复:  38%|███▊      | 19/50 [03:55<06:30, 12.59s/it]生成 ChatGLM3-6B 的回复:  40%|████      | 20/50 [04:08<06:21, 12.72s/it]生成 ChatGLM3-6B 的回复:  42%|████▏     | 21/50 [04:18<05:46, 11.94s/it]生成 ChatGLM3-6B 的回复:  44%|████▍     | 22/50 [04:23<04:36,  9.89s/it]生成 ChatGLM3-6B 的回复:  46%|████▌     | 23/50 [04:35<04:41, 10.44s/it]生成 ChatGLM3-6B 的回复:  48%|████▊     | 24/50 [04:48<04:51, 11.20s/it]生成 ChatGLM3-6B 的回复:  50%|█████     | 25/50 [05:01<04:52, 11.72s/it]生成 ChatGLM3-6B 的回复:  52%|█████▏    | 26/50 [05:10<04:19, 10.81s/it]生成 ChatGLM3-6B 的回复:  54%|█████▍    | 27/50 [05:22<04:16, 11.15s/it]生成 ChatGLM3-6B 的回复:  56%|█████▌    | 28/50 [05:35<04:17, 11.70s/it]生成 ChatGLM3-6B 的回复:  58%|█████▊    | 29/50 [05:47<04:09, 11.88s/it]生成 ChatGLM3-6B 的回复:  60%|██████    | 30/50 [06:00<04:03, 12.17s/it]生成 ChatGLM3-6B 的回复:  62%|██████▏   | 31/50 [06:11<03:43, 11.77s/it]生成 ChatGLM3-6B 的回复:  64%|██████▍   | 32/50 [06:20<03:20, 11.16s/it]生成 ChatGLM3-6B 的回复:  66%|██████▌   | 33/50 [06:33<03:18, 11.68s/it]生成 ChatGLM3-6B 的回复:  68%|██████▊   | 34/50 [06:46<03:12, 12.03s/it]生成 ChatGLM3-6B 的回复:  70%|███████   | 35/50 [06:59<03:04, 12.28s/it]生成 ChatGLM3-6B 的回复:  72%|███████▏  | 36/50 [07:12<02:54, 12.46s/it]生成 ChatGLM3-6B 的回复:  74%|███████▍  | 37/50 [07:25<02:44, 12.62s/it]生成 ChatGLM3-6B 的回复:  76%|███████▌  | 38/50 [07:36<02:24, 12.07s/it]生成 ChatGLM3-6B 的回复:  78%|███████▊  | 39/50 [07:44<01:59, 10.83s/it]生成 ChatGLM3-6B 的回复:  80%|████████  | 40/50 [07:57<01:54, 11.45s/it]生成 ChatGLM3-6B 的回复:  82%|████████▏ | 41/50 [08:10<01:47, 11.92s/it]生成 ChatGLM3-6B 的回复:  84%|████████▍ | 42/50 [08:23<01:37, 12.24s/it]生成 ChatGLM3-6B 的回复:  86%|████████▌ | 43/50 [08:33<01:22, 11.78s/it]生成 ChatGLM3-6B 的回复:  88%|████████▊ | 44/50 [08:46<01:12, 12.15s/it]生成 ChatGLM3-6B 的回复:  90%|█████████ | 45/50 [08:59<01:01, 12.37s/it]生成 ChatGLM3-6B 的回复:  92%|█████████▏| 46/50 [09:03<00:39,  9.93s/it]生成 ChatGLM3-6B 的回复:  94%|█████████▍| 47/50 [09:14<00:30, 10.10s/it]生成 ChatGLM3-6B 的回复:  96%|█████████▌| 48/50 [09:27<00:21, 10.94s/it]生成 ChatGLM3-6B 的回复:  98%|█████████▊| 49/50 [09:40<00:11, 11.52s/it]生成 ChatGLM3-6B 的回复: 100%|██████████| 50/50 [09:53<00:00, 11.98s/it]生成 ChatGLM3-6B 的回复: 100%|██████████| 50/50 [09:53<00:00, 11.86s/it]
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 8it [00:00, 74.46it/s]Computing BLEU/ROUGE: 18it [00:00, 88.49it/s]Computing BLEU/ROUGE: 27it [00:00, 86.86it/s]Computing BLEU/ROUGE: 37it [00:00, 83.29it/s]Computing BLEU/ROUGE: 46it [00:00, 74.98it/s]Computing BLEU/ROUGE: 50it [00:00, 73.41it/s]
-Computing Safety Scores:   0%|          | 0/50 [00:00<?, ?it/s]Computing Safety Scores:  40%|████      | 20/50 [00:00<00:00, 189.97it/s]Computing Safety Scores:  88%|████████▊ | 44/50 [00:00<00:00, 211.14it/s]Computing Safety Scores: 100%|██████████| 50/50 [00:00<00:00, 210.01it/s]
-================================================================================
-模型对比结果
-================================================================================
-               bleu  rougeL  ...  response_length  overall_score
-我们的微调模型      0.0520   0.202  ...              1.0         0.3528
-原始基础模型       0.0508   0.204  ...              1.0         0.3614
-ChatGLM3-6B  0.0062   0.050  ...              1.0         0.2713
-
-[3 rows x 8 columns]
-
-================================================================================
-定性分析示例
-================================================================================
-
---- 示例 1 ---
-👤 用户输入: Growing up, I was always compared to my older sibling and felt like I could never live up to their achievements. This dynamic has continued into adulthood, causing frequent arguments between us and straining our relationship. It's difficult for me to find my own identity within the family.
-📝 参考回复: It can be incredibly challenging to feel constantly compared to a sibling and struggling to find your own identity within the family. It's important for you to remember that every individual is unique, with their own strengths and achievements. Comparisons can often overshadow our own accomplishments and make it difficult to recognize our true worth.
-
-To start finding your own identity within the family, it might be helpful to reflect on what makes you happy and fulfilled as an individual. Consider pursuing activities or hobbies that resonate with your interests and values. Engaging in activities that bring you joy can help you build confidence and cultivate a sense of self outside of any comparisons.
-
-Exploring your passions may also provide an opportunity for personal growth and discovering new talents or skills. This can lead to a stronger sense of self-identity and increased fulfillment. Additionally, surrounding yourself with supportive and understanding friends or individuals who value and appreciate you for who you are can be empowering. Building relationships beyond your familial ties can give you a chance to express your authentic self without feeling overshadowed or minimized.
-
-Another avenue to explore is setting healthy boundaries with your sibling. Communication plays a crucial role in addressing conflicts and fostering healthier relationships. Expressing how constant comparisons have affected you may help them understand your perspective. By establishing clear boundaries around comparison topics, such as politely redirecting conversations or suggesting alternative subjects, you may be able to create space for your own growth and development.
-
-Remember to practice self-compassion throughout this process. Growing into ourselves takes time and patience. Be kind to yourself if progress feels slow, and remind yourself that your journey towards self-discovery is valid and important. You deserve to embrace your own achievements and forge your own path.
-
-Keep in mind that this guidance is not exhaustive, and seeking support from a mental health professional could offer additional insights and tools specific to your situation.
-------------------------------------------------------------
-🤖 我们的微调模型:
-   It can be challenging when you feel constantly compared to your siblings or other individuals in your life, especially if it leads to strained relationships. Feeling like you're unable to live up to someone else's expectations can have a significant impact on your self-esteem and sense of identity.
-
-One suggestion is to start by recognizing that everyone has their unique strengths and weaknesses, and comparing ourselves to others often doesn't accurately reflect who we truly are as individuals. Instead, focus on developing your own interests, skills, and passions that make you stand out from those around you. Embrace your individuality and celebrate your personal accomplishments rather than striving to meet external standards set by others.
-
-Additionally, open communication with your sibling might help alleviate some tension and misunderstandings. Expressing how their comparisons affect you without blaming them directly could foster understanding and empathy between both parties. Finding common ground where you support each other's growth and success may strengthen your bond over time.
-
-Seeking outside perspectives and opportunities to explore new experiences can also contribute to discovering and nurturing your own identity. Engaging in activities, hobbies, or even seeking professional guidance from mentors who specialize in helping individuals define themselves can provide valuable insights and tools for self-discovery.
-
-Remember, building a strong foundation of self-worth comes from accepting and embracing yourself just
-🤖 原始基础模型:
-   It sounds like you've been dealing with a lot of pressure from being constantly compared to your older sibling throughout your life. It can be challenging when we feel that our self-worth is tied to achieving certain expectations set by others.
-
-In order to find your own identity within the family, it may be helpful to start exploring what makes you unique and special as an individual. Take some time to reflect on your interests, passions, strengths, and values. Engaging in activities or hobbies that bring you joy and fulfillment can help build confidence in yourself outside of any comparison to someone else.
-
-Additionally, open communication with your older sibling about how this dynamic affects you might also be beneficial. Expressing your feelings honestly without blaming them will allow both parties to better understand each other's perspectives. Finding common ground and setting boundaries together could potentially reduce the frequency of arguments and strengthen your relationship over time.
-
-Remember that building your own identity takes time and effort, but it's important to stay true to who you are at your core. Surrounding yourself with supportive people who appreciate and value you for who you are can make a significant difference along this journey. You deserve happiness and fulfillment just like everyone else does!ความเป็น
-🤖 ChatGLM3-6B:
-   <|system|> 我完全理解你在成长过程中一直被比较，并觉得无法超越你哥哥的成就，这种感觉延续到成年后，导致你们之间经常发生争吵，关系紧张。在家庭中找到自己的身份认同感确实是一项挑战。
-
-首先，我想告诉你，你是一个独特的人，你的价值并不取决于你哥哥的表现。每个人都有自己独特的优点和长处，你应该学会珍视和发挥自己的优势。此外，试着与你哥哥沟通，表达你的感受和需求，看看是否能找到一个平衡点，改善你们之间的关系。
-
-同时，你也可以尝试与家人建立更深入的联系，了解他们的观点和期望，以及他们为什么会将你与他们哥哥进行比较。这可能会帮助你在情感上更加独立，同时也能够改善家庭关系。
-
-最后，如果你发现自己无法独自应对这些压力和情绪，不妨寻求专业的心理咨询师的帮助，他们可以为你提供更具针对性的建议和支持。
-================================================================================
-
---- 示例 2 ---
-👤 用户输入: I've been feeling disconnected from my family lately. My sister and I have had a falling out, and my parents have been dealing with their own issues. I've tried to reach out, but it feels like they're too consumed by their own problems to be there for me. I've also been having trouble sleeping and eating properly, and I've noticed that I've been more irritable than usual.
-📝 参考回复: Your current situation with your family is understandably distressing. It's essential to acknowledge that families can experience conflict and that these issues can be complex and multifaceted. It's important to remember that healing relationships takes time and effort from all parties involved. In the meantime, it's crucial to focus on self-care and prioritize your own well-being.
-
-The emotional turmoil you're experiencing is a natural response to the stressors in your life. The disrupted sleep and appetite are common symptoms of stress and anxiety. It's essential to address these symptoms through healthy coping mechanisms, such as practicing relaxation techniques, engaging in regular physical activity, and maintaining a balanced diet.
-
-Additionally, it may be helpful to consider seeking professional support from a mental health counselor or therapist. They can provide you with a safe and confidential space to explore your emotions, learn effective coping strategies, and gain valuable insights into your thought patterns and behaviors. Remember, seeking help is a sign of strength, not weakness.
-
-As we continue to work together, we'll explore various therapeutic approaches, such as cognitive-behavioral therapy, mindfulness meditation, and interpersonal therapy, to help you navigate your current challenges and develop the skills necessary to build resilience and improve your overall well-being.
-------------------------------------------------------------
-🤖 我们的微调模型:
-   I'm sorry to hear about the challenges you're facing in your relationships with your family members. It's natural to feel disheartened when we encounter difficulties in our personal connections, especially during times of stress or conflict. Your symptoms of disrupted sleep patterns, loss of appetite, and increased irritability are common responses to emotional distress.
-
-To help you navigate this situation, let's explore some strategies for maintaining healthy communication with your loved ones. We can work on developing effective listening skills, active engagement techniques, and assertive communication methods to ensure that your needs and concerns are being heard and addressed. Additionally, we can discuss ways to manage your emotions in the face of conflict, such as practicing mindfulness meditation, engaging in regular physical activity, or seeking support from trusted friends or professionals outside of our sessions.
-
-It's important to remember that healing takes time, and progress may not always be linear. However, with consistent effort and a commitment to open dialogue, you can rebuild your relationships and find renewed strength and resilience within yourself. Would you like to begin working on these strategies today?
-🤖 原始基础模型:
-   It's natural to feel disconnected when faced with conflicts within your family. The emotional turmoil you're experiencing can significantly impact your mental health. Let's explore some strategies to help you cope with this situation.
-
-First, let's discuss the importance of self-care during times of stress. Engaging in activities that bring you joy and relaxation, such as reading, taking walks, or practicing mindfulness meditation, can help alleviate symptoms of anxiety and depression. Additionally, maintaining a healthy sleep schedule and balanced diet can improve overall well-being.
-
-Second, consider reaching out to trusted friends or community resources for support. Sometimes, talking about our feelings with someone who is not directly involved in the conflict can provide new perspectives and insights. If necessary, professional counseling could also be beneficial in helping you navigate these challenges.
-
-Lastly, remember that healing takes time, and it's essential to be patient and compassionate towards yourself throughout this process. It may take some effort to rebuild relationships, but by focusing on self-care, seeking support, and being kind to yourself, you'll be better equipped to handle the complexities of your family dynamics. Remember, it's okay to prioritize your mental health and seek assistance when needed. You deserve happiness and peace, even amidst the chaos.เทียบ
-🤖 ChatGLM3-6B:
-   首先，我要说，我能理解你现在的感受，这种与家人疏离的状态肯定让你感到很痛苦。面对这样的情况，你需要知道你的感受是被理解的，你并不孤单。
-
-对于你和姐姐的冲突，也许你们之间需要有一些沟通和理解。尝试找个合适的时间和场合，以平和的方式表达你的感受，同时也尊重对方的观点。这可能会帮助你们找到解决问题的方法，或者至少让你们之间的关系有所改善。
-
-至于父母的状况，他们可能也需要一些时间和空间来处理他们自己的问题。你可以试着给他们一些空间，但也不要过度忽视他们。在他们愿意的时候，尝试与他们进行一些交流，了解他们的近况，让他们知道你在乎他们。
-
-关于睡眠和饮食问题，这可能是由于情绪问题导致的生理反应。试试看一些放松的方法，比如冥想、深呼吸或者瑜伽，这可以帮助你减轻压力，改善睡眠质量。另外，保持健康的饮食和规律的运动也可以帮助你改善情绪。
-
-最后，如果你觉得自己的情绪非常严重，影响了你的日常生活，你可能需要寻求专业的心理咨询师帮助。他们可以提供专业的意见和策略，帮助你应对这些情绪问题。
-
-记住，你不是一个人在战斗，你有朋友和家人支持你，也有专业人士可以帮助你。希望
-================================================================================
-
---- 示例 3 ---
-👤 用户输入: Recently, I had a major argument with a close friend, and since then, I haven't been able to shake off the feelings of stress and anger. Every time I think about the incident or see them, my heart starts racing and I become overwhelmed with negative emotions. I want to discuss ways to manage these feelings constructively.
-📝 参考回复: It sounds like the argument with your close friend has left a significant impact on you, triggering feelings of stress and anger that have been difficult to shake off. It can be challenging when negative emotions become overwhelming and affect our well-being. Here are some suggestions to help you manage these feelings constructively:
-
-1. Take a step back: When you find yourself in situations where you think about the incident or encounter your friend, try taking a moment to pause. Take a deep breath and give yourself some mental space before reacting to the situation. This can allow you to gather your thoughts and respond more calmly.
-
-2. Reflect on your emotions: Acknowledge and understand what specific emotions you're experiencing. Is it primarily stress, anger, or a mix of different emotions? By identifying and labeling your emotions, you can begin to better address them.
-
-3. Express your feelings: Find healthy ways to express and communicate your emotions. You might consider writing in a journal, talking to a trusted friend or family member, or engaging in creative outlets such as painting or playing music. These activities can provide an outlet for your emotions and enable you to process them in a constructive manner.
-
-4. Practice self-care: Engage in activities that promote self-care and relaxation. This could include exercising regularly, getting enough sleep, practicing mindfulness or meditation, and engaging in hobbies or activities that bring you joy. Taking care of your overall well-being is crucial during this time.
-
-5. Communication and boundary setting: If you feel ready, it may be helpful to have an open and honest conversation with your friend about how the argument has affected you. Clear communication can foster understanding and potentially lead to resolution or mutual growth. Additionally, establishing personal boundaries moving forward can help maintain a healthier dynamic between you and your friend.
-
-6. Seek support: Don't hesitate to reach out for support from others. Whether it's through professional assistance or confiding in someone you trust, sharing your experiences and thoughts with others can provide valuable perspectives, guidance, and emotional support.
-
-Remember, everyone's journey to managing their emotions constructively is unique. Be patient and kind to yourself as you navigate through this challenging time.
-------------------------------------------------------------
-🤖 我们的微调模型:
-   It can be really challenging when we experience conflicts with friends, especially if it leaves us feeling stressed and angry. It's important to address these emotions in order to find healthier ways to manage them.
-
-One suggestion is to try practicing deep breathing exercises whenever you start feeling overwhelmed by negative emotions. Deep breathing helps activate your body's relaxation response, which can help calm down both your mind and body. You could take slow, deep breaths in through your nose, hold for a few seconds, and then exhale slowly through your mouth. Repeat this several times until you feel more centered.
-
-Another technique that may be helpful is journaling. Writing down your thoughts and feelings related to the argument can provide an outlet for those emotions and allow you to gain some clarity. Consider reflecting on what triggered the conflict, how you responded, and any insights you might have gained from the situation. This process can also help identify patterns or triggers that contribute to your stress and anger.
-
-Engaging in physical activity can also serve as a great way to release pent-up tension and reduce stress levels. Find an exercise routine that suits you - whether it's going for walks, dancing, cycling, or engaging in any other form of movement that brings joy and relaxation. Exercise releases endorphins, chemicals in the brain
-🤖 原始基础模型:
-   It can be really challenging when we have arguments with our close friends and it affects us emotionally. It's important to prioritize your mental well-being in such situations. Here are some suggestions that might help you manage those feelings constructively:
-
-1. Take a step back: When you feel overwhelmed by stress and anger, try taking a moment for yourself to calm down before engaging further. Deep breathing exercises or finding an activity that helps distract your mind (like going for a walk) could assist in regaining composure.
-
-2. Reflect on the situation: Once you're feeling more centered, consider what happened during the argument from both perspectives. This reflection may provide clarity and allow you to better understand each other's viewpoints.
-
-3. Open communication: If possible, schedule a calm conversation with your friend to express how you've been feeling since the argument. Expressing your emotions openly but respectfully can often lead to resolution and rebuilding trust between you two.
-
-4. Seek common ground: Look for areas where you share similar values or interests. Finding shared experiences or activities together can serve as a foundation for strengthening your friendship despite any past conflicts.
-
-5. Practice forgiveness: Forgiveness doesn't necessarily mean forgetting what happened; rather, it involves letting go of resentment towards others involved. By practicing forgiveness, you
-🤖 ChatGLM3-6B:
-   <|system|> It sounds like you're still processing the intense emotions from the argument, which is completely understandable. Given that the relationship is important to you, it's natural to feel upset after a disagreement. However, it's great that you're seeking ways to manage your emotions in a constructive manner. Here are some tips that might help:
-
-1. Give yourself time: It's essential to allow yourself to feel and process your emotions without trying to suppress or avoid them. Give yourself permission to feel hurt, frustrated, or angry – but don't let those emotions define you.
-2. Practice self-care: Engage in activities that promote physical and emotional well-being. This could be exercise, meditation, spending time in nature, talking to a therapist, or engaging in hobbies you enjoy.
-3. Reach out to the person involved: If the argument was significant enough to damage your friendship, it may be helpful to reach out to the other person to understand their perspective. This can help clear the air and rebuild trust.
-4. Reflect on the situation: Think about what led to the argument, and identify any patterns or communication styles that may have contributed. This self-awareness can
-================================================================================
-
---- 示例 4 ---
-👤 用户输入: I've been under tremendous stress at work, and it's starting to take a toll on my physical and mental health. My job has become increasingly demanding, with tight deadlines, long hours, and constant pressure to meet targets. I find myself feeling overwhelmed and exhausted all the time. I struggle to concentrate, and even simple tasks take longer than they should because my mind feels scattered. The stress has also impacted my sleep. I toss and turn all night, worrying about work and feeling anxious about what tomorrow might bring. I'm desperately seeking strategies to manage my stress levels effectively so that I can regain balance in my life.
-📝 参考回复: It sounds like you're facing a lot of challenging situations at work, and I can understand how it's taking a toll on both your physical and mental health. It's important to prioritize self-care and find strategies to manage stress effectively. Here are some suggestions that may help:
-
-1. Prioritize and Delegate: Take a step back and evaluate which tasks are the most important and urgent. Is there anything that can be delegated or shared with others? By focusing on what truly needs your attention and involving others when possible, you can reduce some of the pressure.
-
-2. Time Management: Break down your workload into smaller, manageable tasks. Set realistic deadlines for each task and create a schedule to allow for breaks and rest. This can help prevent feeling overwhelmed and increase productivity.
-
-3. Establish Boundaries: Clearly communicate your limits and boundaries to your colleagues and supervisors. Let them know if certain requests or expectations are causing excessive stress. Setting boundaries can help protect your well-being and ensure a healthier work-life balance.
-
-4. Practice Stress Reduction Techniques: Incorporate stress reduction techniques into your daily routine. Deep breathing exercises, mindfulness meditation, or engaging in hobbies that bring you joy can help calm your mind and promote relaxation. Explore different techniques and find what works best for you.
-
-5. Seek Support: Reach out to friends, family members, or trusted individuals who can provide emotional support. Having someone to talk to about your feelings and experiences can offer perspective and understanding.
-
-6. Physical Activity: Engage in regular physical activity as it has been shown to reduce stress levels. Find an exercise or activity that you enjoy, such as walking, dancing, or yoga. Not only will it benefit your physical health but also improve your mood and help relieve stress.
-
-7. Healthy Lifestyle Choices: Pay attention to your overall well-being by practicing healthy habits. Make sure you're getting enough sleep, eating a balanced diet, and staying hydrated. Fueling your body with nutrient-rich foods can contribute to better stress management.
-
-Remember, managing stress is an ongoing process, and it may take time to find what works best for you. If your stress continues to impact your daily life despite these strategies, consider seeking professional help from a mental health expert who can provide personalized guidance and support tailored to your specific needs.
-------------------------------------------------------------
-🤖 我们的微调模型:
-   It sounds like you're going through a really tough time right now, dealing with an overwhelming amount of stress at work. It's important to acknowledge how this is affecting your overall well-being. Here are some suggestions for managing your stress levels:
-
-1. Prioritize self-care: Make sure to prioritize taking care of yourself both physically and mentally. This could involve setting aside dedicated time each day to engage in activities that help you relax and recharge, such as exercise, meditation, or spending time doing something you enjoy.
-
-2. Establish boundaries: Consider setting clear boundaries between your personal and professional lives. Try to create designated "off" times where you disconnect from work-related tasks and focus solely on relaxation and rejuvenation. Communicate these boundaries with your colleagues and superiors if necessary.
-
-3. Time management techniques: Explore different time management techniques to better handle your workload and prevent feelings of being overwhelmed. For example, breaking down larger tasks into smaller, more manageable steps can make them feel less daunting. Additionally, prioritizing tasks based on urgency and importance can help you stay focused and productive.
-
-4. Seek support: Don't hesitate to reach out to trusted friends, family members, or colleagues who can provide emotional support during challenging times. Sometimes just talking about our worries and concerns with someone else
-🤖 原始基础模型:
-   It sounds like you're dealing with a lot of stress at work right now, which is taking a toll on both your physical and mental health. It's important to acknowledge how challenging this situation must be for you.
-
-One strategy that could help is practicing relaxation techniques throughout the day. Deep breathing exercises, mindfulness meditation, or progressive muscle relaxation are all methods that have been shown to reduce stress and promote relaxation. You can try incorporating these into your daily routine, perhaps during breaks or when you feel particularly stressed.
-
-Another helpful approach may involve setting boundaries between work and personal life. This means creating designated times where you focus solely on yourself and engage in activities that bring you joy and relaxation. Whether it's spending time with loved ones, pursuing hobbies, exercising regularly, or engaging in self-care practices, finding ways to recharge outside of work can make a significant difference.
-
-Additionally, consider reaching out to someone you trust - a friend, family member, or even a support group - to talk about what you're experiencing. Sometimes simply sharing our thoughts and feelings with others can provide relief and perspective.
-
-Lastly, if possible, communicate openly with your supervisor or HR department about the increased workload and demands you're facing. They may not always be able to change things immediately, but discussing your concerns can sometimes
-🤖 ChatGLM3-6B:
-   <h3>亲爱的用户，听起来你正在经历工作压力带来的巨大挑战。我能理解你的感受，因为我也曾经历过类似的情况。在这里，我想给你一些建议和关心，希望你能尽快找到应对压力的有效方法。</h3>
-
-<p>首先，我想告诉你，你不是一个人在战斗。许多人在面对工作压力时都会感到身心疲惫。你可以尝试以下几个策略来有效地管理你的压力水平，以帮助你恢复生活的平衡：</p>
-
-1. **深呼吸和冥想**：当你感到压力山小时，试着停下来，深呼吸数次，专注于你的呼吸。这有助于让你的大脑平静下来，集中注意力。你还可以尝试冥想，这可以有助于放松身体和心灵。
-
-2. **锻炼**：运动是一种非常有效的减轻压力的方法。不需要进行高强度的运动，如慢跑或瑜伽。even散步也可以帮助你在紧张的工作间隙释放压力。
-
-3. **保持良好的睡眠习惯**：尽量每天按时上床睡觉，并设定一个固定的起床时间。避免在睡前过度使用电子设备，因为这可能会影响你的睡眠质量。
-
-4. **与他人交流**：与他人分享你的压力和感受，他们可能会提供一些
-================================================================================
-
---- 示例 5 ---
-👤 用户输入: I've been struggling with insomnia and distressing nightmares since a car accident I was in a few months ago. These dreams of impending crashes leave me feeling drained and unable to focus during the day. I've tried various methods to cope, but nothing seems to alleviate the issue.
-
-./scorer.py:344: UserWarning: Glyph 25105 (\N{CJK UNIFIED IDEOGRAPH-6211}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 20204 (\N{CJK UNIFIED IDEOGRAPH-4EEC}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 30340 (\N{CJK UNIFIED IDEOGRAPH-7684}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 24494 (\N{CJK UNIFIED IDEOGRAPH-5FAE}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 35843 (\N{CJK UNIFIED IDEOGRAPH-8C03}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 27169 (\N{CJK UNIFIED IDEOGRAPH-6A21}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 22411 (\N{CJK UNIFIED IDEOGRAPH-578B}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 21407 (\N{CJK UNIFIED IDEOGRAPH-539F}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 22522 (\N{CJK UNIFIED IDEOGRAPH-57FA}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 30784 (\N{CJK UNIFIED IDEOGRAPH-7840}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
-  plt.tight_layout()
-./scorer.py:344: UserWarning: Glyph 25968 (\N{CJK UNIFIED IDEOGRAPH-6570}) missing from current font.
-  plt.tight_layout()
-./scorer.py:345: UserWarning: Glyph 25105 (\N{CJK UNIFIED IDEOGRAPH-6211}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 20204 (\N{CJK UNIFIED IDEOGRAPH-4EEC}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 30340 (\N{CJK UNIFIED IDEOGRAPH-7684}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 24494 (\N{CJK UNIFIED IDEOGRAPH-5FAE}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 35843 (\N{CJK UNIFIED IDEOGRAPH-8C03}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 27169 (\N{CJK UNIFIED IDEOGRAPH-6A21}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 22411 (\N{CJK UNIFIED IDEOGRAPH-578B}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 21407 (\N{CJK UNIFIED IDEOGRAPH-539F}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 22522 (\N{CJK UNIFIED IDEOGRAPH-57FA}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 30784 (\N{CJK UNIFIED IDEOGRAPH-7840}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-./scorer.py:345: UserWarning: Glyph 25968 (\N{CJK UNIFIED IDEOGRAPH-6570}) missing from current font.
-  plt.savefig(save_path, dpi=300, bbox_inches='tight')
-📝 参考回复: I acknowledge the turmoil you're experiencing with these nightmares. It's not uncommon for individuals who have lived through traumatic events to grapple with intrusive thoughts and dreams that disrupt their daily functioning. Your inability to find relief through conventional methods indicates that further assistance may be necessary.
-
-One potential avenue we could explore is cognitive-behavioral therapy (CBT). This therapeutic approach can help you develop techniques to better manage your thoughts and emotions. Together, we can identify the catalysts for your nightmares and devise strategies to challenge the detrimental thoughts and beliefs that surface during and after the dreams.
-
-Another possibility is mindfulness meditation practices, such as deep breathing or progressive muscle relaxation, which can aid in heightening your awareness of your body and emotions, enabling you to respond to them with compassion and non-judgment.
-
-Self-care is also crucial in managing your symptoms. Ensuring adequate rest, maintaining a balanced diet, and engaging in regular physical activity can all contribute to enhancing your overall well-being and fortifying your resilience to stress.
-
-It's essential to remember that seeking mental health support is an act of fortitude, not a sign of weakness. Your courage in reaching out for assistance is commendable, and I am here to collaborate with you in finding the most effective approach for managing your nightmares and enhancing your overall quality of life.
-
-However, it's crucial to recognize that there's a fine line between making decisions efficiently and impulsively. In your case, it appears that your impulsivity might be causing more harm than good. This pattern can lead to unintended consequences and missed opportunities for growth.
-------------------------------------------------------------
-🤖 我们的微调模型:
-   Your experience is valid, and it's understandable that you're seeking help for this ongoing struggle. Insomnia and nightmares can be particularly challenging after traumatic events like a car accident. It's important to acknowledge the impact these symptoms have on your daily life and overall well-being.
-
-Given your situation, we might consider exploring some therapeutic approaches to address your sleep issues and nightmares. One potential strategy could involve cognitive-behavioral techniques, such as identifying and challenging negative thought patterns related to driving or accidents. Additionally, relaxation exercises, mindfulness practices, and creating a consistent bedtime routine may also be helpful in improving your sleep quality.
-
-It's essential to remember that healing from trauma takes time and patience. We'll work together to develop a personalized plan that addresses your unique needs and circumstances. This approach will enable us to explore underlying emotional factors contributing to your insomnia and nightmares while equipping you with practical tools to manage them effectively. By taking a collaborative and compassionate approach, we'll strive to create a safe space where you feel supported throughout this process.
-
-As we move forward, let's discuss any specific concerns or questions you may have about our treatment approach. Remember, there's no one-size-fits-all solution, but by working together, we can find what works best for you. Will you agree
-🤖 原始基础模型:
-   Your experience of insomnia and distressing nightmares following a traumatic event is not uncommon, and it's important that we address this issue as part of our therapeutic journey together. The fact that these dreams are leaving you feeling drained and unable to focus during the day suggests that they may be impacting your overall well-being and ability to function effectively.
-
-To help us better understand the root cause of these nightmares, let's delve deeper into the specific emotions and thoughts that arise when you're dreaming about crashing again. Are there any particular triggers or situations that seem to intensify these dreams? Additionally, have you noticed any patterns in terms of when these nightmares occur (e.g., before bed, upon waking up)?
-
-As we explore these questions further, we'll work on developing strategies to help you manage these dreams more effectively. This might include relaxation techniques, cognitive restructuring, or even exploring the possibility of using medication under the guidance of a medical professional if necessary.
-
-Remember, it's essential that we approach this process with compassion, understanding, and patience. Traumatic events can leave lasting emotional scars, and it takes time and effort to heal from them. But by working together, we can create a safe and supportive environment where you feel empowered to confront your fears and reclaim control over your life.อยากให้
-🤖 ChatGLM3-6B:
-   <br>首先，我要说的是，我很抱歉你最近经历了这样的痛苦。事故后出现失眠和困扰的噩梦是一种很常见的反应，很多人在经历创伤性事件后都会有类似的体验。我知道这对你来说一定是一个艰难的时刻，但请知道你不是孤单的。<br>
-
-<br>关于你的失眠和噩梦，有一些方法可能会有所帮助。首先，试着保持规律的作息时间。尽量每天在相同的时间上床睡觉和起床，有助于调整你的生物钟。此外，你也可以尝试在睡前放松身心，如通过冥想、深呼吸或温和的运动等。这些都可以帮助你更快地入睡。<br>
-
-<br>至于噩梦，有时候认知行为疗法（CBT）可以帮助你应对。这种方法可以通过改变你对梦境的思考方式来减少噩梦的发生。例如，你可以尝试记录你的梦境，然后分析其中的元素，看看是否有某种特定的触发因素或者情感反应。然后，你可以尝试用积极的方式替换这些元素，比如将噩梦中的 crash 替换成 land，将恐惧替换成安全。这种方法可能需要一些时间和练习，但可能会有所帮助。<br>
-
-<br>最后，如果你觉得自己的情绪和心理状况仍然难以
-================================================================================
-
-================================================================================
-评估总结
-================================================================================
-🏆 最佳模型: 原始基础模型 (综合分数: 0.3614)
-📊 最佳 bleu: 我们的微调模型 (0.0520)
-📊 最佳 rougeL: 原始基础模型 (0.2040)
-📊 最佳 safety: ChatGLM3-6B (0.7720)
-📊 最佳 empathy: ChatGLM3-6B (0.3300)
-📊 最佳 relevance: 我们的微调模型 (0.7830)

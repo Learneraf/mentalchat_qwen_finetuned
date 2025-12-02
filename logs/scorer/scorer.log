@@ -18,16 +18,10 @@ Some weights of the model checkpoint at cardiffnlp/twitter-roberta-base-sentimen
 
 评估模型: Base Qwen1.5-4B
 ============================================================
-加载模型: Qwen/Qwen1.5-4B
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.82s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.90s/it]
-  生成 Base Qwen1.5-4B 的回复...
-生成 Base Qwen1.5-4B 的回复:   0%|          | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
-生成 Base Qwen1.5-4B 的回复:   3%|▎         | 1/30 [00:20<09:49, 20.32s/it]生成 Base Qwen1.5-4B 的回复:   7%|▋         | 2/30 [01:16<19:21, 41.48s/it]生成 Base Qwen1.5-4B 的回复:  10%|█         | 3/30 [01:43<15:35, 34.67s/it]生成 Base Qwen1.5-4B 的回复:  13%|█▎        | 4/30 [02:04<12:40, 29.25s/it]生成 Base Qwen1.5-4B 的回复:  17%|█▋        | 5/30 [02:27<11:13, 26.95s/it]生成 Base Qwen1.5-4B 的回复:  20%|██        | 6/30 [02:46<09:48, 24.52s/it]生成 Base Qwen1.5-4B 的回复:  23%|██▎       | 7/30 [03:04<08:31, 22.22s/it]生成 Base Qwen1.5-4B 的回复:  27%|██▋       | 8/30 [04:01<12:16, 33.48s/it]生成 Base Qwen1.5-4B 的回复:  30%|███       | 9/30 [04:59<14:21, 41.02s/it]生成 Base Qwen1.5-4B 的回复:  33%|███▎      | 10/30 [05:56<15:17, 45.85s/it]生成 Base Qwen1.5-4B 的回复:  37%|███▋      | 11/30 [06:48<15:07, 47.74s/it]生成 Base Qwen1.5-4B 的回复:  40%|████      | 12/30 [07:45<15:09, 50.56s/it]生成 Base Qwen1.5-4B 的回复:  43%|████▎     | 13/30 [08:03<11:34, 40.83s/it]生成 Base Qwen1.5-4B 的回复:  47%|████▋     | 14/30 [09:00<12:12, 45.77s/it]生成 Base Qwen1.5-4B 的回复:  50%|█████     | 15/30 [09:51<11:47, 47.19s/it]生成 Base Qwen1.5-4B 的回复:  53%|█████▎    | 16/30 [10:48<11:44, 50.35s/it]生成 Base Qwen1.5-4B 的回复:  57%|█████▋    | 17/30 [11:27<10:08, 46.77s/it]生成 Base Qwen1.5-4B 的回复:  60%|██████    | 18/30 [12:16<09:30, 47.50s/it]生成 Base Qwen1.5-4B 的回复:  63%|██████▎   | 19/30 [12:52<08:04, 44.07s/it]生成 Base Qwen1.5-4B 的回复:  67%|██████▋   | 20/30 [13:48<07:54, 47.47s/it]生成 Base Qwen1.5-4B 的回复:  70%|███████   | 21/30 [14:42<07:27, 49.70s/it]生成 Base Qwen1.5-4B 的回复:  73%|███████▎  | 22/30 [15:21<06:10, 46.36s/it]生成 Base Qwen1.5-4B 的回复:  77%|███████▋  | 23/30 [16:16<05:42, 48.86s/it]生成 Base Qwen1.5-4B 的回复:  80%|████████  | 24/30 [17:10<05:03, 50.53s/it]生成 Base Qwen1.5-4B 的回复:  83%|████████▎ | 25/30 [18:07<04:21, 52.39s/it]生成 Base Qwen1.5-4B 的回复:  87%|████████▋ | 26/30 [19:18<03:52, 58.02s/it]生成 Base Qwen1.5-4B 的回复:  90%|█████████ | 27/30 [20:05<02:44, 54.79s/it]生成 Base Qwen1.5-4B 的回复:  93%|█████████▎| 28/30 [21:14<01:57, 58.98s/it]生成 Base Qwen1.5-4B 的回复:  97%|█████████▋| 29/30 [22:18<01:00, 60.57s/it]生成 Base Qwen1.5-4B 的回复: 100%|██████████| 30/30 [23:29<00:00, 63.58s/it]生成 Base Qwen1.5-4B 的回复: 100%|██████████| 30/30 [23:29<00:00, 46.98s/it]
-清理模型内存...
-模型已从GPU中移除
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 2it [00:00, 15.86it/s]Computing BLEU/ROUGE: 4it [00:00, 17.47it/s]Computing BLEU/ROUGE: 6it [00:00, 18.02it/s]Computing BLEU/ROUGE: 9it [00:00, 17.73it/s]Computing BLEU/ROUGE: 11it [00:00, 14.12it/s]Computing BLEU/ROUGE: 13it [00:00, 14.81it/s]Computing BLEU/ROUGE: 15it [00:01, 12.25it/s]Computing BLEU/ROUGE: 17it [00:01, 11.93it/s]Computing BLEU/ROUGE: 19it [00:01, 12.84it/s]Computing BLEU/ROUGE: 21it [00:01, 12.00it/s]Computing BLEU/ROUGE: 23it [00:01, 11.16it/s]Computing BLEU/ROUGE: 25it [00:01, 11.06it/s]Computing BLEU/ROUGE: 27it [00:02, 10.41it/s]Computing BLEU/ROUGE: 29it [00:02,  9.55it/s]Computing BLEU/ROUGE: 30it [00:02, 12.21it/s]
-Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  13%|█▎        | 4/30 [00:00<00:00, 38.35it/s]You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-Computing Safety Scores:  40%|████      | 12/30 [00:00<00:00, 60.29it/s]Computing Safety Scores:  67%|██████▋   | 20/30 [00:00<00:00, 68.90it/s]Computing Safety Scores:  93%|█████████▎| 28/30 [00:00<00:00, 73.11it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 68.84it/s]
+  从缓存加载 Base Qwen1.5-4B 的预测结果...
+Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 2it [00:00, 13.56it/s]Computing BLEU/ROUGE: 4it [00:00, 15.68it/s]Computing BLEU/ROUGE: 6it [00:00, 16.51it/s]Computing BLEU/ROUGE: 9it [00:00, 16.87it/s]Computing BLEU/ROUGE: 11it [00:00, 13.35it/s]Computing BLEU/ROUGE: 13it [00:00, 14.36it/s]Computing BLEU/ROUGE: 15it [00:01, 12.58it/s]Computing BLEU/ROUGE: 17it [00:01, 12.59it/s]Computing BLEU/ROUGE: 19it [00:01, 13.36it/s]Computing BLEU/ROUGE: 21it [00:01, 12.38it/s]Computing BLEU/ROUGE: 23it [00:01, 11.46it/s]Computing BLEU/ROUGE: 25it [00:01, 11.21it/s]Computing BLEU/ROUGE: 27it [00:02, 10.34it/s]Computing BLEU/ROUGE: 29it [00:02,  9.62it/s]Computing BLEU/ROUGE: 30it [00:02, 12.19it/s]
+Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:   3%|▎         | 1/30 [00:00<00:12,  2.40it/s]You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Computing Safety Scores:  37%|███▋      | 11/30 [00:00<00:00, 26.64it/s]Computing Safety Scores:  70%|███████   | 21/30 [00:00<00:00, 45.33it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 41.34it/s]
 评估完成: Base Qwen1.5-4B
   bleu: 0.0308
   rouge1: 0.3561
@@ -43,18 +37,9 @@ Some weights of the model checkpoint at cardiffnlp/twitter-roberta-base-sentimen
 
 评估模型: Finetuned Qwen1.5-4B
 ============================================================
-加载模型: Qwen/Qwen1.5-4B (带适配器)
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.46s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.53s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.52s/it]
-  已加载适配器: ./model/finetuned-Qwen1.5-4B
-  生成 Finetuned Qwen1.5-4B 的回复...
-生成 Finetuned Qwen1.5-4B 的回复:   0%|          | 0/30 [00:00<?, ?it/s]生成 Finetuned Qwen1.5-4B 的回复:   3%|▎         | 1/30 [00:40<19:20, 40.01s/it]生成 Finetuned Qwen1.5-4B 的回复:   7%|▋         | 2/30 [01:19<18:34, 39.80s/it]生成 Finetuned Qwen1.5-4B 的回复:  10%|█         | 3/30 [03:50<40:43, 90.48s/it]生成 Finetuned Qwen1.5-4B 的回复:  13%|█▎        | 4/30 [04:55<34:47, 80.28s/it]生成 Finetuned Qwen1.5-4B 的回复:  17%|█▋        | 5/30 [06:04<31:49, 76.36s/it]生成 Finetuned Qwen1.5-4B 的回复:  20%|██        | 6/30 [07:03<28:09, 70.41s/it]生成 Finetuned Qwen1.5-4B 的回复:  23%|██▎       | 7/30 [07:45<23:24, 61.07s/it]生成 Finetuned Qwen1.5-4B 的回复:  27%|██▋       | 8/30 [08:59<23:58, 65.40s/it]生成 Finetuned Qwen1.5-4B 的回复:  30%|███       | 9/30 [09:39<20:04, 57.35s/it]生成 Finetuned Qwen1.5-4B 的回复:  33%|███▎      | 10/30 [10:31<18:34, 55.73s/it]生成 Finetuned Qwen1.5-4B 的回复:  37%|███▋      | 11/30 [11:26<17:35, 55.56s/it]生成 Finetuned Qwen1.5-4B 的回复:  40%|████      | 12/30 [11:56<14:19, 47.73s/it]生成 Finetuned Qwen1.5-4B 的回复:  43%|████▎     | 13/30 [13:03<15:11, 53.64s/it]生成 Finetuned Qwen1.5-4B 的回复:  47%|████▋     | 14/30 [14:29<16:51, 63.22s/it]生成 Finetuned Qwen1.5-4B 的回复:  50%|█████     | 15/30 [15:33<15:53, 63.55s/it]生成 Finetuned Qwen1.5-4B 的回复:  53%|█████▎    | 16/30 [16:48<15:38, 67.03s/it]生成 Finetuned Qwen1.5-4B 的回复:  57%|█████▋    | 17/30 [17:47<13:59, 64.57s/it]生成 Finetuned Qwen1.5-4B 的回复:  60%|██████    | 18/30 [18:21<11:05, 55.50s/it]生成 Finetuned Qwen1.5-4B 的回复:  63%|██████▎   | 19/30 [19:03<09:23, 51.24s/it]生成 Finetuned Qwen1.5-4B 的回复:  67%|██████▋   | 20/30 [19:57<08:41, 52.18s/it]生成 Finetuned Qwen1.5-4B 的回复:  70%|███████   | 21/30 [20:53<08:00, 53.36s/it]生成 Finetuned Qwen1.5-4B 的回复:  73%|███████▎  | 22/30 [21:39<06:49, 51.18s/it]生成 Finetuned Qwen1.5-4B 的回复:  77%|███████▋  | 23/30 [22:20<05:36, 48.06s/it]生成 Finetuned Qwen1.5-4B 的回复:  80%|████████  | 24/30 [22:50<04:16, 42.76s/it]生成 Finetuned Qwen1.5-4B 的回复:  83%|████████▎ | 25/30 [23:36<03:38, 43.75s/it]生成 Finetuned Qwen1.5-4B 的回复:  87%|████████▋ | 26/30 [24:17<02:51, 42.86s/it]生成 Finetuned Qwen1.5-4B 的回复:  90%|█████████ | 27/30 [25:13<02:20, 46.69s/it]生成 Finetuned Qwen1.5-4B 的回复:  93%|█████████▎| 28/30 [26:00<01:33, 46.75s/it]生成 Finetuned Qwen1.5-4B 的回复:  97%|█████████▋| 29/30 [26:50<00:47, 47.84s/it]生成 Finetuned Qwen1.5-4B 的回复: 100%|██████████| 30/30 [27:03<00:00, 37.30s/it]生成 Finetuned Qwen1.5-4B 的回复: 100%|██████████| 30/30 [27:03<00:00, 54.11s/it]
-清理模型内存...
-模型已从GPU中移除
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 32.53it/s]Computing BLEU/ROUGE: 8it [00:00, 27.98it/s]Computing BLEU/ROUGE: 11it [00:00, 27.58it/s]Computing BLEU/ROUGE: 14it [00:00, 26.47it/s]Computing BLEU/ROUGE: 17it [00:00, 22.75it/s]Computing BLEU/ROUGE: 20it [00:00, 23.15it/s]Computing BLEU/ROUGE: 23it [00:00, 24.73it/s]Computing BLEU/ROUGE: 26it [00:01, 25.29it/s]Computing BLEU/ROUGE: 29it [00:01, 21.15it/s]Computing BLEU/ROUGE: 30it [00:01, 24.54it/s]
-Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  33%|███▎      | 10/30 [00:00<00:00, 96.96it/s]Computing Safety Scores:  67%|██████▋   | 20/30 [00:00<00:00, 98.01it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 98.75it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 98.39it/s]
-WARNING:transformers_modules.THUDM.chatglm3-6b.e9e0406d062cdb887444fe5bd546833920abd4ac.tokenization_chatglm:Setting eos_token is not supported, use the default one.
-WARNING:transformers_modules.THUDM.chatglm3-6b.e9e0406d062cdb887444fe5bd546833920abd4ac.tokenization_chatglm:Setting pad_token is not supported, use the default one.
-WARNING:transformers_modules.THUDM.chatglm3-6b.e9e0406d062cdb887444fe5bd546833920abd4ac.tokenization_chatglm:Setting unk_token is not supported, use the default one.
+  从缓存加载 Finetuned Qwen1.5-4B 的预测结果...
+Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 29.51it/s]Computing BLEU/ROUGE: 7it [00:00, 24.68it/s]Computing BLEU/ROUGE: 11it [00:00, 26.95it/s]Computing BLEU/ROUGE: 14it [00:00, 26.05it/s]Computing BLEU/ROUGE: 17it [00:00, 22.30it/s]Computing BLEU/ROUGE: 20it [00:00, 22.51it/s]Computing BLEU/ROUGE: 23it [00:00, 24.04it/s]Computing BLEU/ROUGE: 26it [00:01, 24.64it/s]Computing BLEU/ROUGE: 29it [00:01, 20.76it/s]Computing BLEU/ROUGE: 30it [00:01, 23.81it/s]
+Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  33%|███▎      | 10/30 [00:00<00:00, 96.21it/s]Computing Safety Scores:  67%|██████▋   | 20/30 [00:00<00:00, 97.07it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 97.91it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 97.54it/s]
 评估完成: Finetuned Qwen1.5-4B
   bleu: 0.0769
   rouge1: 0.5155
@@ -70,17 +55,9 @@ WARNING:transformers_modules.THUDM.chatglm3-6b.e9e0406d062cdb887444fe5bd54683392
 
 评估模型: Base chatglm3-6b
 ============================================================
-加载模型: THUDM/chatglm3-6b
-Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:03<00:21,  3.57s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:07<00:18,  3.69s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:11<00:14,  3.70s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:14<00:10,  3.63s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:18<00:07,  3.68s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:22<00:03,  3.68s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:24<00:00,  3.16s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:24<00:00,  3.44s/it]
-  生成 Base chatglm3-6b 的回复...
-生成 Base chatglm3-6b 的回复:   0%|          | 0/30 [00:00<?, ?it/s]生成 Base chatglm3-6b 的回复:   3%|▎         | 1/30 [00:10<05:03, 10.48s/it]生成 Base chatglm3-6b 的回复:   7%|▋         | 2/30 [00:20<04:53, 10.46s/it]生成 Base chatglm3-6b 的回复:  10%|█         | 3/30 [00:31<04:44, 10.53s/it]生成 Base chatglm3-6b 的回复:  13%|█▎        | 4/30 [00:42<04:43, 10.89s/it]生成 Base chatglm3-6b 的回复:  17%|█▋        | 5/30 [01:04<06:08, 14.74s/it]生成 Base chatglm3-6b 的回复:  20%|██        | 6/30 [01:13<05:07, 12.80s/it]生成 Base chatglm3-6b 的回复:  23%|██▎       | 7/30 [01:22<04:23, 11.45s/it]生成 Base chatglm3-6b 的回复:  27%|██▋       | 8/30 [01:31<03:58, 10.84s/it]生成 Base chatglm3-6b 的回复:  30%|███       | 9/30 [01:37<03:17,  9.38s/it]生成 Base chatglm3-6b 的回复:  33%|███▎      | 10/30 [01:51<03:34, 10.75s/it]生成 Base chatglm3-6b 的回复:  37%|███▋      | 11/30 [02:05<03:40, 11.62s/it]生成 Base chatglm3-6b 的回复:  40%|████      | 12/30 [02:17<03:31, 11.77s/it]生成 Base chatglm3-6b 的回复:  43%|████▎     | 13/30 [02:30<03:25, 12.09s/it]生成 Base chatglm3-6b 的回复:  47%|████▋     | 14/30 [02:34<02:36,  9.80s/it]生成 Base chatglm3-6b 的回复:  50%|█████     | 15/30 [02:42<02:18,  9.21s/it]生成 Base chatglm3-6b 的回复:  53%|█████▎    | 16/30 [02:48<01:54,  8.18s/it]生成 Base chatglm3-6b 的回复:  57%|█████▋    | 17/30 [02:59<01:59,  9.17s/it]生成 Base chatglm3-6b 的回复:  60%|██████    | 18/30 [03:11<01:58,  9.87s/it]生成 Base chatglm3-6b 的回复:  63%|██████▎   | 19/30 [03:20<01:44,  9.50s/it]生成 Base chatglm3-6b 的回复:  67%|██████▋   | 20/30 [03:33<01:47, 10.72s/it]生成 Base chatglm3-6b 的回复:  70%|███████   | 21/30 [03:38<01:20,  8.92s/it]生成 Base chatglm3-6b 的回复:  73%|███████▎  | 22/30 [03:48<01:15,  9.41s/it]生成 Base chatglm3-6b 的回复:  77%|███████▋  | 23/30 [03:57<01:03,  9.08s/it]生成 Base chatglm3-6b 的回复:  80%|████████  | 24/30 [04:00<00:44,  7.42s/it]生成 Base chatglm3-6b 的回复:  83%|████████▎ | 25/30 [04:13<00:45,  9.00s/it]生成 Base chatglm3-6b 的回复:  87%|████████▋ | 26/30 [04:22<00:35,  8.97s/it]生成 Base chatglm3-6b 的回复:  90%|█████████ | 27/30 [04:35<00:30, 10.13s/it]生成 Base chatglm3-6b 的回复:  93%|█████████▎| 28/30 [04:57<00:27, 13.72s/it]生成 Base chatglm3-6b 的回复:  97%|█████████▋| 29/30 [05:07<00:12, 12.63s/it]生成 Base chatglm3-6b 的回复: 100%|██████████| 30/30 [05:15<00:00, 11.33s/it]生成 Base chatglm3-6b 的回复: 100%|██████████| 30/30 [05:15<00:00, 10.52s/it]
-清理模型内存...
-模型已从GPU中移除
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 38.12it/s]Computing BLEU/ROUGE: 8it [00:00, 35.53it/s]Computing BLEU/ROUGE: 12it [00:00, 35.74it/s]Computing BLEU/ROUGE: 17it [00:00, 37.73it/s]Computing BLEU/ROUGE: 21it [00:00, 37.61it/s]Computing BLEU/ROUGE: 25it [00:00, 36.76it/s]Computing BLEU/ROUGE: 29it [00:00, 30.31it/s]Computing BLEU/ROUGE: 30it [00:00, 34.49it/s]
-Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  33%|███▎      | 10/30 [00:00<00:00, 98.51it/s]Computing Safety Scores:  70%|███████   | 21/30 [00:00<00:00, 99.86it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 100.37it/s]
-WARNING:transformers_modules.THUDM.chatglm3-6b.e9e0406d062cdb887444fe5bd546833920abd4ac.tokenization_chatglm:Setting eos_token is not supported, use the default one.
-WARNING:transformers_modules.THUDM.chatglm3-6b.e9e0406d062cdb887444fe5bd546833920abd4ac.tokenization_chatglm:Setting pad_token is not supported, use the default one.
-WARNING:transformers_modules.THUDM.chatglm3-6b.e9e0406d062cdb887444fe5bd546833920abd4ac.tokenization_chatglm:Setting unk_token is not supported, use the default one.
+  从缓存加载 Base chatglm3-6b 的预测结果...
+Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 36.20it/s]Computing BLEU/ROUGE: 8it [00:00, 33.65it/s]Computing BLEU/ROUGE: 12it [00:00, 33.71it/s]Computing BLEU/ROUGE: 17it [00:00, 36.28it/s]Computing BLEU/ROUGE: 21it [00:00, 37.07it/s]Computing BLEU/ROUGE: 25it [00:00, 36.26it/s]Computing BLEU/ROUGE: 29it [00:00, 30.06it/s]Computing BLEU/ROUGE: 30it [00:00, 33.75it/s]
+Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  33%|███▎      | 10/30 [00:00<00:00, 98.44it/s]Computing Safety Scores:  67%|██████▋   | 20/30 [00:00<00:00, 98.98it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 98.98it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 98.86it/s]
 评估完成: Base chatglm3-6b
   bleu: 0.0453
   rouge1: 0.4711
@@ -96,15 +73,9 @@ WARNING:transformers_modules.THUDM.chatglm3-6b.e9e0406d062cdb887444fe5bd54683392
 
 评估模型: Finetuned chatglm3-6b
 ============================================================
-加载模型: THUDM/chatglm3-6b (带适配器)
-Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:03<00:21,  3.52s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:07<00:18,  3.67s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:11<00:14,  3.69s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:14<00:10,  3.61s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:18<00:07,  3.67s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:21<00:03,  3.68s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:24<00:00,  3.15s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:24<00:00,  3.43s/it]
-  已加载适配器: ./model/finetuned-chatglm3-6B
-  生成 Finetuned chatglm3-6b 的回复...
-生成 Finetuned chatglm3-6b 的回复:   0%|          | 0/30 [00:00<?, ?it/s]生成 Finetuned chatglm3-6b 的回复:   3%|▎         | 1/30 [00:05<02:40,  5.53s/it]生成 Finetuned chatglm3-6b 的回复:   7%|▋         | 2/30 [00:24<06:10, 13.25s/it]生成 Finetuned chatglm3-6b 的回复:  10%|█         | 3/30 [00:52<09:03, 20.13s/it]生成 Finetuned chatglm3-6b 的回复:  13%|█▎        | 4/30 [01:22<10:22, 23.96s/it]生成 Finetuned chatglm3-6b 的回复:  17%|█▋        | 5/30 [01:54<11:15, 27.02s/it]生成 Finetuned chatglm3-6b 的回复:  20%|██        | 6/30 [02:19<10:28, 26.18s/it]生成 Finetuned chatglm3-6b 的回复:  23%|██▎       | 7/30 [02:32<08:25, 21.96s/it]生成 Finetuned chatglm3-6b 的回复:  27%|██▋       | 8/30 [02:43<06:49, 18.60s/it]生成 Finetuned chatglm3-6b 的回复:  30%|███       | 9/30 [02:49<05:04, 14.51s/it]生成 Finetuned chatglm3-6b 的回复:  33%|███▎      | 10/30 [03:24<06:56, 20.83s/it]生成 Finetuned chatglm3-6b 的回复:  37%|███▋      | 11/30 [03:38<05:54, 18.67s/it]生成 Finetuned chatglm3-6b 的回复:  40%|████      | 12/30 [03:49<04:55, 16.40s/it]生成 Finetuned chatglm3-6b 的回复:  43%|████▎     | 13/30 [04:18<05:43, 20.18s/it]生成 Finetuned chatglm3-6b 的回复:  47%|████▋     | 14/30 [04:23<04:11, 15.71s/it]生成 Finetuned chatglm3-6b 的回复:  50%|█████     | 15/30 [04:59<05:24, 21.65s/it]生成 Finetuned chatglm3-6b 的回复:  53%|█████▎    | 16/30 [05:21<05:06, 21.90s/it]生成 Finetuned chatglm3-6b 的回复:  57%|█████▋    | 17/30 [05:50<05:12, 24.07s/it]生成 Finetuned chatglm3-6b 的回复:  60%|██████    | 18/30 [05:58<03:50, 19.21s/it]生成 Finetuned chatglm3-6b 的回复:  63%|██████▎   | 19/30 [06:24<03:54, 21.35s/it]生成 Finetuned chatglm3-6b 的回复:  67%|██████▋   | 20/30 [06:47<03:37, 21.78s/it]生成 Finetuned chatglm3-6b 的回复:  70%|███████   | 21/30 [06:54<02:36, 17.38s/it]生成 Finetuned chatglm3-6b 的回复:  73%|███████▎  | 22/30 [07:22<02:43, 20.48s/it]生成 Finetuned chatglm3-6b 的回复:  77%|███████▋  | 23/30 [07:50<02:39, 22.76s/it]生成 Finetuned chatglm3-6b 的回复:  80%|████████  | 24/30 [07:55<01:44, 17.46s/it]生成 Finetuned chatglm3-6b 的回复:  83%|████████▎ | 25/30 [08:30<01:52, 22.53s/it]生成 Finetuned chatglm3-6b 的回复:  87%|████████▋ | 26/30 [08:56<01:34, 23.65s/it]生成 Finetuned chatglm3-6b 的回复:  90%|█████████ | 27/30 [09:29<01:19, 26.45s/it]生成 Finetuned chatglm3-6b 的回复:  93%|█████████▎| 28/30 [09:55<00:52, 26.43s/it]生成 Finetuned chatglm3-6b 的回复:  97%|█████████▋| 29/30 [10:24<00:27, 27.15s/it]生成 Finetuned chatglm3-6b 的回复: 100%|██████████| 30/30 [10:31<00:00, 20.94s/it]生成 Finetuned chatglm3-6b 的回复: 100%|██████████| 30/30 [10:31<00:00, 21.03s/it]
-清理模型内存...
-模型已从GPU中移除
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 27.59it/s]Computing BLEU/ROUGE: 7it [00:00, 25.20it/s]Computing BLEU/ROUGE: 11it [00:00, 30.40it/s]Computing BLEU/ROUGE: 15it [00:00, 29.56it/s]Computing BLEU/ROUGE: 19it [00:00, 28.61it/s]Computing BLEU/ROUGE: 23it [00:00, 27.98it/s]Computing BLEU/ROUGE: 26it [00:00, 27.39it/s]Computing BLEU/ROUGE: 29it [00:01, 22.65it/s]Computing BLEU/ROUGE: 30it [00:01, 26.61it/s]
-Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  33%|███▎      | 10/30 [00:00<00:00, 92.49it/s]Computing Safety Scores:  67%|██████▋   | 20/30 [00:00<00:00, 95.70it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 95.95it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 95.47it/s]
+  从缓存加载 Finetuned chatglm3-6b 的预测结果...
+Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 26.72it/s]Computing BLEU/ROUGE: 7it [00:00, 24.30it/s]Computing BLEU/ROUGE: 11it [00:00, 29.59it/s]Computing BLEU/ROUGE: 15it [00:00, 29.57it/s]Computing BLEU/ROUGE: 19it [00:00, 28.53it/s]Computing BLEU/ROUGE: 22it [00:00, 28.63it/s]Computing BLEU/ROUGE: 25it [00:00, 26.31it/s]Computing BLEU/ROUGE: 28it [00:01, 22.95it/s]Computing BLEU/ROUGE: 30it [00:01, 25.95it/s]
+Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  33%|███▎      | 10/30 [00:00<00:00, 93.39it/s]Computing Safety Scores:  67%|██████▋   | 20/30 [00:00<00:00, 94.84it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 95.98it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 95.45it/s]
 评估完成: Finetuned chatglm3-6b
   bleu: 0.0920
   rouge1: 0.5291
@@ -120,14 +91,9 @@ WARNING:transformers_modules.THUDM.chatglm3-6b.e9e0406d062cdb887444fe5bd54683392
 
 评估模型: Base Qwen2.5-7B
 ============================================================
-加载模型: Qwen/Qwen2.5-7B
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.21s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.34s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:16<00:05,  5.35s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  5.13s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  5.20s/it]
-  生成 Base Qwen2.5-7B 的回复...
-生成 Base Qwen2.5-7B 的回复:   0%|          | 0/30 [00:00<?, ?it/s]生成 Base Qwen2.5-7B 的回复:   3%|▎         | 1/30 [00:13<06:29, 13.43s/it]生成 Base Qwen2.5-7B 的回复:   7%|▋         | 2/30 [00:23<05:25, 11.62s/it]生成 Base Qwen2.5-7B 的回复:  10%|█         | 3/30 [00:32<04:35, 10.19s/it]生成 Base Qwen2.5-7B 的回复:  13%|█▎        | 4/30 [00:44<04:48, 11.10s/it]生成 Base Qwen2.5-7B 的回复:  17%|█▋        | 5/30 [01:02<05:33, 13.35s/it]生成 Base Qwen2.5-7B 的回复:  20%|██        | 6/30 [01:19<05:55, 14.81s/it]生成 Base Qwen2.5-7B 的回复:  23%|██▎       | 7/30 [01:29<05:02, 13.17s/it]生成 Base Qwen2.5-7B 的回复:  27%|██▋       | 8/30 [01:36<04:09, 11.32s/it]生成 Base Qwen2.5-7B 的回复:  30%|███       | 9/30 [01:51<04:21, 12.45s/it]生成 Base Qwen2.5-7B 的回复:  33%|███▎      | 10/30 [01:57<03:24, 10.24s/it]生成 Base Qwen2.5-7B 的回复:  37%|███▋      | 11/30 [02:04<02:55,  9.26s/it]生成 Base Qwen2.5-7B 的回复:  40%|████      | 12/30 [02:09<02:26,  8.12s/it]生成 Base Qwen2.5-7B 的回复:  43%|████▎     | 13/30 [02:22<02:42,  9.56s/it]生成 Base Qwen2.5-7B 的回复:  47%|████▋     | 14/30 [02:23<01:53,  7.09s/it]生成 Base Qwen2.5-7B 的回复:  50%|█████     | 15/30 [02:36<02:09,  8.66s/it]生成 Base Qwen2.5-7B 的回复:  53%|█████▎    | 16/30 [02:37<01:31,  6.57s/it]生成 Base Qwen2.5-7B 的回复:  57%|█████▋    | 17/30 [02:49<01:44,  8.07s/it]生成 Base Qwen2.5-7B 的回复:  60%|██████    | 18/30 [02:58<01:39,  8.32s/it]生成 Base Qwen2.5-7B 的回复:  63%|██████▎   | 19/30 [03:04<01:24,  7.66s/it]生成 Base Qwen2.5-7B 的回复:  67%|██████▋   | 20/30 [03:16<01:30,  9.09s/it]生成 Base Qwen2.5-7B 的回复:  70%|███████   | 21/30 [03:34<01:45, 11.77s/it]生成 Base Qwen2.5-7B 的回复:  73%|███████▎  | 22/30 [03:47<01:34, 11.86s/it]生成 Base Qwen2.5-7B 的回复:  77%|███████▋  | 23/30 [03:53<01:12, 10.37s/it]生成 Base Qwen2.5-7B 的回复:  80%|████████  | 24/30 [04:00<00:55,  9.30s/it]生成 Base Qwen2.5-7B 的回复:  83%|████████▎ | 25/30 [04:09<00:45,  9.13s/it]生成 Base Qwen2.5-7B 的回复:  87%|████████▋ | 26/30 [04:20<00:38,  9.58s/it]生成 Base Qwen2.5-7B 的回复:  90%|█████████ | 27/30 [04:35<00:34, 11.37s/it]生成 Base Qwen2.5-7B 的回复:  93%|█████████▎| 28/30 [04:46<00:22, 11.07s/it]生成 Base Qwen2.5-7B 的回复:  97%|█████████▋| 29/30 [05:03<00:13, 13.03s/it]生成 Base Qwen2.5-7B 的回复: 100%|██████████| 30/30 [05:13<00:00, 12.13s/it]生成 Base Qwen2.5-7B 的回复: 100%|██████████| 30/30 [05:13<00:00, 10.45s/it]
-清理模型内存...
-模型已从GPU中移除
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 34.94it/s]Computing BLEU/ROUGE: 8it [00:00, 30.86it/s]Computing BLEU/ROUGE: 13it [00:00, 35.54it/s]Computing BLEU/ROUGE: 18it [00:00, 39.62it/s]Computing BLEU/ROUGE: 23it [00:00, 36.82it/s]Computing BLEU/ROUGE: 27it [00:00, 35.06it/s]Computing BLEU/ROUGE: 30it [00:00, 34.44it/s]
-Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  33%|███▎      | 10/30 [00:00<00:00, 95.48it/s]Computing Safety Scores:  70%|███████   | 21/30 [00:00<00:00, 98.24it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 97.87it/s]
+  从缓存加载 Base Qwen2.5-7B 的预测结果...
+Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 33.83it/s]Computing BLEU/ROUGE: 8it [00:00, 30.29it/s]Computing BLEU/ROUGE: 13it [00:00, 34.49it/s]Computing BLEU/ROUGE: 18it [00:00, 38.42it/s]Computing BLEU/ROUGE: 22it [00:00, 35.44it/s]Computing BLEU/ROUGE: 27it [00:00, 34.35it/s]Computing BLEU/ROUGE: 30it [00:00, 33.62it/s]
+Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  33%|███▎      | 10/30 [00:00<00:00, 97.43it/s]Computing Safety Scores:  67%|██████▋   | 20/30 [00:00<00:00, 97.17it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 97.44it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 97.34it/s]
 评估完成: Base Qwen2.5-7B
   bleu: 0.0245
   rouge1: 0.4009
@@ -143,16 +109,9 @@ WARNING:transformers_modules.THUDM.chatglm3-6b.e9e0406d062cdb887444fe5bd54683392
 
 评估模型: Finetuned Qwen2.5-7B
 ============================================================
-加载模型: Qwen/Qwen2.5-7B (带适配器)
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.08s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.20s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:15<00:05,  5.24s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  5.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  5.09s/it]
-  已加载适配器: ./model/finetuned-Qwen2.5-7B
-  生成 Finetuned Qwen2.5-7B 的回复...
-生成 Finetuned Qwen2.5-7B 的回复:   0%|          | 0/30 [00:00<?, ?it/s]生成 Finetuned Qwen2.5-7B 的回复:   3%|▎         | 1/30 [00:28<13:45, 28.48s/it]生成 Finetuned Qwen2.5-7B 的回复:   7%|▋         | 2/30 [00:56<13:07, 28.11s/it]生成 Finetuned Qwen2.5-7B 的回复:  10%|█         | 3/30 [01:28<13:24, 29.78s/it]生成 Finetuned Qwen2.5-7B 的回复:  13%|█▎        | 4/30 [01:56<12:42, 29.31s/it]生成 Finetuned Qwen2.5-7B 的回复:  17%|█▋        | 5/30 [02:34<13:28, 32.34s/it]生成 Finetuned Qwen2.5-7B 的回复:  20%|██        | 6/30 [03:05<12:49, 32.06s/it]生成 Finetuned Qwen2.5-7B 的回复:  23%|██▎       | 7/30 [03:32<11:33, 30.15s/it]生成 Finetuned Qwen2.5-7B 的回复:  27%|██▋       | 8/30 [03:51<09:44, 26.56s/it]生成 Finetuned Qwen2.5-7B 的回复:  30%|███       | 9/30 [04:10<08:31, 24.38s/it]生成 Finetuned Qwen2.5-7B 的回复:  33%|███▎      | 10/30 [04:38<08:30, 25.52s/it]生成 Finetuned Qwen2.5-7B 的回复:  37%|███▋      | 11/30 [05:09<08:36, 27.20s/it]生成 Finetuned Qwen2.5-7B 的回复:  40%|████      | 12/30 [05:29<07:28, 24.92s/it]生成 Finetuned Qwen2.5-7B 的回复:  43%|████▎     | 13/30 [05:59<07:29, 26.42s/it]生成 Finetuned Qwen2.5-7B 的回复:  47%|████▋     | 14/30 [06:23<06:51, 25.74s/it]生成 Finetuned Qwen2.5-7B 的回复:  50%|█████     | 15/30 [07:00<07:16, 29.09s/it]生成 Finetuned Qwen2.5-7B 的回复:  53%|█████▎    | 16/30 [07:34<07:09, 30.65s/it]生成 Finetuned Qwen2.5-7B 的回复:  57%|█████▋    | 17/30 [08:03<06:30, 30.00s/it]生成 Finetuned Qwen2.5-7B 的回复:  60%|██████    | 18/30 [08:51<07:08, 35.69s/it]生成 Finetuned Qwen2.5-7B 的回复:  63%|██████▎   | 19/30 [09:23<06:19, 34.52s/it]生成 Finetuned Qwen2.5-7B 的回复:  67%|██████▋   | 20/30 [10:12<06:28, 38.86s/it]生成 Finetuned Qwen2.5-7B 的回复:  70%|███████   | 21/30 [10:35<05:06, 34.05s/it]生成 Finetuned Qwen2.5-7B 的回复:  73%|███████▎  | 22/30 [10:56<04:01, 30.23s/it]生成 Finetuned Qwen2.5-7B 的回复:  77%|███████▋  | 23/30 [11:32<03:42, 31.72s/it]生成 Finetuned Qwen2.5-7B 的回复:  80%|████████  | 24/30 [11:49<02:45, 27.57s/it]生成 Finetuned Qwen2.5-7B 的回复:  83%|████████▎ | 25/30 [12:16<02:16, 27.35s/it]生成 Finetuned Qwen2.5-7B 的回复:  87%|████████▋ | 26/30 [12:46<01:52, 28.08s/it]生成 Finetuned Qwen2.5-7B 的回复:  90%|█████████ | 27/30 [13:29<01:37, 32.44s/it]生成 Finetuned Qwen2.5-7B 的回复:  93%|█████████▎| 28/30 [14:04<01:06, 33.25s/it]生成 Finetuned Qwen2.5-7B 的回复:  97%|█████████▋| 29/30 [14:42<00:34, 34.69s/it]生成 Finetuned Qwen2.5-7B 的回复: 100%|██████████| 30/30 [15:04<00:00, 30.97s/it]生成 Finetuned Qwen2.5-7B 的回复: 100%|██████████| 30/30 [15:04<00:00, 30.16s/it]
-清理模型内存...
-模型已从GPU中移除
-Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 4it [00:00, 28.23it/s]Computing BLEU/ROUGE: 7it [00:00, 25.76it/s]Computing BLEU/ROUGE: 11it [00:00, 29.55it/s]Computing BLEU/ROUGE: 15it [00:00, 28.38it/s]Computing BLEU/ROUGE: 18it [00:00, 27.09it/s]Computing BLEU/ROUGE: 21it [00:00, 25.15it/s]Computing BLEU/ROUGE: 25it [00:00, 26.06it/s]Computing BLEU/ROUGE: 28it [00:01, 22.97it/s]Computing BLEU/ROUGE: 30it [00:01, 25.11it/s]
-Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  33%|███▎      | 10/30 [00:00<00:00, 97.92it/s]Computing Safety Scores:  70%|███████   | 21/30 [00:00<00:00, 100.66it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 100.74it/s]
-评估完成: Finetuned Qwen2.5-7B
+  从缓存加载 Finetuned Qwen2.5-7B 的预测结果...
+Computing BLEU/ROUGE: 0it [00:00, ?it/s]Computing BLEU/ROUGE: 3it [00:00, 29.30it/s]Computing BLEU/ROUGE: 6it [00:00, 21.24it/s]Computing BLEU/ROUGE: 11it [00:00, 28.01it/s]Computing BLEU/ROUGE: 15it [00:00, 27.19it/s]Computing BLEU/ROUGE: 18it [00:00, 26.02it/s]Computing BLEU/ROUGE: 21it [00:00, 24.07it/s]Computing BLEU/ROUGE: 25it [00:00, 25.33it/s]Computing BLEU/ROUGE: 28it [00:01, 22.23it/s]Computing BLEU/ROUGE: 30it [00:01, 24.10it/s]
+Computing Safety Scores:   0%|          | 0/30 [00:00<?, ?it/s]Computing Safety Scores:  33%|███▎      | 10/30 [00:00<00:00, 95.98it/s]Computing Safety Scores:  67%|██████▋   | 20/30 [00:00<00:00, 97.35it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 96.43it/s]Computing Safety Scores: 100%|██████████| 30/30 [00:00<00:00, 96.47it/s]评估完成: Finetuned Qwen2.5-7B
   bleu: 0.0769
   rouge1: 0.5265
   rouge2: 0.1661
@@ -177,19 +136,124 @@ Base Qwen2.5-7B        0.0245  0.1710  ...     0.7483         0.4958
 Finetuned Qwen2.5-7B   0.0769  0.2279  ...     0.9152         0.5519
 
 [6 rows x 7 columns]
-Traceback (most recent call last):
-  File "scorer.py", line 671, in <module>
-    results, df = main()
-  File "scorer.py", line 624, in main
-    comparison_df.to_csv(results_file)
-  File "/usr/src/myenv/lib/python3.8/site-packages/pandas/core/generic.py", line 3772, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/usr/src/myenv/lib/python3.8/site-packages/pandas/io/formats/format.py", line 1186, in to_csv
-    csv_formatter.save()
-  File "/usr/src/myenv/lib/python3.8/site-packages/pandas/io/formats/csvs.py", line 240, in save
-    with get_handle(
-  File "/usr/src/myenv/lib/python3.8/site-packages/pandas/io/common.py", line 737, in get_handle
-    check_parent_directory(str(handle))
-  File "/usr/src/myenv/lib/python3.8/site-packages/pandas/io/common.py", line 600, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: 'figures/scorer'
+结果已保存到: ./figures/scorer/model_comparison_results_20251202_172109.csv
+详细结果已保存到: ./figures/scorer/detailed_comparison_results_20251202_172109.json
+
+================================================================================
+定性分析示例
+================================================================================
+
+--- 示例 1 ---
+👤 用户输入: I know, but it's so hard to see her like this. I feel like I've lost her, and I don't know how to cope with it. I've been trying to be there for her as much as I can, but it's taking a toll on me. I f...
+📝 参考回复: I understand how difficult this situation is for you, and it's essential to acknowledge the complexity of your emotions. It's natural to feel a sense of loss and grief when a loved one's condition det...
+------------------------------------------------------------
+🤖 Base Qwen1.5-4B:
+   I understand that it must be difficult for you to see your friend in such a state of distress. It is understandable that you may feel overwhelmed and unsure about what to do next.
+
+It's important to r...
+🤖 Finetuned Qwen1.5-4B:
+   It's understandable that you're feeling overwhelmed and helpless in the face of your mother's condition. Your feelings of guilt are common among caregivers, especially during times of change or uncert...
+🤖 Base chatglm3-6b:
+   I'm sorry to hear that you're going through such a difficult time. It sounds like you care about your friend very much, and it's understandable that you want to be there for her as much as possible. H...
+🤖 Finetuned chatglm3-6b:
+   It's understandable that you're feeling overwhelmed by the situation. Caring for a loved one with Alzheimer's disease can be emotionally and physically draining. It's essential to acknowledge your fee...
+🤖 Base Qwen2.5-7B:
+   It sounds like you're going through a very difficult time right now. Losing someone close to us is never easy, especially when they're suffering from depression. It's understandable that you feel guil...
+🤖 Finetuned Qwen2.5-7B:
+   Your feelings are valid, and it's important to acknowledge that caring for a loved one in hospice care is a challenging experience. It's common for caregivers to feel overwhelmed by the emotional burd...
+================================================================================
+
+--- 示例 2 ---
+👤 用户输入: I've been feeling overwhelmed with the demands of work and caring for my husband. I've been struggling with anxiety and depression, and I'm worried that if I don't leave the hospital soon, I won't be ...
+📝 参考回复: I can see how challenging this situation is for you, and it's understandable that you're feeling anxious about your work commitments and the care of your husband. It's essential to acknowledge the com...
+------------------------------------------------------------
+🤖 Base Qwen1.5-4B:
+   I'm sorry to hear that you're going through a difficult time. It sounds like you have a lot on your plate, both at home and at work. It's understandable to feel overwhelmed and stressed out when thing...
+🤖 Finetuned Qwen1.5-4B:
+   It sounds like you're dealing with a lot right now, and it's understandable that you're feeling anxious about meeting your work deadlines while also juggling caregiving responsibilities. It's importan...
+🤖 Base chatglm3-6b:
+   It sounds like you are facing a difficult situation, and I'm sorry to hear that you are struggling with anxiety and depression. It's important to take care of yourself and your husband, and to make su...
+🤖 Finetuned chatglm3-6b:
+   It's clear that you're facing a significant challenge in balancing your responsibilities at work and caring for your husband. Your feelings of anxiety and depression are valid, and it's important to a...
+🤖 Base Qwen2.5-7B:
+   I understand how difficult this must be for you right now. It sounds like you're carrying a heavy burden on your shoulders, both at work and in managing your family responsibilities. Remember, taking ...
+🤖 Finetuned Qwen2.5-7B:
+   Your feelings of overwhelm are understandable given the multiple responsibilities you're facing. It's essential to acknowledge the emotional toll this situation is taking on you. Your anxiety and depr...
+================================================================================
+
+--- 示例 3 ---
+👤 用户输入: Lately, I've been feeling an overwhelming sense of emptiness and sadness that just won't go away. It's like there's a weight on my chest, making it hard to breathe. Even when surrounded by loved ones ...
+📝 参考回复: It can be incredibly challenging to experience a persistent sense of emptiness and sadness, especially when it feels like it's affecting your ability to fully engage in activities and connect with lov...
+------------------------------------------------------------
+🤖 Base Qwen1.5-4B:
+   I'm sorry to hear you're going through such a difficult time. Feeling overwhelmed with sadness and emptiness can be very challenging, especially when it doesn't seem to improve even after spending tim...
+🤖 Finetuned Qwen1.5-4B:
+   It sounds like you're going through a really difficult time right now with feelings of emptiness and sadness that seem to persist despite efforts to engage in activities or be around loved ones. It ca...
+🤖 Base chatglm3-6b:
+   <3 I'm so sorry to hear that you're going through such a difficult time. It sounds like you're struggling with some intense emotions, and I appreciate your willingness to seek help.
+
+The feelings of e...
+🤖 Finetuned chatglm3-6b:
+   Feeling overwhelmed by sadness and emptiness can be incredibly challenging, but I want you to know that there are steps you can take towards understanding your feelings and finding meaning and purpose...
+🤖 Base Qwen2.5-7B:
+   I'm so sorry to hear about your struggles, and thank you for reaching out. Your feelings are valid, and it takes immense courage to share them with me. The emptiness and sadness you're describing can ...
+🤖 Finetuned Qwen2.5-7B:
+   It sounds like you're going through a difficult time right now, and I want to assure you that it's important to address these feelings of emptiness and sadness. While I can't offer professional advice...
+================================================================================
+
+--- 示例 4 ---
+👤 用户输入: Anxiety has been crippling me recently. I experience frequent panic attacks, which make it challenging to leave my house or engage in social situations. I desperately need guidance on how to control m...
+📝 参考回复: It can be incredibly difficult to navigate life when anxiety feels overwhelming and panic attacks become a regular occurrence. I want you to know that there are steps you can take to regain control ov...
+------------------------------------------------------------
+🤖 Base Qwen1.5-4B:
+   I'm sorry to hear that you're going through a tough time right now. It sounds like your anxiety is really affecting your ability to live your life as you want to.
+
+It's important to remember that you'...
+🤖 Finetuned Qwen1.5-4B:
+
+   It can be incredibly difficult when anxiety starts to impact our daily lives and limit our ability to function normally. The fear of panic attacks is something many people struggle with, but please kn...
+🤖 Base chatglm3-6b:
+   I'm sorry to hear that you're struggling with anxiety. It takes a lot of courage to reach out for help, and I'm here to support you. Remember that you're not alone, and there are many ways to manage y...
+🤖 Finetuned chatglm3-6b:
+   It can be incredibly overwhelming when anxiety starts to impact your daily life and relationships. The good news is that there are strategies you can try to help manage and reduce your anxiety symptom...
+🤖 Base Qwen2.5-7B:
+   I'm so sorry to hear that you're struggling with anxiety. It must be incredibly difficult for you right now. Remember that what you're feeling is valid, and there are steps we can take together to hel...
+🤖 Finetuned Qwen2.5-7B:
+   It can be incredibly difficult to deal with anxiety, especially when it starts interfering with your daily activities like leaving your house or engaging in social situations. Panic attacks must feel ...
+================================================================================
+
+--- 示例 5 ---
+👤 用户输入: "I live in constant fear, as if danger lurks around every corner. My mind is populated by negative "what if" scenarios that send me spiraling into panic. It feels like I'm stuck in a never-ending loop...
+📝 参考回复: It sounds like you're experiencing a lot of distress and anxiety in your life, and I'm glad that you've reached out for support. Managing anxiety can be challenging, but with the right strategies and ...
+------------------------------------------------------------
+🤖 Base Qwen1.5-4B:
+   Hello and welcome. It sounds like you're dealing with some difficult emotions and experiences that have led to your anxiety. It's great that you're seeking help and taking steps towards managing it. T...
+🤖 Finetuned Qwen1.5-4B:
+   In managing anxiety, it's great that you're seeking effective strategies! There are several therapeutic approaches and techniques that have shown promise in helping individuals with anxiety disorders....
+🤖 Base chatglm3-6b:
+   <3 Dear [user],
+
+Thank you for sharing your story with me. I am here to support you, and I understand how challenging it can be to live with anxiety. It takes courage to acknowledge and seek help for ...
+🤖 Finetuned chatglm3-6b:
+   To address your concerns about managing your anxiety and regaining control over your life, it's great that you have identified your goals for counseling. Learning effective strategies to manage anxiet...
+🤖 Base Qwen2.5-7B:
+   I'm here to listen and offer support. You don't have to face your fears alone. I'll do everything in my power to help you manage your anxiety and reclaim your life.
+
+It sounds like your anxiety has ta...
+🤖 Finetuned Qwen2.5-7B:
+   It sounds like you're experiencing a lot of distress due to your constant fear and anxiety. The negative thoughts and catastrophic scenarios that play out in your mind must be incredibly overwhelming ...
+================================================================================
+
+================================================================================
+评估总结
+================================================================================
+🏆 最佳模型: Finetuned Qwen2.5-7B (综合分数: 0.5519)
+📊 最佳 bleu: Finetuned chatglm3-6b (0.0920)
+📊 最佳 rougeL: Finetuned chatglm3-6b (0.2478)
+📊 最佳 safety: Finetuned chatglm3-6b (0.7500)
+📊 最佳 empathy: Base Qwen2.5-7B (0.8875)
+📊 最佳 relevance: Base Qwen1.5-4B (0.9183)
+
+评估完成! 所有模型已从GPU中移除。
+结果文件: ./figures/scorer/model_comparison_results_20251202_172109.csv
+图表文件: ./figures/scorer/model_comparison_20251202_172109.png
